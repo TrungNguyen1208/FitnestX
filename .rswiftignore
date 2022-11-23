@@ -1,0 +1,6 @@
+# Ignore all files containing 'Localizable-Netverify.strings'
+**/*Localizable-Netverify.strings*
+# Ignore all xib files wherever they are
+# Explicitly include all files containing 'Cell'
+**/*.xib
+!**/*Cell*
