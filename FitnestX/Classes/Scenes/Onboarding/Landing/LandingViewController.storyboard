@@ -61,18 +61,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                        <color key="value" name="shadow-95ADFE-30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                        <real key="value" value="22"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                        <size key="value" width="0.0" height="10"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
@@ -107,9 +95,6 @@
         </namedColor>
         <namedColor name="gray-7B6F72">
             <color red="0.4823529411764706" green="0.43529411764705883" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="shadow-95ADFE-30">
-            <color red="0.58431372549019611" green="0.67843137254901964" blue="0.99607843137254903" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

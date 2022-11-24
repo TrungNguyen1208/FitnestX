@@ -75,11 +75,6 @@ open class GradientButton: UIButton {
   open override func layoutSublayers(of layer: CALayer) {
     super.layoutSublayers(of: layer)
     gradientLayer.frame = bounds
-    self.layer.cornerRadius = gradientCornerRadius
-    self.layer.shadowColor = shadowColor?.cgColor
-    self.layer.shadowOffset = shadowOffset
-    self.layer.shadowRadius = shadowRadius
-    self.layer.shadowOpacity = 1
   }
 }
 
