@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -22,43 +23,55 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding-step-1" translatesAutoresizingMaskIntoConstraints="NO" id="YKj-Vo-SKj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="406"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="YKj-Vo-SKj" secondAttribute="height" multiplier="375:406" id="U3a-Fw-lvq"/>
-                        </constraints>
-                    </imageView>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7CD-Ip-oah" userLabel="Text Section">
-                        <rect key="frame" x="30" y="470" width="315" height="110"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prX-h2-rYE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Your Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGN-UX-0pw">
-                                <rect key="frame" x="0.0" y="0.0" width="315" height="36"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding-step-1" translatesAutoresizingMaskIntoConstraints="NO" id="YKj-Vo-SKj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="406"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="Ibn-zM-B5I"/>
+                                    <constraint firstAttribute="width" secondItem="YKj-Vo-SKj" secondAttribute="height" multiplier="375:406" id="U3a-Fw-lvq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't worry if you have trouble determining your goals, We can help you determine your goals and track your goals" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWU-68-iRu">
-                                <rect key="frame" x="0.0" y="51" width="315" height="59"/>
-                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
-                                <color key="textColor" name="gray-7B6F72"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7CD-Ip-oah" userLabel="Text Section">
+                                <rect key="frame" x="30" y="470" width="315" height="110"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Your Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGN-UX-0pw">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="Ibn-zM-B5I"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't worry if you have trouble determining your goals, We can help you determine your goals and track your goals" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWU-68-iRu">
+                                        <rect key="frame" x="0.0" y="51" width="315" height="59"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                        <color key="textColor" name="gray-7B6F72"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </stackView>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7CD-Ip-oah" firstAttribute="top" secondItem="YKj-Vo-SKj" secondAttribute="bottom" constant="64" id="FnT-ea-pBF"/>
+                            <constraint firstItem="YKj-Vo-SKj" firstAttribute="top" secondItem="prX-h2-rYE" secondAttribute="top" id="Yt4-hf-2eK"/>
+                            <constraint firstItem="YKj-Vo-SKj" firstAttribute="leading" secondItem="prX-h2-rYE" secondAttribute="leading" id="fMo-vL-Blm"/>
+                            <constraint firstItem="7CD-Ip-oah" firstAttribute="leading" secondItem="prX-h2-rYE" secondAttribute="leading" constant="30" id="mSb-Sc-IoT"/>
+                            <constraint firstAttribute="trailing" secondItem="YKj-Vo-SKj" secondAttribute="trailing" id="r7z-Fa-rkb"/>
+                            <constraint firstAttribute="trailing" secondItem="7CD-Ip-oah" secondAttribute="trailing" constant="30" id="w4I-xN-yxo"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="YKj-Vo-SKj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8Qc-uI-oet"/>
-                <constraint firstItem="7CD-Ip-oah" firstAttribute="top" secondItem="YKj-Vo-SKj" secondAttribute="bottom" constant="64" id="9Re-qs-543"/>
-                <constraint firstAttribute="trailing" secondItem="7CD-Ip-oah" secondAttribute="trailing" constant="30" id="GFZ-Pb-VDS"/>
-                <constraint firstItem="7CD-Ip-oah" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="fPz-NH-e9h"/>
-                <constraint firstAttribute="trailing" secondItem="YKj-Vo-SKj" secondAttribute="trailing" id="i7z-fY-dab"/>
-                <constraint firstItem="YKj-Vo-SKj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wbD-o8-d3V"/>
+                <constraint firstItem="prX-h2-rYE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TTf-QC-pwd"/>
+                <constraint firstAttribute="bottom" secondItem="prX-h2-rYE" secondAttribute="bottom" id="Zxo-ai-941"/>
+                <constraint firstAttribute="trailing" secondItem="prX-h2-rYE" secondAttribute="trailing" id="edc-Vp-DD1"/>
+                <constraint firstItem="prX-h2-rYE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oJG-xC-I5S"/>
             </constraints>
             <size key="customSize" width="306" height="578"/>
             <point key="canvasLocation" x="-49.275362318840585" y="215.625"/>
@@ -69,5 +82,8 @@
         <namedColor name="gray-7B6F72">
             <color red="0.4823529411764706" green="0.43529411764705883" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
