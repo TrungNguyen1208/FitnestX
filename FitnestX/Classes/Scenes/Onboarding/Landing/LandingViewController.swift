@@ -12,6 +12,8 @@ final class LandingViewController: BaseViewController {
   
   // MARK: - IBOutlet
   
+  @IBOutlet private weak var getStartedButton: GradientButton!
+  
   // MARK: - Lifecycle
   
   override func viewDidLoad() {
@@ -21,6 +23,13 @@ final class LandingViewController: BaseViewController {
   
   override func applyLocalization() {
     
+  }
+  
+  // MARK: - Action
+  
+  @IBAction private func startButtonDidTap() {
+    let vc = OnboardingViewController.makeMe()
+    navigationController?.pushViewController(vc, animated: true)
   }
 }
 

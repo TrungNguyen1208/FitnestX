@@ -62,6 +62,9 @@
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startButtonDidTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="pSF-WA-cPZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -74,6 +77,9 @@
                             <constraint firstItem="UMo-y9-RdL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vQR-lv-WBc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="RL9-HJ-HXa" id="k31-up-FqP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
