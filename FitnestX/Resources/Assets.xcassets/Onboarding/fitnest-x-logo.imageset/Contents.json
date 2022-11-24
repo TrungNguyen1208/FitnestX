@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "fitnest-x-logo.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

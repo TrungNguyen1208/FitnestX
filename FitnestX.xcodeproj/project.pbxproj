@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0127C242292E2811000504E4 /* LandingViewController.storyboard */; };
+		0127C247292E2811000504E4 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C243292E2811000504E4 /* LandingViewController.swift */; };
+		0127C24C292E2A25000504E4 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C24B292E2A25000504E4 /* NibView.swift */; };
+		0127C250292E2A35000504E4 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0127C24F292E2A35000504E4 /* TTTAttributedLabel.m */; };
+		0127C256292E2A43000504E4 /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C252292E2A43000504E4 /* ToastManager.swift */; };
+		0127C257292E2A43000504E4 /* ToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C253292E2A43000504E4 /* ToastStyle.swift */; };
+		0127C258292E2A43000504E4 /* ToastPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C254292E2A43000504E4 /* ToastPosition.swift */; };
+		0127C259292E2A43000504E4 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C255292E2A43000504E4 /* Toast.swift */; };
+		0127C25C292E2A6C000504E4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C25B292E2A6C000504E4 /* GradientView.swift */; };
 		01755B1A292DC5730020DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01755B19292DC5730020DA7E /* AppDelegate.swift */; };
 		01755B23292DC5740020DA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01755B22292DC5740020DA7E /* Assets.xcassets */; };
 		01755B26292DC5740020DA7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01755B24292DC5740020DA7E /* LaunchScreen.storyboard */; };
@@ -57,10 +66,21 @@
 		01755BB4292E0BC20020DA7E /* Array+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01755BB2292E0BC20020DA7E /* Array+Additions.swift */; };
 		01755BB5292E0BC20020DA7E /* Collection+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01755BB3292E0BC20020DA7E /* Collection+SafeSubscript.swift */; };
 		01755BB9292E14F70020DA7E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01755BB8292E14F70020DA7E /* R.generated.swift */; };
+		01BF5D46292F1C9200B7446E /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BF5D45292F1C9200B7446E /* GradientButton.swift */; };
 		4FE38886121795767F056EB9 /* Pods_FitnestX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11666F100796CA469128E412 /* Pods_FitnestX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0127C242292E2811000504E4 /* LandingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LandingViewController.storyboard; sourceTree = "<group>"; };
+		0127C243292E2811000504E4 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		0127C24B292E2A25000504E4 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		0127C24E292E2A35000504E4 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		0127C24F292E2A35000504E4 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		0127C252292E2A43000504E4 /* ToastManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastManager.swift; sourceTree = "<group>"; };
+		0127C253292E2A43000504E4 /* ToastStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastStyle.swift; sourceTree = "<group>"; };
+		0127C254292E2A43000504E4 /* ToastPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastPosition.swift; sourceTree = "<group>"; };
+		0127C255292E2A43000504E4 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		0127C25B292E2A6C000504E4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		01755B16292DC5730020DA7E /* FitnestX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnestX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01755B19292DC5730020DA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01755B22292DC5740020DA7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +133,7 @@
 		01755BB2292E0BC20020DA7E /* Array+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Additions.swift"; sourceTree = "<group>"; };
 		01755BB3292E0BC20020DA7E /* Collection+SafeSubscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+SafeSubscript.swift"; sourceTree = "<group>"; };
 		01755BB8292E14F70020DA7E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		01BF5D45292F1C9200B7446E /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		11666F100796CA469128E412 /* Pods_FitnestX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnestX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		124CBD6FD62264FCEDEFCE45 /* Pods-FitnestX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.release.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.release.xcconfig"; sourceTree = "<group>"; };
 		C6F88D206A5749E90FD2C7A0 /* Pods-FitnestX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.debug.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +151,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0127C238292E270C000504E4 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				0127C242292E2811000504E4 /* LandingViewController.storyboard */,
+				0127C243292E2811000504E4 /* LandingViewController.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		0127C249292E2A15000504E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0127C25A292E2A51000504E4 /* GradientView */,
+				0127C24A292E2A25000504E4 /* NibView */,
+				0127C251292E2A43000504E4 /* Toast */,
+				0127C24D292E2A35000504E4 /* TTTAttributedLabel */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0127C24A292E2A25000504E4 /* NibView */ = {
+			isa = PBXGroup;
+			children = (
+				0127C24B292E2A25000504E4 /* NibView.swift */,
+			);
+			path = NibView;
+			sourceTree = "<group>";
+		};
+		0127C24D292E2A35000504E4 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				0127C24E292E2A35000504E4 /* TTTAttributedLabel.h */,
+				0127C24F292E2A35000504E4 /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		0127C251292E2A43000504E4 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				0127C252292E2A43000504E4 /* ToastManager.swift */,
+				0127C253292E2A43000504E4 /* ToastStyle.swift */,
+				0127C254292E2A43000504E4 /* ToastPosition.swift */,
+				0127C255292E2A43000504E4 /* Toast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		0127C25A292E2A51000504E4 /* GradientView */ = {
+			isa = PBXGroup;
+			children = (
+				0127C25B292E2A6C000504E4 /* GradientView.swift */,
+				01BF5D45292F1C9200B7446E /* GradientButton.swift */,
+			);
+			path = GradientView;
+			sourceTree = "<group>";
+		};
 		01755B0D292DC5730020DA7E = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +318,7 @@
 				01755B49292E07950020DA7E /* Bases */,
 				01755B4E292E090C0020DA7E /* Constant */,
 				01755B43292E06BE0020DA7E /* Utils */,
+				0127C249292E2A15000504E4 /* Views */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -305,6 +384,7 @@
 		01755B56292E0B360020DA7E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				0127C238292E270C000504E4 /* Landing */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -578,6 +658,7 @@
 				01755B3A292DDC5F0020DA7E /* Poppins-Regular.ttf in Resources */,
 				01755B23292DC5740020DA7E /* Assets.xcassets in Resources */,
 				01755B38292DDC4D0020DA7E /* Poppins-Medium.ttf in Resources */,
+				0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */,
 				01755B34292DDC310020DA7E /* Poppins-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,10 +753,14 @@
 				01755B98292E0B890020DA7E /* UIView+Shadows.swift in Sources */,
 				01755B96292E0B890020DA7E /* UIView+Screenshot.swift in Sources */,
 				01755B91292E0B890020DA7E /* UILabel+Convenience.swift in Sources */,
+				0127C256292E2A43000504E4 /* ToastManager.swift in Sources */,
 				01755BB5292E0BC20020DA7E /* Collection+SafeSubscript.swift in Sources */,
+				0127C247292E2811000504E4 /* LandingViewController.swift in Sources */,
 				01755B9E292E0B890020DA7E /* UIView+Animation.swift in Sources */,
 				01755BA6292E0B890020DA7E /* UIViewController+Convenience.swift in Sources */,
+				0127C250292E2A35000504E4 /* TTTAttributedLabel.m in Sources */,
 				01755B97292E0B890020DA7E /* UIView+Anchor.swift in Sources */,
+				0127C25C292E2A6C000504E4 /* GradientView.swift in Sources */,
 				01755B41292DE4070020DA7E /* AppCoordinator.swift in Sources */,
 				01755BAA292E0B890020DA7E /* UITableViewCell+Extension.swift in Sources */,
 				01755B4B292E07CB0020DA7E /* NavigationController.swift in Sources */,
@@ -685,7 +770,9 @@
 				01755BA8292E0B890020DA7E /* UINavigationController+Transparency.swift in Sources */,
 				01755B95292E0B890020DA7E /* UIView+Extensions.swift in Sources */,
 				01755BB0292E0B890020DA7E /* UITextField+Extension.swift in Sources */,
+				0127C259292E2A43000504E4 /* Toast.swift in Sources */,
 				01755B99292E0B890020DA7E /* UIView+Image.swift in Sources */,
+				0127C258292E2A43000504E4 /* ToastPosition.swift in Sources */,
 				01755BAB292E0B890020DA7E /* UITableView+HeaderLayoutHelpers.swift in Sources */,
 				01755BA9292E0B890020DA7E /* UITableView+Convenience.swift in Sources */,
 				01755BA2292E0B890020DA7E /* UITextView+ContainerInsets.swift in Sources */,
@@ -710,8 +797,11 @@
 				01755B9C292E0B890020DA7E /* UIView+Shake.swift in Sources */,
 				01755B9D292E0B890020DA7E /* UIView+Dashed.swift in Sources */,
 				01755B4D292E08200020DA7E /* BaseViewController.swift in Sources */,
+				0127C24C292E2A25000504E4 /* NibView.swift in Sources */,
 				01755BA3292E0B890020DA7E /* UIDevice+Model.swift in Sources */,
+				01BF5D46292F1C9200B7446E /* GradientButton.swift in Sources */,
 				01755B1A292DC5730020DA7E /* AppDelegate.swift in Sources */,
+				0127C257292E2A43000504E4 /* ToastStyle.swift in Sources */,
 				01755BA5292E0B890020DA7E /* UICollectionViewCell+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
