@@ -80,6 +80,7 @@
 		018698A7292F81E3000033E7 /* OnboardingViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018698A3292F81E3000033E7 /* OnboardingViewProtocol.swift */; };
 		018698AE292FA880000033E7 /* OnboardingPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018698AC292FA880000033E7 /* OnboardingPagerViewCell.swift */; };
 		018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018698AD292FA880000033E7 /* OnboardingPagerViewCell.xib */; };
+		018698B2292FB37F000033E7 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018698B1292FB37F000033E7 /* OnboardingViewModel.swift */; };
 		01BF5D46292F1C9200B7446E /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BF5D45292F1C9200B7446E /* GradientButton.swift */; };
 		4FE38886121795767F056EB9 /* Pods_FitnestX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11666F100796CA469128E412 /* Pods_FitnestX.framework */; };
 /* End PBXBuildFile section */
@@ -162,6 +163,7 @@
 		018698A3292F81E3000033E7 /* OnboardingViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewProtocol.swift; sourceTree = "<group>"; };
 		018698AC292FA880000033E7 /* OnboardingPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPagerViewCell.swift; sourceTree = "<group>"; };
 		018698AD292FA880000033E7 /* OnboardingPagerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingPagerViewCell.xib; sourceTree = "<group>"; };
+		018698B1292FB37F000033E7 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		01BF5D45292F1C9200B7446E /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		11666F100796CA469128E412 /* Pods_FitnestX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnestX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		124CBD6FD62264FCEDEFCE45 /* Pods-FitnestX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.release.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.release.xcconfig"; sourceTree = "<group>"; };
@@ -630,9 +632,18 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		018698B0292FB335000033E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				018698B1292FB37F000033E7 /* OnboardingViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		01BF5D47292F321900B7446E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				018698B0292FB335000033E7 /* Model */,
 				018698A8292FA605000033E7 /* Views */,
 				018698A0292F81E3000033E7 /* OnboardingPresenter.swift */,
 				018698A1292F81E3000033E7 /* OnboardingViewController.storyboard */,
@@ -839,6 +850,7 @@
 				01755B3F292DE37C0020DA7E /* AppDelegate+Setup.swift in Sources */,
 				01755B48292E06C40020DA7E /* RootControllerPresenter.swift in Sources */,
 				01755B90292E0B890020DA7E /* AttributedString+Convenience.swift in Sources */,
+				018698B2292FB37F000033E7 /* OnboardingViewModel.swift in Sources */,
 				01755BA8292E0B890020DA7E /* UINavigationController+Transparency.swift in Sources */,
 				01755B95292E0B890020DA7E /* UIView+Extensions.swift in Sources */,
 				01755BB0292E0B890020DA7E /* UITextField+Extension.swift in Sources */,
@@ -1021,7 +1033,6 @@
 			baseConfigurationReference = C6F88D206A5749E90FD2C7A0 /* Pods-FitnestX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1052,7 +1063,6 @@
 			baseConfigurationReference = 124CBD6FD62264FCEDEFCE45 /* Pods-FitnestX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

@@ -54,11 +54,13 @@ extension OnboardingViewController: OnboardingViewInput {
 
 extension OnboardingViewController: FSPagerViewDataSource, FSPagerViewDelegate {
   func numberOfItems(in pagerView: FSPagerView) -> Int {
-    return 4
+    presenter.onboardingViewModels.count
   }
   
   func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
-    let cell = pagerView.dequeueReusableCell(withReuseIdentifier: OnboardingPagerViewCell.nibName(), at: index)
+    let cell = pagerView.dequeueReusableCell(withReuseIdentifier: OnboardingPagerViewCell.nibName(), at: index) as! OnboardingPagerViewCell
+    let viewModel = presenter.onboardingViewModels[index]
+    cell.update(with: viewModel)
     return cell
   }
 }
