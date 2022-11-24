@@ -17,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFi-Er-Hjh" customClass="FSPagerView" customModule="FitnestX" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isScrollEnabled" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="decelerationDistance">
@@ -27,6 +27,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="interitemSpacing">
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bounces" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -36,9 +37,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KFi-Er-Hjh" secondAttribute="bottom" id="8c5-6p-K4E"/>
                             <constraint firstItem="KFi-Er-Hjh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CGJ-F2-eZf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KFi-Er-Hjh" secondAttribute="trailing" id="Cel-5c-vRI"/>
-                            <constraint firstItem="KFi-Er-Hjh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sgS-l3-HtG"/>
+                            <constraint firstItem="KFi-Er-Hjh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sgS-l3-HtG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pagerView" destination="KFi-Er-Hjh" id="B7z-tv-Kv7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

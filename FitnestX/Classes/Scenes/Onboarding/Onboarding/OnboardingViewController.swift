@@ -12,6 +12,8 @@ final class OnboardingViewController: BaseViewController {
   
   // MARK: - IBOutlet
   
+  @IBOutlet private weak var pagerView: FSPagerView!
+  
   // MARK: - Private Variable
   
   private lazy var presenter: OnboardingPresenter = {
@@ -36,7 +38,9 @@ final class OnboardingViewController: BaseViewController {
 
 private extension OnboardingViewController {
   func setupUI() {
-    
+    pagerView.register(OnboardingPagerViewCell.nib(), forCellWithReuseIdentifier: OnboardingPagerViewCell.nibName())
+    pagerView.delegate = self
+    pagerView.dataSource = self
   }
 }
 
@@ -44,4 +48,17 @@ private extension OnboardingViewController {
 
 extension OnboardingViewController: OnboardingViewInput {
   
+}
+
+// MARK: - FSPagerViewDataSource, FSPagerViewDelegate
+
+extension OnboardingViewController: FSPagerViewDataSource, FSPagerViewDelegate {
+  func numberOfItems(in pagerView: FSPagerView) -> Int {
+    return 4
+  }
+  
+  func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
+    let cell = pagerView.dequeueReusableCell(withReuseIdentifier: OnboardingPagerViewCell.nibName(), at: index)
+    return cell
+  }
 }

@@ -78,6 +78,8 @@
 		018698A5292F81E3000033E7 /* OnboardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018698A1292F81E3000033E7 /* OnboardingViewController.storyboard */; };
 		018698A6292F81E3000033E7 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018698A2292F81E3000033E7 /* OnboardingViewController.swift */; };
 		018698A7292F81E3000033E7 /* OnboardingViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018698A3292F81E3000033E7 /* OnboardingViewProtocol.swift */; };
+		018698AE292FA880000033E7 /* OnboardingPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018698AC292FA880000033E7 /* OnboardingPagerViewCell.swift */; };
+		018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018698AD292FA880000033E7 /* OnboardingPagerViewCell.xib */; };
 		01BF5D46292F1C9200B7446E /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BF5D45292F1C9200B7446E /* GradientButton.swift */; };
 		4FE38886121795767F056EB9 /* Pods_FitnestX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11666F100796CA469128E412 /* Pods_FitnestX.framework */; };
 /* End PBXBuildFile section */
@@ -158,6 +160,8 @@
 		018698A1292F81E3000033E7 /* OnboardingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingViewController.storyboard; sourceTree = "<group>"; };
 		018698A2292F81E3000033E7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		018698A3292F81E3000033E7 /* OnboardingViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewProtocol.swift; sourceTree = "<group>"; };
+		018698AC292FA880000033E7 /* OnboardingPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPagerViewCell.swift; sourceTree = "<group>"; };
+		018698AD292FA880000033E7 /* OnboardingPagerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingPagerViewCell.xib; sourceTree = "<group>"; };
 		01BF5D45292F1C9200B7446E /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		11666F100796CA469128E412 /* Pods_FitnestX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnestX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		124CBD6FD62264FCEDEFCE45 /* Pods-FitnestX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.release.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.release.xcconfig"; sourceTree = "<group>"; };
@@ -617,9 +621,19 @@
 			path = FSPagerView;
 			sourceTree = "<group>";
 		};
+		018698A8292FA605000033E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				018698AC292FA880000033E7 /* OnboardingPagerViewCell.swift */,
+				018698AD292FA880000033E7 /* OnboardingPagerViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		01BF5D47292F321900B7446E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				018698A8292FA605000033E7 /* Views */,
 				018698A0292F81E3000033E7 /* OnboardingPresenter.swift */,
 				018698A1292F81E3000033E7 /* OnboardingViewController.storyboard */,
 				018698A2292F81E3000033E7 /* OnboardingViewController.swift */,
@@ -714,6 +728,7 @@
 				018698A5292F81E3000033E7 /* OnboardingViewController.storyboard in Resources */,
 				01755B38292DDC4D0020DA7E /* Poppins-Medium.ttf in Resources */,
 				0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */,
+				018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */,
 				01755B34292DDC310020DA7E /* Poppins-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -833,6 +848,7 @@
 				018698A6292F81E3000033E7 /* OnboardingViewController.swift in Sources */,
 				0127C258292E2A43000504E4 /* ToastPosition.swift in Sources */,
 				01869898292F81B3000033E7 /* FSPagerView.swift in Sources */,
+				018698AE292FA880000033E7 /* OnboardingPagerViewCell.swift in Sources */,
 				0186989F292F81B3000033E7 /* FSPagerCollectionView.swift in Sources */,
 				01755BAB292E0B890020DA7E /* UITableView+HeaderLayoutHelpers.swift in Sources */,
 				01755BA9292E0B890020DA7E /* UITableView+Convenience.swift in Sources */,
