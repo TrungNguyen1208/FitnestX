@@ -17,35 +17,32 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OnboardingPagerViewCell" customModule="FitnestX" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
+            <rect key="frame" x="0.0" y="0.0" width="395" height="711"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
+                <rect key="frame" x="0.0" y="0.0" width="395" height="711"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prX-h2-rYE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
+                        <rect key="frame" x="0.0" y="0.0" width="395" height="711"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding-step-1" translatesAutoresizingMaskIntoConstraints="NO" id="YKj-Vo-SKj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="406"/>
+                                <rect key="frame" x="0.0" y="0.0" width="395" height="427.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YKj-Vo-SKj" secondAttribute="height" multiplier="375:406" id="U3a-Fw-lvq"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7CD-Ip-oah" userLabel="Text Section">
-                                <rect key="frame" x="30" y="470" width="315" height="110"/>
+                                <rect key="frame" x="30" y="491.5" width="335" height="107"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Your Goal" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGN-UX-0pw">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="Ibn-zM-B5I"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="33"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't worry if you have trouble determining your goals, We can help you determine your goals and track your goals" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWU-68-iRu">
-                                        <rect key="frame" x="0.0" y="51" width="315" height="59"/>
+                                        <rect key="frame" x="0.0" y="48" width="335" height="59"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                         <color key="textColor" name="gray-7B6F72"/>
                                         <nil key="highlightedColor"/>
@@ -73,13 +70,13 @@
                 <constraint firstAttribute="trailing" secondItem="prX-h2-rYE" secondAttribute="trailing" id="edc-Vp-DD1"/>
                 <constraint firstItem="prX-h2-rYE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oJG-xC-I5S"/>
             </constraints>
-            <size key="customSize" width="306" height="578"/>
+            <size key="customSize" width="326" height="614"/>
             <connections>
                 <outlet property="onboardingImageView" destination="YKj-Vo-SKj" id="zju-3m-fpj"/>
                 <outlet property="subtitleLabel" destination="SWU-68-iRu" id="Yo5-AI-aXY"/>
                 <outlet property="titleLabel" destination="PGN-UX-0pw" id="0YW-Ua-yr4"/>
             </connections>
-            <point key="canvasLocation" x="-49.275362318840585" y="215.625"/>
+            <point key="canvasLocation" x="-64.492753623188406" y="227.34375"/>
         </collectionViewCell>
     </objects>
     <resources>
