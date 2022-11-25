@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,14 +31,31 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="bounces" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4h-9C-LNx">
+                                <rect key="frame" x="329" y="792" width="50" height="50"/>
+                                <color key="backgroundColor" name="blue-92A3FD"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kdv-FY-YUK"/>
+                                    <constraint firstAttribute="width" constant="50" id="wr4-Jx-qCp"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W4h-9C-LNx" secondAttribute="trailing" constant="35" id="5Cy-xR-Vqd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KFi-Er-Hjh" secondAttribute="bottom" id="8c5-6p-K4E"/>
                             <constraint firstItem="KFi-Er-Hjh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CGJ-F2-eZf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KFi-Er-Hjh" secondAttribute="trailing" id="Cel-5c-vRI"/>
                             <constraint firstItem="KFi-Er-Hjh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sgS-l3-HtG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W4h-9C-LNx" secondAttribute="bottom" constant="20" id="yV8-Ue-y3N"/>
                         </constraints>
                     </view>
                     <connections>
@@ -49,4 +67,9 @@
             <point key="canvasLocation" x="14" y="63"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="blue-92A3FD">
+            <color red="0.5725490196078431" green="0.63921568627450975" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
