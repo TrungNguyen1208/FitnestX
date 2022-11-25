@@ -16,6 +16,9 @@
 		0127C258292E2A43000504E4 /* ToastPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C254292E2A43000504E4 /* ToastPosition.swift */; };
 		0127C259292E2A43000504E4 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C255292E2A43000504E4 /* Toast.swift */; };
 		0127C25C292E2A6C000504E4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C25B292E2A6C000504E4 /* GradientView.swift */; };
+		0134054E2930A6DA00112DC5 /* ALTimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134054A2930A6DA00112DC5 /* ALTimingFunction.swift */; };
+		0134054F2930A6DA00112DC5 /* ALProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134054C2930A6DA00112DC5 /* ALProgressBar.swift */; };
+		013405502930A6DA00112DC5 /* ALProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134054D2930A6DA00112DC5 /* ALProgressRing.swift */; };
 		01755B1A292DC5730020DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01755B19292DC5730020DA7E /* AppDelegate.swift */; };
 		01755B23292DC5740020DA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01755B22292DC5740020DA7E /* Assets.xcassets */; };
 		01755B26292DC5740020DA7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01755B24292DC5740020DA7E /* LaunchScreen.storyboard */; };
@@ -96,6 +99,9 @@
 		0127C254292E2A43000504E4 /* ToastPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastPosition.swift; sourceTree = "<group>"; };
 		0127C255292E2A43000504E4 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		0127C25B292E2A6C000504E4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		0134054A2930A6DA00112DC5 /* ALTimingFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTimingFunction.swift; sourceTree = "<group>"; };
+		0134054C2930A6DA00112DC5 /* ALProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALProgressBar.swift; sourceTree = "<group>"; };
+		0134054D2930A6DA00112DC5 /* ALProgressRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALProgressRing.swift; sourceTree = "<group>"; };
 		01755B16292DC5730020DA7E /* FitnestX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnestX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01755B19292DC5730020DA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01755B22292DC5740020DA7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -194,6 +200,7 @@
 		0127C249292E2A15000504E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				013405472930A6A300112DC5 /* ProgressView */,
 				0186988E292F81B3000033E7 /* FSPagerView */,
 				0127C25A292E2A51000504E4 /* GradientView */,
 				0127C24A292E2A25000504E4 /* NibView */,
@@ -238,6 +245,24 @@
 				01BF5D45292F1C9200B7446E /* GradientButton.swift */,
 			);
 			path = GradientView;
+			sourceTree = "<group>";
+		};
+		013405472930A6A300112DC5 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				013405482930A6DA00112DC5 /* ALProgressView */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		013405482930A6DA00112DC5 /* ALProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				0134054A2930A6DA00112DC5 /* ALTimingFunction.swift */,
+				0134054C2930A6DA00112DC5 /* ALProgressBar.swift */,
+				0134054D2930A6DA00112DC5 /* ALProgressRing.swift */,
+			);
+			path = ALProgressView;
 			sourceTree = "<group>";
 		};
 		01755B0D292DC5730020DA7E = {
@@ -408,6 +433,7 @@
 		01755B55292E0ADE0020DA7E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				018698B329305BEE000033E7 /* Authen */,
 				01755B56292E0B360020DA7E /* Onboarding */,
 			);
 			path = Scenes;
@@ -640,6 +666,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		018698B329305BEE000033E7 /* Authen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authen;
+			sourceTree = "<group>";
+		};
 		01BF5D47292F321900B7446E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -860,6 +893,7 @@
 				018698A6292F81E3000033E7 /* OnboardingViewController.swift in Sources */,
 				0127C258292E2A43000504E4 /* ToastPosition.swift in Sources */,
 				01869898292F81B3000033E7 /* FSPagerView.swift in Sources */,
+				0134054F2930A6DA00112DC5 /* ALProgressBar.swift in Sources */,
 				018698AE292FA880000033E7 /* OnboardingPagerViewCell.swift in Sources */,
 				0186989F292F81B3000033E7 /* FSPagerCollectionView.swift in Sources */,
 				01755BAB292E0B890020DA7E /* UITableView+HeaderLayoutHelpers.swift in Sources */,
@@ -875,10 +909,12 @@
 				018698A7292F81E3000033E7 /* OnboardingViewProtocol.swift in Sources */,
 				01755B94292E0B890020DA7E /* UIView+LayerAnimation.swift in Sources */,
 				01755B47292E06C40020DA7E /* RootViewControllerProvider.swift in Sources */,
+				0134054E2930A6DA00112DC5 /* ALTimingFunction.swift in Sources */,
 				0186989B292F81B3000033E7 /* FSPagerViewLayoutAttributes.swift in Sources */,
 				01755BB4292E0BC20020DA7E /* Array+Additions.swift in Sources */,
 				01755BA0292E0B890020DA7E /* UIPageViewController+Extension.swift in Sources */,
 				01755BAE292E0B890020DA7E /* UIStackView+RemoveAll.swift in Sources */,
+				013405502930A6DA00112DC5 /* ALProgressRing.swift in Sources */,
 				01755BB9292E14F70020DA7E /* R.generated.swift in Sources */,
 				01755B54292E09980020DA7E /* NotificationCenterService.swift in Sources */,
 				01755B93292E0B890020DA7E /* UIColor+Extension.swift in Sources */,
