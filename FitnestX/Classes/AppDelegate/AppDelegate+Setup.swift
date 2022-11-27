@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import IQKeyboardManagerSwift
 
 extension AppDelegate {
   func setupAppearance() {
@@ -17,7 +18,9 @@ extension AppDelegate {
 
 private extension AppDelegate {
   func setupIQKeyboard() {
-
+    IQKeyboardManager.shared.enable = true
+    IQKeyboardManager.shared.enableAutoToolbar = true
+    IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "Done"
   }
   
   func setupToastView() {

@@ -20,6 +20,11 @@
 		0134054F2930A6DA00112DC5 /* ALProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134054C2930A6DA00112DC5 /* ALProgressBar.swift */; };
 		013405502930A6DA00112DC5 /* ALProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134054D2930A6DA00112DC5 /* ALProgressRing.swift */; };
 		016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 016CC48A2931C5AF0085A5FC /* Localizable.strings */; };
+		016CC4A1293256990085A5FC /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016CC49D293256990085A5FC /* RegisterPresenter.swift */; };
+		016CC4A2293256990085A5FC /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016CC49E293256990085A5FC /* RegisterViewController.storyboard */; };
+		016CC4A3293256990085A5FC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016CC49F293256990085A5FC /* RegisterViewController.swift */; };
+		016CC4A4293256990085A5FC /* RegisterViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016CC4A0293256990085A5FC /* RegisterViewProtocol.swift */; };
+		016CC4A829325DA30085A5FC /* FitnestTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016CC4A729325DA30085A5FC /* FitnestTextField.swift */; };
 		01755B1A292DC5730020DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01755B19292DC5730020DA7E /* AppDelegate.swift */; };
 		01755B23292DC5740020DA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01755B22292DC5740020DA7E /* Assets.xcassets */; };
 		01755B26292DC5740020DA7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01755B24292DC5740020DA7E /* LaunchScreen.storyboard */; };
@@ -85,6 +90,11 @@
 		018698AE292FA880000033E7 /* OnboardingPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018698AC292FA880000033E7 /* OnboardingPagerViewCell.swift */; };
 		018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018698AD292FA880000033E7 /* OnboardingPagerViewCell.xib */; };
 		018698B2292FB37F000033E7 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018698B1292FB37F000033E7 /* OnboardingViewModel.swift */; };
+		01BB89892933495500379A96 /* BEMPathManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB89852933495500379A96 /* BEMPathManager.swift */; };
+		01BB898A2933495500379A96 /* BEMAnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB89862933495500379A96 /* BEMAnimationManager.swift */; };
+		01BB898B2933495500379A96 /* BEMCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB89872933495500379A96 /* BEMCheckBox.swift */; };
+		01BB898C2933495500379A96 /* BEMCheckBoxGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB89882933495500379A96 /* BEMCheckBoxGroup.swift */; };
+		01BB898E2933B20500379A96 /* FitnestPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB898D2933B20500379A96 /* FitnestPasswordTextField.swift */; };
 		01BF5D46292F1C9200B7446E /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BF5D45292F1C9200B7446E /* GradientButton.swift */; };
 		4FE38886121795767F056EB9 /* Pods_FitnestX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11666F100796CA469128E412 /* Pods_FitnestX.framework */; };
 /* End PBXBuildFile section */
@@ -105,6 +115,11 @@
 		0134054D2930A6DA00112DC5 /* ALProgressRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALProgressRing.swift; sourceTree = "<group>"; };
 		016CC4892931C5AF0085A5FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		016CC48B2931C5B20085A5FC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		016CC49D293256990085A5FC /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		016CC49E293256990085A5FC /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
+		016CC49F293256990085A5FC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		016CC4A0293256990085A5FC /* RegisterViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewProtocol.swift; sourceTree = "<group>"; };
+		016CC4A729325DA30085A5FC /* FitnestTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnestTextField.swift; sourceTree = "<group>"; };
 		01755B16292DC5730020DA7E /* FitnestX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnestX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01755B19292DC5730020DA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01755B22292DC5740020DA7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -173,6 +188,11 @@
 		018698AC292FA880000033E7 /* OnboardingPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPagerViewCell.swift; sourceTree = "<group>"; };
 		018698AD292FA880000033E7 /* OnboardingPagerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingPagerViewCell.xib; sourceTree = "<group>"; };
 		018698B1292FB37F000033E7 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		01BB89852933495500379A96 /* BEMPathManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMPathManager.swift; sourceTree = "<group>"; };
+		01BB89862933495500379A96 /* BEMAnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMAnimationManager.swift; sourceTree = "<group>"; };
+		01BB89872933495500379A96 /* BEMCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMCheckBox.swift; sourceTree = "<group>"; };
+		01BB89882933495500379A96 /* BEMCheckBoxGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMCheckBoxGroup.swift; sourceTree = "<group>"; };
+		01BB898D2933B20500379A96 /* FitnestPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnestPasswordTextField.swift; sourceTree = "<group>"; };
 		01BF5D45292F1C9200B7446E /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		11666F100796CA469128E412 /* Pods_FitnestX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnestX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		124CBD6FD62264FCEDEFCE45 /* Pods-FitnestX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.release.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.release.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +223,8 @@
 		0127C249292E2A15000504E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				01BB89842933495500379A96 /* BEMCheckBox */,
+				016CC4A629325D850085A5FC /* TextField */,
 				013405472930A6A300112DC5 /* ProgressView */,
 				0186988E292F81B3000033E7 /* FSPagerView */,
 				0127C25A292E2A51000504E4 /* GradientView */,
@@ -268,6 +290,33 @@
 			path = ALProgressView;
 			sourceTree = "<group>";
 		};
+		016CC48C29324A4D0085A5FC /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				016CC49D293256990085A5FC /* RegisterPresenter.swift */,
+				016CC49E293256990085A5FC /* RegisterViewController.storyboard */,
+				016CC49F293256990085A5FC /* RegisterViewController.swift */,
+				016CC4A0293256990085A5FC /* RegisterViewProtocol.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		016CC4A52932586E0085A5FC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		016CC4A629325D850085A5FC /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				016CC4A729325DA30085A5FC /* FitnestTextField.swift */,
+				01BB898D2933B20500379A96 /* FitnestPasswordTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
 		01755B0D292DC5730020DA7E = {
 			isa = PBXGroup;
 			children = (
@@ -322,7 +371,6 @@
 			children = (
 				01755B30292DDB420020DA7E /* AppDelegate */,
 				01755B42292E069A0020DA7E /* Common */,
-				01755B57292E0B6E0020DA7E /* Extensions */,
 				01755B55292E0ADE0020DA7E /* Scenes */,
 				01755B51292E09860020DA7E /* Services */,
 			);
@@ -378,6 +426,7 @@
 			children = (
 				01755B49292E07950020DA7E /* Bases */,
 				01755B4E292E090C0020DA7E /* Constant */,
+				01755B57292E0B6E0020DA7E /* Extensions */,
 				01755B43292E06BE0020DA7E /* Utils */,
 				0127C249292E2A15000504E4 /* Views */,
 			);
@@ -673,8 +722,21 @@
 		018698B329305BEE000033E7 /* Authen */ = {
 			isa = PBXGroup;
 			children = (
+				016CC4A52932586E0085A5FC /* Login */,
+				016CC48C29324A4D0085A5FC /* Register */,
 			);
 			path = Authen;
+			sourceTree = "<group>";
+		};
+		01BB89842933495500379A96 /* BEMCheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				01BB89852933495500379A96 /* BEMPathManager.swift */,
+				01BB89862933495500379A96 /* BEMAnimationManager.swift */,
+				01BB89872933495500379A96 /* BEMCheckBox.swift */,
+				01BB89882933495500379A96 /* BEMCheckBoxGroup.swift */,
+			);
+			path = BEMCheckBox;
 			sourceTree = "<group>";
 		};
 		01BF5D47292F321900B7446E /* Onboarding */ = {
@@ -778,6 +840,7 @@
 				016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */,
 				01755B38292DDC4D0020DA7E /* Poppins-Medium.ttf in Resources */,
 				0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */,
+				016CC4A2293256990085A5FC /* RegisterViewController.storyboard in Resources */,
 				018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */,
 				01755B34292DDC310020DA7E /* Poppins-Bold.ttf in Resources */,
 			);
@@ -871,6 +934,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01755B98292E0B890020DA7E /* UIView+Shadows.swift in Sources */,
+				016CC4A3293256990085A5FC /* RegisterViewController.swift in Sources */,
 				01755B96292E0B890020DA7E /* UIView+Screenshot.swift in Sources */,
 				01755B91292E0B890020DA7E /* UILabel+Convenience.swift in Sources */,
 				0127C256292E2A43000504E4 /* ToastManager.swift in Sources */,
@@ -890,11 +954,15 @@
 				01755B48292E06C40020DA7E /* RootControllerPresenter.swift in Sources */,
 				01755B90292E0B890020DA7E /* AttributedString+Convenience.swift in Sources */,
 				018698B2292FB37F000033E7 /* OnboardingViewModel.swift in Sources */,
+				01BB898C2933495500379A96 /* BEMCheckBoxGroup.swift in Sources */,
 				01755BA8292E0B890020DA7E /* UINavigationController+Transparency.swift in Sources */,
 				01755B95292E0B890020DA7E /* UIView+Extensions.swift in Sources */,
+				016CC4A4293256990085A5FC /* RegisterViewProtocol.swift in Sources */,
 				01755BB0292E0B890020DA7E /* UITextField+Extension.swift in Sources */,
+				01BB898E2933B20500379A96 /* FitnestPasswordTextField.swift in Sources */,
 				0127C259292E2A43000504E4 /* Toast.swift in Sources */,
 				0186989C292F81B3000033E7 /* FSPageViewLayout.swift in Sources */,
+				016CC4A829325DA30085A5FC /* FitnestTextField.swift in Sources */,
 				01755B99292E0B890020DA7E /* UIView+Image.swift in Sources */,
 				018698A6292F81E3000033E7 /* OnboardingViewController.swift in Sources */,
 				0127C258292E2A43000504E4 /* ToastPosition.swift in Sources */,
@@ -921,10 +989,12 @@
 				01755BA0292E0B890020DA7E /* UIPageViewController+Extension.swift in Sources */,
 				01755BAE292E0B890020DA7E /* UIStackView+RemoveAll.swift in Sources */,
 				013405502930A6DA00112DC5 /* ALProgressRing.swift in Sources */,
+				01BB898A2933495500379A96 /* BEMAnimationManager.swift in Sources */,
 				01755BB9292E14F70020DA7E /* R.generated.swift in Sources */,
 				01755B54292E09980020DA7E /* NotificationCenterService.swift in Sources */,
 				01755B93292E0B890020DA7E /* UIColor+Extension.swift in Sources */,
 				01755B9B292E0B890020DA7E /* UIView+Convenience.swift in Sources */,
+				01BB898B2933495500379A96 /* BEMCheckBox.swift in Sources */,
 				01755B8E292E0B890020DA7E /* UIImage+Size.swift in Sources */,
 				018698A4292F81E3000033E7 /* OnboardingPresenter.swift in Sources */,
 				01755B8F292E0B890020DA7E /* UIScrollView+Convenience.swift in Sources */,
@@ -932,9 +1002,11 @@
 				0186989D292F81B3000033E7 /* FSPageControl.swift in Sources */,
 				01755B9C292E0B890020DA7E /* UIView+Shake.swift in Sources */,
 				01755B9D292E0B890020DA7E /* UIView+Dashed.swift in Sources */,
+				01BB89892933495500379A96 /* BEMPathManager.swift in Sources */,
 				01755B4D292E08200020DA7E /* BaseViewController.swift in Sources */,
 				0127C24C292E2A25000504E4 /* NibView.swift in Sources */,
 				01755BA3292E0B890020DA7E /* UIDevice+Model.swift in Sources */,
+				016CC4A1293256990085A5FC /* RegisterPresenter.swift in Sources */,
 				01BF5D46292F1C9200B7446E /* GradientButton.swift in Sources */,
 				01755B1A292DC5730020DA7E /* AppDelegate.swift in Sources */,
 				0127C257292E2A43000504E4 /* ToastStyle.swift in Sources */,

@@ -45,6 +45,9 @@ final class OnboardingViewController: BaseViewController {
       pagerView.scrollToItem(at: currentIndex, animated: true)
       let progress = Float(currentIndex + 1) / Float(numberOfItems)
       progressRingView.setProgress(progress, animated: true)
+    } else {
+      let vc = RegisterViewController.makeMe()
+      navigationController?.pushViewController(vc, animated: true)
     }
   }
 }
