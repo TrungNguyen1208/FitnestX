@@ -65,7 +65,7 @@ private extension FitnestPasswordTextField {
     toggle()
   }
   
-  @objc func textDidChange() -> Void {
+  @objc func textDidChange() {
     if text == ""  {
       rightButton.setImage(UIImage(named: "password_show") , for: .normal)
     } else if isSecureTextEntry {
