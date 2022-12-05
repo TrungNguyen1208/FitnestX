@@ -32,6 +32,13 @@ final class RegisterViewController: BaseViewController {
   override func applyLocalization() {
     
   }
+  
+  // MARK: - Action
+  
+  @IBAction private func startButtonDidTap() {
+    let vc = CompleteProfileViewController.makeMe()
+    navigationController?.pushViewController(vc, animated: true)
+  }
 }
 
 // MARK: - Private

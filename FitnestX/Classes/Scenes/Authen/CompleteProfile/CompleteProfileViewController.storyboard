@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Complete Profile View Controller-->
+        <scene sceneID="jiC-V2-2yD">
+            <objects>
+                <viewController storyboardIdentifier="CompleteProfileViewController" id="Sry-T9-MSQ" customClass="CompleteProfileViewController" customModule="FitnestX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tSM-zK-btf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="9wH-LP-gSj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="N6d-W8-kzZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="858"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="complete-profile-bg" translatesAutoresizingMaskIntoConstraints="NO" id="jvg-LP-FGf">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9QD-DK-wrV">
+                                                <rect key="frame" x="0.0" y="380" width="375" height="478"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="axL-1C-cis">
+                                                        <rect key="frame" x="30" y="0.0" width="315" height="446"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="baT-yG-duf" userLabel="Title Section">
+                                                                <rect key="frame" x="0.0" y="0.0" width="315" height="59"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s complete your profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNK-4b-1hz">
+                                                                        <rect key="frame" x="21.5" y="0.0" width="272.5" height="24"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="24" id="T0Y-tI-ly8"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="20"/>
+                                                                        <color key="textColor" name="black-1D1617"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It will help us to know more about you!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNl-dA-vJi">
+                                                                        <rect key="frame" x="43" y="29" width="229" height="30"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="30" id="o0a-5v-zAr"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                        <color key="textColor" name="gray-7B6F72"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82q-dF-6Oh" userLabel="View Space">
+                                                                <rect key="frame" x="0.0" y="59" width="315" height="30"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="8NT-ls-eiE"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0dc-AN-xSr" userLabel="Text Field Section">
+                                                                <rect key="frame" x="0.0" y="89" width="315" height="237"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6uZ-8I-oeL" customClass="FitnestTextField" customModule="FitnestX" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="48"/>
+                                                                        <color key="backgroundColor" name="border-F7F8F8"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="48" id="TBf-vh-KXL"/>
+                                                                        </constraints>
+                                                                        <color key="textColor" name="gray-ADA4A5"/>
+                                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="14"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="icon-profile"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="gapPadding">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                                <real key="value" value="15"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0oN-dQ-dm6" customClass="FitnestTextField" customModule="FitnestX" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="63" width="315" height="48"/>
+                                                                        <color key="backgroundColor" name="border-F7F8F8"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="48" id="Oyh-eV-uCF"/>
+                                                                        </constraints>
+                                                                        <color key="textColor" name="gray-ADA4A5"/>
+                                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="14"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="icon-profile"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="gapPadding">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                                <real key="value" value="15"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wzJ-Yy-qpQ">
+                                                                        <rect key="frame" x="0.0" y="126" width="315" height="48"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACs-Vn-Ivg" customClass="FitnestTextField" customModule="FitnestX" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="252" height="48"/>
+                                                                                <color key="backgroundColor" name="border-F7F8F8"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="48" id="XCy-6Z-Djc"/>
+                                                                                </constraints>
+                                                                                <color key="textColor" name="gray-ADA4A5"/>
+                                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                                <textInputTraits key="textInputTraits"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="14"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="icon-email"/>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="gapPadding">
+                                                                                        <real key="value" value="10"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                                        <real key="value" value="15"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </textField>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Q3-j3-rY5" customClass="GradientButton" customModule="FitnestX" customModuleProvider="target">
+                                                                                <rect key="frame" x="267" y="0.0" width="48" height="48"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paw-rZ-qex">
+                                                                                        <rect key="frame" x="15.5" y="15.5" width="17" height="17"/>
+                                                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" name="purple-EEA4CE"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="paw-rZ-qex" firstAttribute="centerX" secondItem="5Q3-j3-rY5" secondAttribute="centerX" id="GHP-FE-4e6"/>
+                                                                                    <constraint firstAttribute="width" constant="48" id="KUI-gT-M0O"/>
+                                                                                    <constraint firstItem="paw-rZ-qex" firstAttribute="centerY" secondItem="5Q3-j3-rY5" secondAttribute="centerY" id="P23-zr-lTr"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                                                        <color key="value" name="purple-C58BF2"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                                                        <color key="value" name="purple-EEA4CE"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
+                                                                                        <real key="value" value="14"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="48" id="NRi-iU-z7p"/>
+                                                                        </constraints>
+                                                                    </stackView>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aIj-vl-DGh" customClass="FitnestPasswordTextField" customModule="FitnestX" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="189" width="315" height="48"/>
+                                                                        <color key="backgroundColor" name="border-F7F8F8"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="48" id="BXQ-Y7-Mwy"/>
+                                                                        </constraints>
+                                                                        <color key="textColor" name="gray-ADA4A5"/>
+                                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="14"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="icon-lock"/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="gapPadding">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                                <real key="value" value="15"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILw-zf-A9j" userLabel="View Space">
+                                                                <rect key="frame" x="0.0" y="326" width="315" height="30"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="gxr-s3-arC"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUD-RS-T95" customClass="GradientButton" customModule="FitnestX" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="356" width="315" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="Dpk-fc-tER"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Next"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                                        <color key="value" name="blue-9DCEFF"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                                        <color key="value" name="blue-92A3FD"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
+                                                                        <real key="value" value="30"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bim-cA-uc4" userLabel="View Space">
+                                                                <rect key="frame" x="0.0" y="416" width="315" height="30"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="wgL-dm-aqN"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="axL-1C-cis" secondAttribute="trailing" constant="30" id="2MJ-eC-eJq"/>
+                                                    <constraint firstAttribute="bottom" secondItem="axL-1C-cis" secondAttribute="bottom" constant="32" id="JEn-Hg-SUA"/>
+                                                    <constraint firstItem="axL-1C-cis" firstAttribute="top" secondItem="9QD-DK-wrV" secondAttribute="top" id="Qbv-TN-lAm"/>
+                                                    <constraint firstItem="axL-1C-cis" firstAttribute="leading" secondItem="9QD-DK-wrV" secondAttribute="leading" constant="30" id="wQJ-4H-GNd"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="N6d-W8-kzZ" firstAttribute="width" secondItem="9wH-LP-gSj" secondAttribute="width" id="9SJ-RB-Eds"/>
+                                    <constraint firstAttribute="trailing" secondItem="N6d-W8-kzZ" secondAttribute="trailing" id="JOE-cd-bpn"/>
+                                    <constraint firstAttribute="bottom" secondItem="N6d-W8-kzZ" secondAttribute="bottom" id="Nlr-By-4sH"/>
+                                    <constraint firstItem="N6d-W8-kzZ" firstAttribute="leading" secondItem="9wH-LP-gSj" secondAttribute="leading" id="oWn-1B-6la"/>
+                                    <constraint firstItem="N6d-W8-kzZ" firstAttribute="top" secondItem="9wH-LP-gSj" secondAttribute="top" id="trB-yd-d8e"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k7G-YJ-8G7"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9wH-LP-gSj" firstAttribute="trailing" secondItem="tSM-zK-btf" secondAttribute="trailing" id="E4M-mB-gJc"/>
+                            <constraint firstAttribute="bottom" secondItem="9wH-LP-gSj" secondAttribute="bottom" id="K3B-3v-pM4"/>
+                            <constraint firstItem="9wH-LP-gSj" firstAttribute="leading" secondItem="tSM-zK-btf" secondAttribute="leading" id="f4t-9n-gsn"/>
+                            <constraint firstItem="9wH-LP-gSj" firstAttribute="top" secondItem="tSM-zK-btf" secondAttribute="top" id="vUr-mj-pDl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nLY-7p-jD9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832" y="33"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="0oN-dQ-dm6">
+            <size key="intrinsicContentSize" width="121.5" height="18.5"/>
+        </designable>
+        <designable name="6uZ-8I-oeL">
+            <size key="intrinsicContentSize" width="122" height="18.5"/>
+        </designable>
+        <designable name="ACs-Vn-Ivg">
+            <size key="intrinsicContentSize" width="91" height="18.5"/>
+        </designable>
+        <designable name="RUD-RS-T95">
+            <size key="intrinsicContentSize" width="38" height="35"/>
+        </designable>
+        <designable name="aIj-vl-DGh">
+            <size key="intrinsicContentSize" width="148" height="18.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="complete-profile-bg" width="375" height="350"/>
+        <image name="icon-email" width="18" height="18"/>
+        <image name="icon-lock" width="18" height="18"/>
+        <image name="icon-profile" width="18" height="18"/>
+        <namedColor name="black-1D1617">
+            <color red="0.11764705882352941" green="0.082352941176470587" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blue-92A3FD">
+            <color red="0.5725490196078431" green="0.63921568627450975" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blue-9DCEFF">
+            <color red="0.61568627450980395" green="0.80784313725490198" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="border-F7F8F8">
+            <color red="0.96862745098039216" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray-7B6F72">
+            <color red="0.4823529411764706" green="0.43529411764705883" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray-ADA4A5">
+            <color red="0.67843137254901964" green="0.64313725490196083" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="purple-C58BF2">
+            <color red="0.77254901960784317" green="0.54509803921568623" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="purple-EEA4CE">
+            <color red="0.93333333333333335" green="0.64313725490196083" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
