@@ -99,6 +99,8 @@
 		01DEE7F12934C48700A988DC /* TermsAndPolicyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEE7F02934C48700A988DC /* TermsAndPolicyLabel.swift */; };
 		01DEE7F42934C74900A988DC /* LoginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEE7F32934C74900A988DC /* LoginLabel.swift */; };
 		4FE38886121795767F056EB9 /* Pods_FitnestX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11666F100796CA469128E412 /* Pods_FitnestX.framework */; };
+		7E7DA3BD293E36630092FFE3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7DA3BC293E36630092FFE3 /* LoginViewController.swift */; };
+		7E7DA3BF293E368B0092FFE3 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7DA3BE293E368B0092FFE3 /* LoginViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -201,6 +203,8 @@
 		01DEE7F32934C74900A988DC /* LoginLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLabel.swift; sourceTree = "<group>"; };
 		11666F100796CA469128E412 /* Pods_FitnestX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnestX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		124CBD6FD62264FCEDEFCE45 /* Pods-FitnestX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.release.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.release.xcconfig"; sourceTree = "<group>"; };
+		7E7DA3BC293E36630092FFE3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		7E7DA3BE293E368B0092FFE3 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		C6F88D206A5749E90FD2C7A0 /* Pods-FitnestX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.debug.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -311,6 +315,8 @@
 		016CC4A52932586E0085A5FC /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				7E7DA3BC293E36630092FFE3 /* LoginViewController.swift */,
+				7E7DA3BE293E368B0092FFE3 /* LoginViewController.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -865,6 +871,7 @@
 				01755B38292DDC4D0020DA7E /* Poppins-Medium.ttf in Resources */,
 				0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */,
 				016CC4A2293256990085A5FC /* RegisterViewController.storyboard in Resources */,
+				7E7DA3BF293E368B0092FFE3 /* LoginViewController.storyboard in Resources */,
 				018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */,
 				01755B34292DDC310020DA7E /* Poppins-Bold.ttf in Resources */,
 			);
@@ -957,6 +964,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E7DA3BD293E36630092FFE3 /* LoginViewController.swift in Sources */,
 				01755B98292E0B890020DA7E /* UIView+Shadows.swift in Sources */,
 				016CC4A3293256990085A5FC /* RegisterViewController.swift in Sources */,
 				01755B96292E0B890020DA7E /* UIView+Screenshot.swift in Sources */,

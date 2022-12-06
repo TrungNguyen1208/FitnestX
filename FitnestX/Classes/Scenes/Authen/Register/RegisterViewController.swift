@@ -13,6 +13,7 @@ final class RegisterViewController: BaseViewController {
   // MARK: - IBOutlet
   
   @IBOutlet private weak var termCheckBox: BEMCheckBox!
+  @IBOutlet private weak var loginLabel: LoginLabel!
   
   // MARK: - Private Variable
   
@@ -32,6 +33,10 @@ final class RegisterViewController: BaseViewController {
   override func applyLocalization() {
     
   }
+  
+  @IBAction private func startButtonDidTap() {
+    
+  }
 }
 
 // MARK: - Private
@@ -39,6 +44,21 @@ final class RegisterViewController: BaseViewController {
 private extension RegisterViewController {
   func setupUI() {
     termCheckBox.boxType = .square
+    loginLabel.delegate = self
+  }
+}
+
+// MARK: - TTTAttributedLabelDelegate
+
+extension RegisterViewController: TTTAttributedLabelDelegate {
+  func attributedLabel(_ label: TTTAttributedLabel!, didSelectLinkWith url: URL!) {
+    switch url.absoluteString {
+    case LoginLabelURL.loginLinkAction:
+      let vc = LoginViewController.makeMe()
+      navigationController?.pushViewController(vc, animated: true)
+    default:
+      break
+    }
   }
 }
 
