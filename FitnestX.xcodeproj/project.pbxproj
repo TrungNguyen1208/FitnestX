@@ -315,7 +315,6 @@
 		016CC4A52932586E0085A5FC /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				7E7DA3C0293E46970092FFE3 /* Views */,
 				7E7DA3BC293E36630092FFE3 /* LoginViewController.swift */,
 				7E7DA3BE293E368B0092FFE3 /* LoginViewController.storyboard */,
 			);
@@ -789,13 +788,6 @@
 				11666F100796CA469128E412 /* Pods_FitnestX.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7E7DA3C0293E46970092FFE3 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		D3075C6FFFAF90CD44B4360F /* Pods */ = {

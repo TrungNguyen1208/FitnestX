@@ -38,7 +38,7 @@ final class LoginLabel: TTTAttributedLabel {
                                               attributes: textAttributes)
     text = attributedString
     
-    let loginLink = URL(string: TermsAndPolicyLabelURL.termsLinkAction)
+    let loginLink = URL(string: LoginLabelURL.loginLinkAction)
     addLink(to: loginLink, with: NSRange(fullText.range(of: login)!, in: fullText))
   }
 }

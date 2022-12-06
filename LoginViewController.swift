@@ -22,6 +22,7 @@ final class LoginViewController: BaseViewController {
   }
   
   override func applyLocalization() {
+    
   }
   
   @IBAction func getStartedButtonDidTapped() {
@@ -33,11 +34,14 @@ final class LoginViewController: BaseViewController {
 
 private extension LoginViewController {
   func setupUI() {
-    forgotPasswordLabel.attributedText = NSAttributedString(string: "Forgot your password?", attributes:
+    forgotPasswordLabel.attributedText = NSAttributedString(
+      string: "Forgot your password?",
+      attributes:
         [
           .underlineStyle: NSUnderlineStyle.single.rawValue,
           .font: R.font.poppinsRegular(size: 12)!,
           .foregroundColor: R.color.grayADA4A5()!
-        ])
+        ]
+    )
   }
 }
