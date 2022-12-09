@@ -101,6 +101,8 @@
 		4FE38886121795767F056EB9 /* Pods_FitnestX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11666F100796CA469128E412 /* Pods_FitnestX.framework */; };
 		7E7DA3BD293E36630092FFE3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7DA3BC293E36630092FFE3 /* LoginViewController.swift */; };
 		7E7DA3BF293E368B0092FFE3 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7DA3BE293E368B0092FFE3 /* LoginViewController.storyboard */; };
+		7E9832132943024F00B695FD /* CompleteProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */; };
+		7E9832152943026700B695FD /* CompleteProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9832142943026700B695FD /* CompleteProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -205,6 +207,8 @@
 		124CBD6FD62264FCEDEFCE45 /* Pods-FitnestX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.release.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.release.xcconfig"; sourceTree = "<group>"; };
 		7E7DA3BC293E36630092FFE3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		7E7DA3BE293E368B0092FFE3 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = SOURCE_ROOT; };
+		7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompleteProfileViewController.storyboard; sourceTree = "<group>"; };
+		7E9832142943026700B695FD /* CompleteProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteProfileViewController.swift; sourceTree = "<group>"; };
 		C6F88D206A5749E90FD2C7A0 /* Pods-FitnestX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.debug.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -736,6 +740,7 @@
 		018698B329305BEE000033E7 /* Authen */ = {
 			isa = PBXGroup;
 			children = (
+				7E9832112943022200B695FD /* CompleteProfile */,
 				016CC4A52932586E0085A5FC /* Login */,
 				016CC48C29324A4D0085A5FC /* Register */,
 			);
@@ -788,6 +793,15 @@
 				11666F100796CA469128E412 /* Pods_FitnestX.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E9832112943022200B695FD /* CompleteProfile */ = {
+			isa = PBXGroup;
+			children = (
+				7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */,
+				7E9832142943026700B695FD /* CompleteProfileViewController.swift */,
+			);
+			path = CompleteProfile;
 			sourceTree = "<group>";
 		};
 		D3075C6FFFAF90CD44B4360F /* Pods */ = {
@@ -873,6 +887,7 @@
 				016CC4A2293256990085A5FC /* RegisterViewController.storyboard in Resources */,
 				7E7DA3BF293E368B0092FFE3 /* LoginViewController.storyboard in Resources */,
 				018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */,
+				7E9832132943024F00B695FD /* CompleteProfileViewController.storyboard in Resources */,
 				01755B34292DDC310020DA7E /* Poppins-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -993,6 +1008,7 @@
 				01755BB0292E0B890020DA7E /* UITextField+Extension.swift in Sources */,
 				01BB898E2933B20500379A96 /* FitnestPasswordTextField.swift in Sources */,
 				0127C259292E2A43000504E4 /* Toast.swift in Sources */,
+				7E9832152943026700B695FD /* CompleteProfileViewController.swift in Sources */,
 				0186989C292F81B3000033E7 /* FSPageViewLayout.swift in Sources */,
 				016CC4A829325DA30085A5FC /* FitnestTextField.swift in Sources */,
 				01755B99292E0B890020DA7E /* UIView+Image.swift in Sources */,

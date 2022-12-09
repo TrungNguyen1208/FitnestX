@@ -42,7 +42,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="59"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey there," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxE-8m-c9j">
-                                                                        <rect key="frame" x="137.5" y="0.0" width="79.5" height="24"/>
+                                                                        <rect key="frame" x="140.5" y="0.0" width="73.5" height="24"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="24" id="kuz-V4-m76"/>
                                                                         </constraints>
@@ -51,7 +51,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2H-K2-EnI">
-                                                                        <rect key="frame" x="81" y="29" width="192.5" height="30"/>
+                                                                        <rect key="frame" x="93.5" y="29" width="167" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="eIi-GF-HLk"/>
                                                                         </constraints>
@@ -187,7 +187,7 @@
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </view>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing you accept our Privacy Policy and Term of Use" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAf-cH-QqF" customClass="TermsAndPolicyLabel" customModule="FitnestX" customModuleProvider="target">
-                                                                                <rect key="frame" x="28" y="0.0" width="276" height="29"/>
+                                                                                <rect key="frame" x="28" y="0.0" width="276" height="12"/>
                                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
                                                                                 <color key="textColor" name="gray-ADA4A5"/>
                                                                                 <nil key="highlightedColor"/>
@@ -250,14 +250,14 @@
                                                                         <rect key="frame" x="0.0" y="20" width="354" height="18"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQu-SY-IJz">
-                                                                                <rect key="frame" x="0.0" y="8.5" width="160" height="1"/>
+                                                                                <rect key="frame" x="0.0" y="8.5" width="160.5" height="1"/>
                                                                                 <color key="backgroundColor" name="gray-DDDADA"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="1" id="KrG-Mb-dz4"/>
                                                                                 </constraints>
                                                                             </view>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIP-yT-bHX">
-                                                                                <rect key="frame" x="170" y="0.5" width="14" height="17"/>
+                                                                                <rect key="frame" x="170.5" y="2" width="13.5" height="14"/>
                                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                                 <color key="textColor" name="black-1D1617"/>
                                                                                 <nil key="highlightedColor"/>
@@ -433,28 +433,28 @@
     </scenes>
     <designables>
         <designable name="1gS-q3-YgO">
-            <size key="intrinsicContentSize" width="94" height="35"/>
+            <size key="intrinsicContentSize" width="83" height="31"/>
         </designable>
         <designable name="CKC-3V-R0B">
-            <size key="intrinsicContentSize" width="91" height="18.5"/>
+            <size key="intrinsicContentSize" width="99" height="22"/>
         </designable>
         <designable name="EXd-oW-Swn">
             <size key="intrinsicContentSize" width="18" height="18"/>
         </designable>
         <designable name="Hop-kn-bBF">
-            <size key="intrinsicContentSize" width="121.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="139.5" height="22"/>
         </designable>
         <designable name="OZY-Rj-vBV">
-            <size key="intrinsicContentSize" width="122" height="18.5"/>
+            <size key="intrinsicContentSize" width="140.5" height="22"/>
         </designable>
         <designable name="WAf-cH-QqF">
-            <size key="intrinsicContentSize" width="301" height="14"/>
+            <size key="intrinsicContentSize" width="274" height="12"/>
         </designable>
         <designable name="jHp-a8-4BA">
-            <size key="intrinsicContentSize" width="148" height="18.5"/>
+            <size key="intrinsicContentSize" width="163.5" height="22"/>
         </designable>
         <designable name="wYM-r7-ruc">
-            <size key="intrinsicContentSize" width="225" height="20"/>
+            <size key="intrinsicContentSize" width="201" height="17"/>
         </designable>
     </designables>
     <resources>
