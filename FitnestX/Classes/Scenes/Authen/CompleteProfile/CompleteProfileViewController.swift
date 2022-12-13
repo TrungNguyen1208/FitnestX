@@ -28,8 +28,8 @@ final class CompleteProfileViewController: BaseViewController {
   
   // MARK: - Action
   
-  @IBAction private func getStartedButtonDidTap() {
-    let vc = CompleteProfileViewController.makeMe()
+  @IBAction func nextButtonDidTapped() {
+    let vc = RegisterViewController.makeMe()
     navigationController?.pushViewController(vc, animated: true)
   }
 }
@@ -38,7 +38,6 @@ final class CompleteProfileViewController: BaseViewController {
 
 private extension CompleteProfileViewController {
   func setupUI() {
-    
   }
 }
 
