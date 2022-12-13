@@ -35,7 +35,8 @@ final class RegisterViewController: BaseViewController {
   }
   
   @IBAction private func startButtonDidTap() {
-    
+    let vc = CompleteProfileViewController.makeMe()
+    navigationController?.pushViewController(vc, animated: true)
   }
 }
 

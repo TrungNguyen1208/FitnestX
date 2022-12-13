@@ -233,6 +233,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
+                                                                    <action selector="getStartedButtonDidTapped" destination="5IN-pF-fQb" eventType="touchUpInside" id="sbk-Kg-ZDr"/>
                                                                     <action selector="startButtonDidTap" destination="8Ju-Uf-xY4" eventType="touchUpInside" id="0Id-VW-y0D"/>
                                                                 </connections>
                                                             </button>
@@ -427,6 +428,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CvL-dR-X1Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5IN-pF-fQb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="832" y="33"/>
         </scene>

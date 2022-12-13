@@ -25,11 +25,11 @@ final class LoginViewController: BaseViewController {
     
   }
   
-  @IBAction func getStartedButtonDidTapped() {
-    
+  @IBAction private func getStartedButtonDidTapped() {
+
   }
 }
-
+    
 // MARK: - Private
 
 private extension LoginViewController {
