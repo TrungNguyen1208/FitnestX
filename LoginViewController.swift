@@ -25,9 +25,8 @@ final class LoginViewController: BaseViewController {
     
   }
   
-  @IBAction func getStartedButtonDidTapped() {
-    let vc = OnboardingViewController.makeMe()
-    navigationController?.pushViewController(vc, animated: true)
+  @IBAction private func getStartedButtonDidTapped() {
+
   }
 }
     
