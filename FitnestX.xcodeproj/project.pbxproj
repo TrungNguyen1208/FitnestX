@@ -99,8 +99,13 @@
 		01DEE7F12934C48700A988DC /* TermsAndPolicyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEE7F02934C48700A988DC /* TermsAndPolicyLabel.swift */; };
 		01DEE7F42934C74900A988DC /* LoginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEE7F32934C74900A988DC /* LoginLabel.swift */; };
 		4FE38886121795767F056EB9 /* Pods_FitnestX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11666F100796CA469128E412 /* Pods_FitnestX.framework */; };
+		7E220852294EF9E200685AD5 /* GoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E220851294EF9E200685AD5 /* GoalViewModel.swift */; };
+		7E5C0AAF29484FBA002B5035 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C0AAE29484FBA002B5035 /* GoalViewController.swift */; };
+		7E5C0AB129484FC6002B5035 /* GoalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5C0AB029484FC6002B5035 /* GoalViewController.storyboard */; };
 		7E7DA3BD293E36630092FFE3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7DA3BC293E36630092FFE3 /* LoginViewController.swift */; };
 		7E7DA3BF293E368B0092FFE3 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7DA3BE293E368B0092FFE3 /* LoginViewController.storyboard */; };
+		7E97FEA5294B634A00061E58 /* GoalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E97FEA3294B634A00061E58 /* GoalCollectionViewCell.swift */; };
+		7E97FEA6294B634A00061E58 /* GoalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E97FEA4294B634A00061E58 /* GoalCollectionViewCell.xib */; };
 		7E9832132943024F00B695FD /* CompleteProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */; };
 		7E9832152943026700B695FD /* CompleteProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9832142943026700B695FD /* CompleteProfileViewController.swift */; };
 /* End PBXBuildFile section */
@@ -205,8 +210,13 @@
 		01DEE7F32934C74900A988DC /* LoginLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLabel.swift; sourceTree = "<group>"; };
 		11666F100796CA469128E412 /* Pods_FitnestX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnestX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		124CBD6FD62264FCEDEFCE45 /* Pods-FitnestX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.release.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.release.xcconfig"; sourceTree = "<group>"; };
+		7E220851294EF9E200685AD5 /* GoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewModel.swift; sourceTree = "<group>"; };
+		7E5C0AAE29484FBA002B5035 /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
+		7E5C0AB029484FC6002B5035 /* GoalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoalViewController.storyboard; sourceTree = "<group>"; };
 		7E7DA3BC293E36630092FFE3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		7E7DA3BE293E368B0092FFE3 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = SOURCE_ROOT; };
+		7E97FEA3294B634A00061E58 /* GoalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCollectionViewCell.swift; sourceTree = "<group>"; };
+		7E97FEA4294B634A00061E58 /* GoalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalCollectionViewCell.xib; sourceTree = "<group>"; };
 		7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompleteProfileViewController.storyboard; sourceTree = "<group>"; };
 		7E9832142943026700B695FD /* CompleteProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteProfileViewController.swift; sourceTree = "<group>"; };
 		C6F88D206A5749E90FD2C7A0 /* Pods-FitnestX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.debug.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.debug.xcconfig"; sourceTree = "<group>"; };
@@ -740,6 +750,7 @@
 		018698B329305BEE000033E7 /* Authen */ = {
 			isa = PBXGroup;
 			children = (
+				7E5C0AAD29484F87002B5035 /* Goal */,
 				7E9832112943022200B695FD /* CompleteProfile */,
 				016CC4A52932586E0085A5FC /* Login */,
 				016CC48C29324A4D0085A5FC /* Register */,
@@ -793,6 +804,34 @@
 				11666F100796CA469128E412 /* Pods_FitnestX.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E22084C294EF98300685AD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E220851294EF9E200685AD5 /* GoalViewModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7E5C0AAD29484F87002B5035 /* Goal */ = {
+			isa = PBXGroup;
+			children = (
+				7E22084C294EF98300685AD5 /* Model */,
+				7E5C0AB229484FF7002B5035 /* Views */,
+				7E5C0AAE29484FBA002B5035 /* GoalViewController.swift */,
+				7E5C0AB029484FC6002B5035 /* GoalViewController.storyboard */,
+			);
+			path = Goal;
+			sourceTree = "<group>";
+		};
+		7E5C0AB229484FF7002B5035 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7E97FEA3294B634A00061E58 /* GoalCollectionViewCell.swift */,
+				7E97FEA4294B634A00061E58 /* GoalCollectionViewCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		7E9832112943022200B695FD /* CompleteProfile */ = {
@@ -877,9 +916,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				01755B36292DDC410020DA7E /* Poppins-SemiBold.ttf in Resources */,
+				7E97FEA6294B634A00061E58 /* GoalCollectionViewCell.xib in Resources */,
 				01755B26292DC5740020DA7E /* LaunchScreen.storyboard in Resources */,
 				01755B3A292DDC5F0020DA7E /* Poppins-Regular.ttf in Resources */,
 				01755B23292DC5740020DA7E /* Assets.xcassets in Resources */,
+				7E5C0AB129484FC6002B5035 /* GoalViewController.storyboard in Resources */,
 				018698A5292F81E3000033E7 /* OnboardingViewController.storyboard in Resources */,
 				016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */,
 				01755B38292DDC4D0020DA7E /* Poppins-Medium.ttf in Resources */,
@@ -1003,6 +1044,7 @@
 				018698B2292FB37F000033E7 /* OnboardingViewModel.swift in Sources */,
 				01BB898C2933495500379A96 /* BEMCheckBoxGroup.swift in Sources */,
 				01755BA8292E0B890020DA7E /* UINavigationController+Transparency.swift in Sources */,
+				7E5C0AAF29484FBA002B5035 /* GoalViewController.swift in Sources */,
 				01755B95292E0B890020DA7E /* UIView+Extensions.swift in Sources */,
 				016CC4A4293256990085A5FC /* RegisterViewProtocol.swift in Sources */,
 				01755BB0292E0B890020DA7E /* UITextField+Extension.swift in Sources */,
@@ -1015,6 +1057,7 @@
 				018698A6292F81E3000033E7 /* OnboardingViewController.swift in Sources */,
 				0127C258292E2A43000504E4 /* ToastPosition.swift in Sources */,
 				01869898292F81B3000033E7 /* FSPagerView.swift in Sources */,
+				7E97FEA5294B634A00061E58 /* GoalCollectionViewCell.swift in Sources */,
 				0134054F2930A6DA00112DC5 /* ALProgressBar.swift in Sources */,
 				018698AE292FA880000033E7 /* OnboardingPagerViewCell.swift in Sources */,
 				0186989F292F81B3000033E7 /* FSPagerCollectionView.swift in Sources */,
@@ -1031,6 +1074,7 @@
 				018698A7292F81E3000033E7 /* OnboardingViewProtocol.swift in Sources */,
 				01755B94292E0B890020DA7E /* UIView+LayerAnimation.swift in Sources */,
 				01755B47292E06C40020DA7E /* RootViewControllerProvider.swift in Sources */,
+				7E220852294EF9E200685AD5 /* GoalViewModel.swift in Sources */,
 				0134054E2930A6DA00112DC5 /* ALTimingFunction.swift in Sources */,
 				0186989B292F81B3000033E7 /* FSPagerViewLayoutAttributes.swift in Sources */,
 				01755BB4292E0BC20020DA7E /* Array+Additions.swift in Sources */,

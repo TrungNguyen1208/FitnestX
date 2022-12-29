@@ -63,7 +63,6 @@ private extension OnboardingViewController {
     progressRingView.endColor = R.color.blue92A3FD()!
     progressRingView.timingFunction = .linear
     progressRingView.setProgress(0.25, animated: false)
-    
     pagerView.register(OnboardingPagerViewCell.nib(), forCellWithReuseIdentifier: OnboardingPagerViewCell.nibName())
     pagerView.delegate = self
     pagerView.dataSource = self

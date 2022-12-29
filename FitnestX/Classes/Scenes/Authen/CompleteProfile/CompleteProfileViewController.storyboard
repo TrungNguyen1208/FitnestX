@@ -249,6 +249,9 @@
                                                                         <real key="value" value="30"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="nextButtonDidTapped" destination="TKw-FT-XRX" eventType="touchUpInside" id="dqN-gj-8bI"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Goal View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="GoalViewController" id="Y6W-OH-hqX" customClass="GoalViewController" customModule="FitnestX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juc-5m-fEs" customClass="GradientButton" customModule="FitnestX" customModuleProvider="target">
+                                <rect key="frame" x="30" y="762" width="354" height="60"/>
+                                <color key="backgroundColor" name="blue-9DCEFF"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="rry-s3-QVb"/>
+                                </constraints>
+                                <color key="tintColor" red="0.96862745289999996" green="0.97254908080000002" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Confirm">
+                                    <fontDescription key="titleFontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" name="blue-92A3FD"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" name="blue-9DCEFF"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientCornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S4r-vt-9b3">
+                                <rect key="frame" x="90" y="84" width="234" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your goal ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvq-oU-pE6">
+                                        <rect key="frame" x="0.0" y="0.0" width="234" height="28"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It will help us to choose a best program for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgJ-9K-nAz">
+                                        <rect key="frame" x="0.0" y="28" width="234" height="34"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                        <color key="textColor" name="gray-7B6F72"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KhO-A1-0FZ" customClass="FSPagerView" customModule="FitnestX" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="209" width="414" height="478"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="478" id="3ja-qm-CpQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="itemSize">
+                                        <size key="value" width="275" height="478"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="juc-5m-fEs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="0un-0R-SJE"/>
+                            <constraint firstItem="KhO-A1-0FZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8Hu-2P-Vwh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="juc-5m-fEs" secondAttribute="trailing" constant="30" id="Ngf-eJ-DXU"/>
+                            <constraint firstItem="KhO-A1-0FZ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="UTe-rR-yBc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="juc-5m-fEs" secondAttribute="bottom" constant="40" id="YA3-ro-dPC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KhO-A1-0FZ" secondAttribute="trailing" id="cim-di-Nh6"/>
+                            <constraint firstItem="KhO-A1-0FZ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="eUM-z2-7d7"/>
+                            <constraint firstItem="S4r-vt-9b3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="90" id="mTk-GG-70x"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="S4r-vt-9b3" secondAttribute="trailing" constant="90" id="rIW-29-8J9"/>
+                            <constraint firstItem="S4r-vt-9b3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="wQs-MF-GE8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="juc-5m-fEs" id="fVq-D7-biH"/>
+                        <outlet property="pagerView" destination="KhO-A1-0FZ" id="Pxf-lG-rEx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32" y="80"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="juc-5m-fEs">
+            <size key="intrinsicContentSize" width="88.5" height="36.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="blue-92A3FD">
+            <color red="0.5725490196078431" green="0.63921568627450975" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blue-9DCEFF">
+            <color red="0.61568627450980395" green="0.80784313725490198" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray-7B6F72">
+            <color red="0.4823529411764706" green="0.43529411764705883" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
