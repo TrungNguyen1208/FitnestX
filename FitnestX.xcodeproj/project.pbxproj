@@ -79,6 +79,8 @@
 		01755BB4292E0BC20020DA7E /* Array+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01755BB2292E0BC20020DA7E /* Array+Additions.swift */; };
 		01755BB5292E0BC20020DA7E /* Collection+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01755BB3292E0BC20020DA7E /* Collection+SafeSubscript.swift */; };
 		01755BB9292E14F70020DA7E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01755BB8292E14F70020DA7E /* R.generated.swift */; };
+		017B17F72966C3A4001C3517 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017B17F52966C3A4001C3517 /* LoginViewController.storyboard */; };
+		017B17F82966C3A4001C3517 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B17F62966C3A4001C3517 /* LoginViewController.swift */; };
 		01869898292F81B3000033E7 /* FSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0186988F292F81B3000033E7 /* FSPagerView.swift */; };
 		01869899292F81B3000033E7 /* FSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01869890292F81B3000033E7 /* FSPageViewTransformer.swift */; };
 		0186989A292F81B3000033E7 /* FSPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01869892292F81B3000033E7 /* FSPagerViewCell.swift */; };
@@ -104,8 +106,6 @@
 		01DEE7F12934C48700A988DC /* TermsAndPolicyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEE7F02934C48700A988DC /* TermsAndPolicyLabel.swift */; };
 		01DEE7F42934C74900A988DC /* LoginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEE7F32934C74900A988DC /* LoginLabel.swift */; };
 		4FE38886121795767F056EB9 /* Pods_FitnestX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11666F100796CA469128E412 /* Pods_FitnestX.framework */; };
-		7E7DA3BD293E36630092FFE3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7DA3BC293E36630092FFE3 /* LoginViewController.swift */; };
-		7E7DA3BF293E368B0092FFE3 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7DA3BE293E368B0092FFE3 /* LoginViewController.storyboard */; };
 		7E9832132943024F00B695FD /* CompleteProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */; };
 		7E9832152943026700B695FD /* CompleteProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9832142943026700B695FD /* CompleteProfileViewController.swift */; };
 /* End PBXBuildFile section */
@@ -187,6 +187,8 @@
 		01755BB2292E0BC20020DA7E /* Array+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Additions.swift"; sourceTree = "<group>"; };
 		01755BB3292E0BC20020DA7E /* Collection+SafeSubscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+SafeSubscript.swift"; sourceTree = "<group>"; };
 		01755BB8292E14F70020DA7E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		017B17F52966C3A4001C3517 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		017B17F62966C3A4001C3517 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0186988F292F81B3000033E7 /* FSPagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerView.swift; sourceTree = "<group>"; };
 		01869890292F81B3000033E7 /* FSPageViewTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewTransformer.swift; sourceTree = "<group>"; };
 		01869891292F81B3000033E7 /* FSPagerViewObjcCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPagerViewObjcCompat.h; sourceTree = "<group>"; };
@@ -215,8 +217,6 @@
 		01DEE7F32934C74900A988DC /* LoginLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLabel.swift; sourceTree = "<group>"; };
 		11666F100796CA469128E412 /* Pods_FitnestX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnestX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		124CBD6FD62264FCEDEFCE45 /* Pods-FitnestX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.release.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.release.xcconfig"; sourceTree = "<group>"; };
-		7E7DA3BC293E36630092FFE3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = SOURCE_ROOT; };
-		7E7DA3BE293E368B0092FFE3 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompleteProfileViewController.storyboard; sourceTree = "<group>"; };
 		7E9832142943026700B695FD /* CompleteProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteProfileViewController.swift; sourceTree = "<group>"; };
 		C6F88D206A5749E90FD2C7A0 /* Pods-FitnestX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.debug.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.debug.xcconfig"; sourceTree = "<group>"; };
@@ -349,8 +349,8 @@
 		016CC4A52932586E0085A5FC /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				7E7DA3BC293E36630092FFE3 /* LoginViewController.swift */,
-				7E7DA3BE293E368B0092FFE3 /* LoginViewController.storyboard */,
+				017B17F52966C3A4001C3517 /* LoginViewController.storyboard */,
+				017B17F62966C3A4001C3517 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -926,8 +926,8 @@
 				01755B38292DDC4D0020DA7E /* Poppins-Medium.ttf in Resources */,
 				0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */,
 				016CC4A2293256990085A5FC /* RegisterViewController.storyboard in Resources */,
-				7E7DA3BF293E368B0092FFE3 /* LoginViewController.storyboard in Resources */,
 				018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */,
+				017B17F72966C3A4001C3517 /* LoginViewController.storyboard in Resources */,
 				7E9832132943024F00B695FD /* CompleteProfileViewController.storyboard in Resources */,
 				01755B34292DDC310020DA7E /* Poppins-Bold.ttf in Resources */,
 			);
@@ -1020,7 +1020,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E7DA3BD293E36630092FFE3 /* LoginViewController.swift in Sources */,
 				019415F1294EF8E000F11B23 /* YourGoalPagerViewModel.swift in Sources */,
 				01755B98292E0B890020DA7E /* UIView+Shadows.swift in Sources */,
 				016CC4A3293256990085A5FC /* RegisterViewController.swift in Sources */,
@@ -1034,6 +1033,7 @@
 				0127C250292E2A35000504E4 /* TTTAttributedLabel.m in Sources */,
 				01755B97292E0B890020DA7E /* UIView+Anchor.swift in Sources */,
 				0127C25C292E2A6C000504E4 /* GradientView.swift in Sources */,
+				017B17F82966C3A4001C3517 /* LoginViewController.swift in Sources */,
 				0186989E292F81B3000033E7 /* FSPagerViewObjcCompat.m in Sources */,
 				0186989A292F81B3000033E7 /* FSPagerViewCell.swift in Sources */,
 				01755B41292DE4070020DA7E /* AppCoordinator.swift in Sources */,
