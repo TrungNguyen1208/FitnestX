@@ -19,6 +19,10 @@
 		0134054E2930A6DA00112DC5 /* ALTimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134054A2930A6DA00112DC5 /* ALTimingFunction.swift */; };
 		0134054F2930A6DA00112DC5 /* ALProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134054C2930A6DA00112DC5 /* ALProgressBar.swift */; };
 		013405502930A6DA00112DC5 /* ALProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134054D2930A6DA00112DC5 /* ALProgressRing.swift */; };
+		013C12A7294813E70059C95F /* YourGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C12A6294813E70059C95F /* YourGoalViewController.swift */; };
+		013C12A9294814190059C95F /* YourGoalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013C12A8294814190059C95F /* YourGoalViewController.storyboard */; };
+		013C12AD294817CA0059C95F /* YourGoalPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */; };
+		013C12AE294817CA0059C95F /* YourGoalPagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013C12AC294817CA0059C95F /* YourGoalPagerViewCell.xib */; };
 		016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 016CC48A2931C5AF0085A5FC /* Localizable.strings */; };
 		016CC4A1293256990085A5FC /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016CC49D293256990085A5FC /* RegisterPresenter.swift */; };
 		016CC4A2293256990085A5FC /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016CC49E293256990085A5FC /* RegisterViewController.storyboard */; };
@@ -90,6 +94,7 @@
 		018698AE292FA880000033E7 /* OnboardingPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018698AC292FA880000033E7 /* OnboardingPagerViewCell.swift */; };
 		018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018698AD292FA880000033E7 /* OnboardingPagerViewCell.xib */; };
 		018698B2292FB37F000033E7 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018698B1292FB37F000033E7 /* OnboardingViewModel.swift */; };
+		019415F1294EF8E000F11B23 /* YourGoalPagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019415F0294EF8E000F11B23 /* YourGoalPagerViewModel.swift */; };
 		01BB89892933495500379A96 /* BEMPathManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB89852933495500379A96 /* BEMPathManager.swift */; };
 		01BB898A2933495500379A96 /* BEMAnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB89862933495500379A96 /* BEMAnimationManager.swift */; };
 		01BB898B2933495500379A96 /* BEMCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB89872933495500379A96 /* BEMCheckBox.swift */; };
@@ -119,6 +124,10 @@
 		0134054A2930A6DA00112DC5 /* ALTimingFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTimingFunction.swift; sourceTree = "<group>"; };
 		0134054C2930A6DA00112DC5 /* ALProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALProgressBar.swift; sourceTree = "<group>"; };
 		0134054D2930A6DA00112DC5 /* ALProgressRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALProgressRing.swift; sourceTree = "<group>"; };
+		013C12A6294813E70059C95F /* YourGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalViewController.swift; sourceTree = "<group>"; };
+		013C12A8294814190059C95F /* YourGoalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YourGoalViewController.storyboard; sourceTree = "<group>"; };
+		013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalPagerViewCell.swift; sourceTree = "<group>"; };
+		013C12AC294817CA0059C95F /* YourGoalPagerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourGoalPagerViewCell.xib; sourceTree = "<group>"; };
 		016CC4892931C5AF0085A5FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		016CC48B2931C5B20085A5FC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		016CC49D293256990085A5FC /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
@@ -194,6 +203,7 @@
 		018698AC292FA880000033E7 /* OnboardingPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPagerViewCell.swift; sourceTree = "<group>"; };
 		018698AD292FA880000033E7 /* OnboardingPagerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingPagerViewCell.xib; sourceTree = "<group>"; };
 		018698B1292FB37F000033E7 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		019415F0294EF8E000F11B23 /* YourGoalPagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalPagerViewModel.swift; sourceTree = "<group>"; };
 		01BB89852933495500379A96 /* BEMPathManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMPathManager.swift; sourceTree = "<group>"; };
 		01BB89862933495500379A96 /* BEMAnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMAnimationManager.swift; sourceTree = "<group>"; };
 		01BB89872933495500379A96 /* BEMCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMCheckBox.swift; sourceTree = "<group>"; };
@@ -302,6 +312,26 @@
 				0134054D2930A6DA00112DC5 /* ALProgressRing.swift */,
 			);
 			path = ALProgressView;
+			sourceTree = "<group>";
+		};
+		013C12A5294813C50059C95F /* YourGoal */ = {
+			isa = PBXGroup;
+			children = (
+				019415EF294EF8BE00F11B23 /* Model */,
+				013C12AA294816FF0059C95F /* Views */,
+				013C12A6294813E70059C95F /* YourGoalViewController.swift */,
+				013C12A8294814190059C95F /* YourGoalViewController.storyboard */,
+			);
+			path = YourGoal;
+			sourceTree = "<group>";
+		};
+		013C12AA294816FF0059C95F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */,
+				013C12AC294817CA0059C95F /* YourGoalPagerViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		016CC48C29324A4D0085A5FC /* Register */ = {
@@ -740,11 +770,20 @@
 		018698B329305BEE000033E7 /* Authen */ = {
 			isa = PBXGroup;
 			children = (
+				013C12A5294813C50059C95F /* YourGoal */,
 				7E9832112943022200B695FD /* CompleteProfile */,
 				016CC4A52932586E0085A5FC /* Login */,
 				016CC48C29324A4D0085A5FC /* Register */,
 			);
 			path = Authen;
+			sourceTree = "<group>";
+		};
+		019415EF294EF8BE00F11B23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				019415F0294EF8E000F11B23 /* YourGoalPagerViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		01BB89842933495500379A96 /* BEMCheckBox */ = {
@@ -876,11 +915,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013C12AE294817CA0059C95F /* YourGoalPagerViewCell.xib in Resources */,
 				01755B36292DDC410020DA7E /* Poppins-SemiBold.ttf in Resources */,
 				01755B26292DC5740020DA7E /* LaunchScreen.storyboard in Resources */,
 				01755B3A292DDC5F0020DA7E /* Poppins-Regular.ttf in Resources */,
 				01755B23292DC5740020DA7E /* Assets.xcassets in Resources */,
 				018698A5292F81E3000033E7 /* OnboardingViewController.storyboard in Resources */,
+				013C12A9294814190059C95F /* YourGoalViewController.storyboard in Resources */,
 				016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */,
 				01755B38292DDC4D0020DA7E /* Poppins-Medium.ttf in Resources */,
 				0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */,
@@ -980,6 +1021,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E7DA3BD293E36630092FFE3 /* LoginViewController.swift in Sources */,
+				019415F1294EF8E000F11B23 /* YourGoalPagerViewModel.swift in Sources */,
 				01755B98292E0B890020DA7E /* UIView+Shadows.swift in Sources */,
 				016CC4A3293256990085A5FC /* RegisterViewController.swift in Sources */,
 				01755B96292E0B890020DA7E /* UIView+Screenshot.swift in Sources */,
@@ -1013,6 +1055,7 @@
 				016CC4A829325DA30085A5FC /* FitnestTextField.swift in Sources */,
 				01755B99292E0B890020DA7E /* UIView+Image.swift in Sources */,
 				018698A6292F81E3000033E7 /* OnboardingViewController.swift in Sources */,
+				013C12AD294817CA0059C95F /* YourGoalPagerViewCell.swift in Sources */,
 				0127C258292E2A43000504E4 /* ToastPosition.swift in Sources */,
 				01869898292F81B3000033E7 /* FSPagerView.swift in Sources */,
 				0134054F2930A6DA00112DC5 /* ALProgressBar.swift in Sources */,
@@ -1045,6 +1088,7 @@
 				01BB898B2933495500379A96 /* BEMCheckBox.swift in Sources */,
 				01755B8E292E0B890020DA7E /* UIImage+Size.swift in Sources */,
 				018698A4292F81E3000033E7 /* OnboardingPresenter.swift in Sources */,
+				013C12A7294813E70059C95F /* YourGoalViewController.swift in Sources */,
 				01DEE7F12934C48700A988DC /* TermsAndPolicyLabel.swift in Sources */,
 				01755B8F292E0B890020DA7E /* UIScrollView+Convenience.swift in Sources */,
 				01755B50292E091A0020DA7E /* NotificationNames.swift in Sources */,

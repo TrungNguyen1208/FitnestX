@@ -29,7 +29,8 @@ final class CompleteProfileViewController: BaseViewController {
   // MARK: - Action
   
   @IBAction private func nextButtonDidTapped() {
-    
+    let goalVC = YourGoalViewController.makeMe()
+    navigationController?.pushViewController(goalVC, animated: true)
   }
 }
 
