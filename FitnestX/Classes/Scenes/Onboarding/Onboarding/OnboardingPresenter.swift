@@ -8,13 +8,27 @@
 
 import Foundation
 
-final class OnboardingPresenter {
+protocol OnboardingPresenterProtocol: AnyObject {
+  var router: OnboardingRouterProtocol { get }
+  var onboardingViewModels: [OnboardingViewModel] { get }
+  
+  init(view: OnboardingViewProtocol, router: OnboardingRouterProtocol)
+  func onViewDidLoad()
+  func onNextButtonDidTap()
+  func onMoveToItem(at targetIndex: Int)
+}
+
+final class OnboardingPresenter: OnboardingPresenterProtocol {
+  
+  // MARK: - Private Variable
+  
+  private weak var view: OnboardingViewProtocol?
+  private var currentIndex: Int = 0
   
   // MARK: - Public Variable
   
-  weak var view: OnboardingViewInput?
-  
-  let onboardingViewModels: [OnboardingViewModel] = [
+  public var router: OnboardingRouterProtocol
+  public let onboardingViewModels: [OnboardingViewModel] = [
     OnboardingViewModel(
       image: R.image.onboardingStep1.name,
       title: "Track Your Goal",
@@ -36,12 +50,33 @@ final class OnboardingPresenter {
       subtitle: "Improve the quality of your sleep with us, good quality sleep can bring a good mood in the morning"
     )
   ]
-}
-
-// MARK: - OnboardingViewOutput
-
-extension OnboardingPresenter: OnboardingViewOutput {
+  
+  // MARK: - Public function
+  
+  init(view: OnboardingViewProtocol, router: OnboardingRouterProtocol) {
+    self.view = view
+    self.router = router
+  }
+  
   func onViewDidLoad() {
     
+  }
+  
+  func onNextButtonDidTap() {
+    let numberOfItems = onboardingViewModels.count
+    if currentIndex < numberOfItems - 1 {
+      currentIndex += 1
+      view?.scrollToItem(at: currentIndex)
+      let progress = Float(currentIndex + 1) / Float(numberOfItems)
+      view?.setProgressRingView(progress)
+    } else {
+      router.navigateToRegister()
+    }
+  }
+  
+  func onMoveToItem(at targetIndex: Int) {
+    currentIndex = targetIndex
+    let progress = Float(targetIndex + 1) / Float(onboardingViewModels.count)
+    view?.setProgressRingView(progress)
   }
 }

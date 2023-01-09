@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol OnboardingViewProtocol: AnyObject {
+  func scrollToItem(at index: Int)
+  func setProgressRingView(_ value: Float)
+}
+
 final class OnboardingViewController: BaseViewController {
   
   // MARK: - IBOutlet
@@ -15,21 +20,16 @@ final class OnboardingViewController: BaseViewController {
   @IBOutlet private weak var pagerView: FSPagerView!
   @IBOutlet private weak var progressRingView: ALProgressRing!
   
-  // MARK: - Private Variable
+  // MARK: - Public Variable
   
-  private lazy var presenter: OnboardingPresenter = {
-    let presenter = OnboardingPresenter()
-    presenter.view = self
-    return presenter
-  }()
-  
-  private var currentIndex: Int = 0
+  public var presenter: OnboardingPresenterProtocol!
   
   // MARK: - Lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
     setupUI()
+    presenter.onViewDidLoad()
   }
   
   override func applyLocalization() {
@@ -39,16 +39,7 @@ final class OnboardingViewController: BaseViewController {
   // MARK: - Action
   
   @IBAction private func nextButtonDidTap() {
-    let numberOfItems = presenter.onboardingViewModels.count
-    if currentIndex < numberOfItems - 1 {
-      currentIndex += 1
-      pagerView.scrollToItem(at: currentIndex, animated: true)
-      let progress = Float(currentIndex + 1) / Float(numberOfItems)
-      progressRingView.setProgress(progress, animated: true)
-    } else {
-      let vc = RegisterViewController.makeMe()
-      navigationController?.pushViewController(vc, animated: true)
-    }
+    presenter.onNextButtonDidTap()
   }
 }
 
@@ -70,12 +61,6 @@ private extension OnboardingViewController {
   }
 }
 
-// MARK: - OnboardingViewInput
-
-extension OnboardingViewController: OnboardingViewInput {
-  
-}
-
 // MARK: - FSPagerViewDataSource, FSPagerViewDelegate
 
 extension OnboardingViewController: FSPagerViewDataSource, FSPagerViewDelegate {
@@ -91,8 +76,16 @@ extension OnboardingViewController: FSPagerViewDataSource, FSPagerViewDelegate {
   }
   
   func pagerViewWillEndDragging(_ pagerView: FSPagerView, targetIndex: Int) {
-    currentIndex = targetIndex
-    let progress = Float(targetIndex + 1) / Float(presenter.onboardingViewModels.count)
-    progressRingView.setProgress(progress, animated: true)
+    presenter.onMoveToItem(at: targetIndex)
+  }
+}
+
+extension OnboardingViewController: OnboardingViewProtocol {
+  func scrollToItem(at index: Int) {
+    pagerView.scrollToItem(at: index, animated: true)
+  }
+  
+  func setProgressRingView(_ value: Float) {
+    progressRingView.setProgress(value, animated: true)
   }
 }
