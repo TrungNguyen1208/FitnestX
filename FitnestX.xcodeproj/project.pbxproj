@@ -98,6 +98,13 @@
 		018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018698AD292FA880000033E7 /* OnboardingPagerViewCell.xib */; };
 		018698B2292FB37F000033E7 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018698B1292FB37F000033E7 /* OnboardingViewModel.swift */; };
 		019415F1294EF8E000F11B23 /* YourGoalPagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019415F0294EF8E000F11B23 /* YourGoalPagerViewModel.swift */; };
+		01A3BBA12A3DF0AE007C10F9 /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3BB9C2A3DF0AE007C10F9 /* DashboardPresenter.swift */; };
+		01A3BBA22A3DF0AE007C10F9 /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3BB9D2A3DF0AE007C10F9 /* DashboardRouter.swift */; };
+		01A3BBA32A3DF0AE007C10F9 /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A3BB9E2A3DF0AE007C10F9 /* DashboardViewController.storyboard */; };
+		01A3BBA42A3DF0AE007C10F9 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3BB9F2A3DF0AE007C10F9 /* DashboardViewController.swift */; };
+		01A3BBA52A3DF0AE007C10F9 /* DashboardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3BBA02A3DF0AE007C10F9 /* DashboardBuilder.swift */; };
+		01A3BBA82A3DF210007C10F9 /* FitnestActionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3BBA72A3DF210007C10F9 /* FitnestActionCardView.swift */; };
+		01A3BBAA2A3DF25F007C10F9 /* FitnestActionCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A3BBA92A3DF25F007C10F9 /* FitnestActionCardView.xib */; };
 		01BB89892933495500379A96 /* BEMPathManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB89852933495500379A96 /* BEMPathManager.swift */; };
 		01BB898A2933495500379A96 /* BEMAnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB89862933495500379A96 /* BEMAnimationManager.swift */; };
 		01BB898B2933495500379A96 /* BEMCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB89872933495500379A96 /* BEMCheckBox.swift */; };
@@ -208,6 +215,13 @@
 		018698AD292FA880000033E7 /* OnboardingPagerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingPagerViewCell.xib; sourceTree = "<group>"; };
 		018698B1292FB37F000033E7 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		019415F0294EF8E000F11B23 /* YourGoalPagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalPagerViewModel.swift; sourceTree = "<group>"; };
+		01A3BB9C2A3DF0AE007C10F9 /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		01A3BB9D2A3DF0AE007C10F9 /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		01A3BB9E2A3DF0AE007C10F9 /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
+		01A3BB9F2A3DF0AE007C10F9 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		01A3BBA02A3DF0AE007C10F9 /* DashboardBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardBuilder.swift; sourceTree = "<group>"; };
+		01A3BBA72A3DF210007C10F9 /* FitnestActionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnestActionCardView.swift; sourceTree = "<group>"; };
+		01A3BBA92A3DF25F007C10F9 /* FitnestActionCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnestActionCardView.xib; sourceTree = "<group>"; };
 		01BB89852933495500379A96 /* BEMPathManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMPathManager.swift; sourceTree = "<group>"; };
 		01BB89862933495500379A96 /* BEMAnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMAnimationManager.swift; sourceTree = "<group>"; };
 		01BB89872933495500379A96 /* BEMCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMCheckBox.swift; sourceTree = "<group>"; };
@@ -248,6 +262,7 @@
 		0127C249292E2A15000504E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				01A3BBA62A3DF1BD007C10F9 /* Card */,
 				01DEE7F52934C88900A988DC /* UILabel */,
 				01BB89842933495500379A96 /* BEMCheckBox */,
 				016CC4A629325D850085A5FC /* TextField */,
@@ -537,6 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				018698B329305BEE000033E7 /* Authen */,
+				01A3BB9B2A3DF068007C10F9 /* Dashboard */,
 				01755B56292E0B360020DA7E /* Onboarding */,
 			);
 			path = Scenes;
@@ -788,6 +804,27 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		01A3BB9B2A3DF068007C10F9 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				01A3BB9C2A3DF0AE007C10F9 /* DashboardPresenter.swift */,
+				01A3BB9D2A3DF0AE007C10F9 /* DashboardRouter.swift */,
+				01A3BB9E2A3DF0AE007C10F9 /* DashboardViewController.storyboard */,
+				01A3BB9F2A3DF0AE007C10F9 /* DashboardViewController.swift */,
+				01A3BBA02A3DF0AE007C10F9 /* DashboardBuilder.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		01A3BBA62A3DF1BD007C10F9 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				01A3BBA72A3DF210007C10F9 /* FitnestActionCardView.swift */,
+				01A3BBA92A3DF25F007C10F9 /* FitnestActionCardView.xib */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		01BB89842933495500379A96 /* BEMCheckBox */ = {
 			isa = PBXGroup;
 			children = (
@@ -918,6 +955,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A3BBA32A3DF0AE007C10F9 /* DashboardViewController.storyboard in Resources */,
 				013C12AE294817CA0059C95F /* YourGoalPagerViewCell.xib in Resources */,
 				01755B36292DDC410020DA7E /* Poppins-SemiBold.ttf in Resources */,
 				01755B26292DC5740020DA7E /* LaunchScreen.storyboard in Resources */,
@@ -929,6 +967,7 @@
 				01755B38292DDC4D0020DA7E /* Poppins-Medium.ttf in Resources */,
 				0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */,
 				016CC4A2293256990085A5FC /* RegisterViewController.storyboard in Resources */,
+				01A3BBAA2A3DF25F007C10F9 /* FitnestActionCardView.xib in Resources */,
 				018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */,
 				017B17F72966C3A4001C3517 /* LoginViewController.storyboard in Resources */,
 				7E9832132943024F00B695FD /* CompleteProfileViewController.storyboard in Resources */,
@@ -1025,6 +1064,7 @@
 			files = (
 				019415F1294EF8E000F11B23 /* YourGoalPagerViewModel.swift in Sources */,
 				01755B98292E0B890020DA7E /* UIView+Shadows.swift in Sources */,
+				01A3BBA82A3DF210007C10F9 /* FitnestActionCardView.swift in Sources */,
 				016CC4A3293256990085A5FC /* RegisterViewController.swift in Sources */,
 				01755B96292E0B890020DA7E /* UIView+Screenshot.swift in Sources */,
 				01755B91292E0B890020DA7E /* UILabel+Convenience.swift in Sources */,
@@ -1069,12 +1109,15 @@
 				01755BA2292E0B890020DA7E /* UITextView+ContainerInsets.swift in Sources */,
 				01869899292F81B3000033E7 /* FSPageViewTransformer.swift in Sources */,
 				01755B92292E0B890020DA7E /* UIApplication+Convenience.swift in Sources */,
+				01A3BBA52A3DF0AE007C10F9 /* DashboardBuilder.swift in Sources */,
 				01755B9F292E0B890020DA7E /* UIView+ShimmerAnimation.swift in Sources */,
 				01755BA7292E0B890020DA7E /* UIViewController+TopVisible.swift in Sources */,
 				01755B9A292E0B890020DA7E /* UIView+Properties+Inspectable.swift in Sources */,
 				01755BA4292E0B890020DA7E /* UICollectionView+Extension.swift in Sources */,
+				01A3BBA12A3DF0AE007C10F9 /* DashboardPresenter.swift in Sources */,
 				01755BA1292E0B890020DA7E /* UITabBarController+Convenience.swift in Sources */,
 				015F83D1296C5D9D000DEA70 /* OnboardingRouter.swift in Sources */,
+				01A3BBA42A3DF0AE007C10F9 /* DashboardViewController.swift in Sources */,
 				01755B94292E0B890020DA7E /* UIView+LayerAnimation.swift in Sources */,
 				01755B47292E06C40020DA7E /* RootViewControllerProvider.swift in Sources */,
 				0134054E2930A6DA00112DC5 /* ALTimingFunction.swift in Sources */,
@@ -1087,6 +1130,7 @@
 				01755BB9292E14F70020DA7E /* R.generated.swift in Sources */,
 				01755B54292E09980020DA7E /* NotificationCenterService.swift in Sources */,
 				01755B93292E0B890020DA7E /* UIColor+Extension.swift in Sources */,
+				01A3BBA22A3DF0AE007C10F9 /* DashboardRouter.swift in Sources */,
 				01755B9B292E0B890020DA7E /* UIView+Convenience.swift in Sources */,
 				01BB898B2933495500379A96 /* BEMCheckBox.swift in Sources */,
 				01755B8E292E0B890020DA7E /* UIImage+Size.swift in Sources */,

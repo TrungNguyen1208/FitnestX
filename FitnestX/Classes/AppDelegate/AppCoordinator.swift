@@ -65,7 +65,7 @@ private extension AppCoordinatorImpl {
   }
   
   func stateForLaunch() -> AppCoordinatorState {
-    return .firstLaunch
+    return .loggedIn
   }
   
   func switchToState(_ updatedState: AppCoordinatorState, animated: Bool) {
