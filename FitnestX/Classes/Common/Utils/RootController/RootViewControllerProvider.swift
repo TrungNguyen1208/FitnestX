@@ -13,7 +13,7 @@ final class RootViewControllerProviderImpl: RootViewControllerProvider {
     case .firstLaunch, .loggedOut:
       return makeLandingScreen()
     case .loggedIn:
-      return makeHomeScreen()
+      return makeDashboardScreen()
     }
   }
 }
@@ -34,7 +34,7 @@ private extension RootViewControllerProviderImpl {
   }
   
   func makeDashboardScreen() -> NavigationController {
-    let dashboardVC = UIViewController()
+    let dashboardVC = DashboardBuilder.build()
     let navigation = NavigationController(viewControllers: dashboardVC)
     navigation.setNavigationBarHidden(true, animated: false)
     return navigation
