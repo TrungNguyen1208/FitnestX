@@ -15,9 +15,21 @@ final class YourGoalViewController: BaseViewController {
   @IBOutlet private weak var pagerView: FSPagerView!
   
   private let cellViewModels: [YourGoalPagerViewModel] = [
-    YourGoalPagerViewModel(image: R.image.yourGoalCard1(), title: "1312312", subtitle: "213534dfgghdbfgvb xfgbgx"),
-    YourGoalPagerViewModel(image: R.image.yourGoalCard1(), title: "234124124", subtitle: "Quang dep trai"),
-    YourGoalPagerViewModel(image: R.image.yourGoalCard1(), title: "Trung", subtitle: "Trung dep trai")
+    YourGoalPagerViewModel(
+      image: R.image.yourGoalCard1(),
+      title: "Improve Shape",
+      subtitle: "I have a low amount of body fat and need / want to build more muscle"
+    ),
+    YourGoalPagerViewModel(
+      image: R.image.yourGoalCard2(),
+      title: "Lean & Tone",
+      subtitle: "I’m “skinny fat”. look thin but have no shape. I want to add learn muscle in the right way"
+    ),
+    YourGoalPagerViewModel(
+      image: R.image.yourGoalCard3(),
+      title: "Lose a Fat",
+      subtitle: "I have over 20 lbs to lose. I want to drop all this fat and gain muscle mass"
+    )
   ]
   
   // MARK: - Lifecycle

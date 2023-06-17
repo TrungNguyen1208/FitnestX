@@ -13,6 +13,7 @@ protocol OnboardingPresenterProtocol: AnyObject {
   var onboardingViewModels: [OnboardingViewModel] { get }
   
   init(view: OnboardingViewProtocol, router: OnboardingRouterProtocol)
+  
   func onViewDidLoad()
   func onNextButtonDidTap()
   func onMoveToItem(at targetIndex: Int)
