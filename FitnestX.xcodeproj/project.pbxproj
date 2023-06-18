@@ -116,6 +116,10 @@
 		4FE38886121795767F056EB9 /* Pods_FitnestX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11666F100796CA469128E412 /* Pods_FitnestX.framework */; };
 		7E9832132943024F00B695FD /* CompleteProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */; };
 		7E9832152943026700B695FD /* CompleteProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9832142943026700B695FD /* CompleteProfileViewController.swift */; };
+		DB364B842A3F41A20040C3BF /* HeaderDashboardCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB364B832A3F41A20040C3BF /* HeaderDashboardCardView.swift */; };
+		DB364B862A3F41DF0040C3BF /* HeaderDashboardCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB364B852A3F41DF0040C3BF /* HeaderDashboardCardView.xib */; };
+		DB9BB0172A3EAB19000303CD /* BannerComponentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9BB0162A3EAB19000303CD /* BannerComponentCardView.swift */; };
+		DB9BB0192A3EAB29000303CD /* BannerComponentCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB9BB0182A3EAB29000303CD /* BannerComponentCardView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -236,6 +240,10 @@
 		7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompleteProfileViewController.storyboard; sourceTree = "<group>"; };
 		7E9832142943026700B695FD /* CompleteProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteProfileViewController.swift; sourceTree = "<group>"; };
 		C6F88D206A5749E90FD2C7A0 /* Pods-FitnestX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.debug.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.debug.xcconfig"; sourceTree = "<group>"; };
+		DB364B832A3F41A20040C3BF /* HeaderDashboardCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDashboardCardView.swift; sourceTree = "<group>"; };
+		DB364B852A3F41DF0040C3BF /* HeaderDashboardCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderDashboardCardView.xib; sourceTree = "<group>"; };
+		DB9BB0162A3EAB19000303CD /* BannerComponentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerComponentCardView.swift; sourceTree = "<group>"; };
+		DB9BB0182A3EAB29000303CD /* BannerComponentCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerComponentCardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -821,6 +829,10 @@
 			children = (
 				01A3BBA72A3DF210007C10F9 /* FitnestActionCardView.swift */,
 				01A3BBA92A3DF25F007C10F9 /* FitnestActionCardView.xib */,
+				DB9BB0162A3EAB19000303CD /* BannerComponentCardView.swift */,
+				DB9BB0182A3EAB29000303CD /* BannerComponentCardView.xib */,
+				DB364B832A3F41A20040C3BF /* HeaderDashboardCardView.swift */,
+				DB364B852A3F41DF0040C3BF /* HeaderDashboardCardView.xib */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -955,6 +967,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB9BB0192A3EAB29000303CD /* BannerComponentCardView.xib in Resources */,
 				01A3BBA32A3DF0AE007C10F9 /* DashboardViewController.storyboard in Resources */,
 				013C12AE294817CA0059C95F /* YourGoalPagerViewCell.xib in Resources */,
 				01755B36292DDC410020DA7E /* Poppins-SemiBold.ttf in Resources */,
@@ -969,6 +982,7 @@
 				016CC4A2293256990085A5FC /* RegisterViewController.storyboard in Resources */,
 				01A3BBAA2A3DF25F007C10F9 /* FitnestActionCardView.xib in Resources */,
 				018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */,
+				DB364B862A3F41DF0040C3BF /* HeaderDashboardCardView.xib in Resources */,
 				017B17F72966C3A4001C3517 /* LoginViewController.storyboard in Resources */,
 				7E9832132943024F00B695FD /* CompleteProfileViewController.storyboard in Resources */,
 				01755B34292DDC310020DA7E /* Poppins-Bold.ttf in Resources */,
@@ -1112,6 +1126,7 @@
 				01A3BBA52A3DF0AE007C10F9 /* DashboardBuilder.swift in Sources */,
 				01755B9F292E0B890020DA7E /* UIView+ShimmerAnimation.swift in Sources */,
 				01755BA7292E0B890020DA7E /* UIViewController+TopVisible.swift in Sources */,
+				DB9BB0172A3EAB19000303CD /* BannerComponentCardView.swift in Sources */,
 				01755B9A292E0B890020DA7E /* UIView+Properties+Inspectable.swift in Sources */,
 				01755BA4292E0B890020DA7E /* UICollectionView+Extension.swift in Sources */,
 				01A3BBA12A3DF0AE007C10F9 /* DashboardPresenter.swift in Sources */,
@@ -1126,6 +1141,7 @@
 				01755BA0292E0B890020DA7E /* UIPageViewController+Extension.swift in Sources */,
 				01755BAE292E0B890020DA7E /* UIStackView+RemoveAll.swift in Sources */,
 				013405502930A6DA00112DC5 /* ALProgressRing.swift in Sources */,
+				DB364B842A3F41A20040C3BF /* HeaderDashboardCardView.swift in Sources */,
 				01BB898A2933495500379A96 /* BEMAnimationManager.swift in Sources */,
 				01755BB9292E14F70020DA7E /* R.generated.swift in Sources */,
 				01755B54292E09980020DA7E /* NotificationCenterService.swift in Sources */,
