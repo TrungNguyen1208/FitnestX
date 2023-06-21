@@ -116,6 +116,8 @@
 		4FE38886121795767F056EB9 /* Pods_FitnestX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11666F100796CA469128E412 /* Pods_FitnestX.framework */; };
 		7E9832132943024F00B695FD /* CompleteProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */; };
 		7E9832152943026700B695FD /* CompleteProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9832142943026700B695FD /* CompleteProfileViewController.swift */; };
+		DB9BB0172A3EAB19000303CD /* FitnestBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9BB0162A3EAB19000303CD /* FitnestBannerView.swift */; };
+		DB9BB0192A3EAB29000303CD /* FitnestBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB9BB0182A3EAB29000303CD /* FitnestBannerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -236,6 +238,8 @@
 		7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompleteProfileViewController.storyboard; sourceTree = "<group>"; };
 		7E9832142943026700B695FD /* CompleteProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteProfileViewController.swift; sourceTree = "<group>"; };
 		C6F88D206A5749E90FD2C7A0 /* Pods-FitnestX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.debug.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.debug.xcconfig"; sourceTree = "<group>"; };
+		DB9BB0162A3EAB19000303CD /* FitnestBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnestBannerView.swift; sourceTree = "<group>"; };
+		DB9BB0182A3EAB29000303CD /* FitnestBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnestBannerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -807,6 +811,7 @@
 		01A3BB9B2A3DF068007C10F9 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				01A3BBAD2A3F4F52007C10F9 /* Views */,
 				01A3BB9C2A3DF0AE007C10F9 /* DashboardPresenter.swift */,
 				01A3BB9D2A3DF0AE007C10F9 /* DashboardRouter.swift */,
 				01A3BB9E2A3DF0AE007C10F9 /* DashboardViewController.storyboard */,
@@ -819,10 +824,35 @@
 		01A3BBA62A3DF1BD007C10F9 /* Card */ = {
 			isa = PBXGroup;
 			children = (
+				01A3BBAB2A3F4ED7007C10F9 /* ActionCard */,
+				01A3BBAC2A3F4F16007C10F9 /* FitnestBanner */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		01A3BBAB2A3F4ED7007C10F9 /* ActionCard */ = {
+			isa = PBXGroup;
+			children = (
 				01A3BBA72A3DF210007C10F9 /* FitnestActionCardView.swift */,
 				01A3BBA92A3DF25F007C10F9 /* FitnestActionCardView.xib */,
 			);
-			path = Card;
+			path = ActionCard;
+			sourceTree = "<group>";
+		};
+		01A3BBAC2A3F4F16007C10F9 /* FitnestBanner */ = {
+			isa = PBXGroup;
+			children = (
+				DB9BB0162A3EAB19000303CD /* FitnestBannerView.swift */,
+				DB9BB0182A3EAB29000303CD /* FitnestBannerView.xib */,
+			);
+			path = FitnestBanner;
+			sourceTree = "<group>";
+		};
+		01A3BBAD2A3F4F52007C10F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		01BB89842933495500379A96 /* BEMCheckBox */ = {
@@ -955,6 +985,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB9BB0192A3EAB29000303CD /* FitnestBannerView.xib in Resources */,
 				01A3BBA32A3DF0AE007C10F9 /* DashboardViewController.storyboard in Resources */,
 				013C12AE294817CA0059C95F /* YourGoalPagerViewCell.xib in Resources */,
 				01755B36292DDC410020DA7E /* Poppins-SemiBold.ttf in Resources */,
@@ -1112,6 +1143,7 @@
 				01A3BBA52A3DF0AE007C10F9 /* DashboardBuilder.swift in Sources */,
 				01755B9F292E0B890020DA7E /* UIView+ShimmerAnimation.swift in Sources */,
 				01755BA7292E0B890020DA7E /* UIViewController+TopVisible.swift in Sources */,
+				DB9BB0172A3EAB19000303CD /* FitnestBannerView.swift in Sources */,
 				01755B9A292E0B890020DA7E /* UIView+Properties+Inspectable.swift in Sources */,
 				01755BA4292E0B890020DA7E /* UICollectionView+Extension.swift in Sources */,
 				01A3BBA12A3DF0AE007C10F9 /* DashboardPresenter.swift in Sources */,
