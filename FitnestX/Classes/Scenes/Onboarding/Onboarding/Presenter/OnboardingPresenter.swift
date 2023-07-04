@@ -60,6 +60,7 @@ final class OnboardingPresenter: OnboardingPresenterProtocol {
     if currentIndex < numberOfItems - 1 {
       currentIndex += 1
       view?.scrollToItem(at: currentIndex)
+      
       let progress = Float(currentIndex + 1) / Float(numberOfItems)
       view?.setProgressRingView(progress)
     } else {

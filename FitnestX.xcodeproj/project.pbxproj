@@ -31,6 +31,7 @@
 		013C12A9294814190059C95F /* YourGoalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013C12A8294814190059C95F /* YourGoalViewController.storyboard */; };
 		013C12AD294817CA0059C95F /* YourGoalPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */; };
 		013C12AE294817CA0059C95F /* YourGoalPagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013C12AC294817CA0059C95F /* YourGoalPagerViewCell.xib */; };
+		015A05F62A5468A4009773D8 /* OnboardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015A05F52A5468A4009773D8 /* OnboardingViewController.storyboard */; };
 		015F83D1296C5D9D000DEA70 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015F83D0296C5D9D000DEA70 /* OnboardingRouter.swift */; };
 		015F83D3296C6B3D000DEA70 /* OnboardingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015F83D2296C6B3D000DEA70 /* OnboardingBuilder.swift */; };
 		016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 016CC48A2931C5AF0085A5FC /* Localizable.strings */; };
@@ -100,7 +101,6 @@
 		0186989E292F81B3000033E7 /* FSPagerViewObjcCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 01869896292F81B3000033E7 /* FSPagerViewObjcCompat.m */; };
 		0186989F292F81B3000033E7 /* FSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01869897292F81B3000033E7 /* FSPagerCollectionView.swift */; };
 		018698A4292F81E3000033E7 /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018698A0292F81E3000033E7 /* OnboardingPresenter.swift */; };
-		018698A5292F81E3000033E7 /* OnboardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018698A1292F81E3000033E7 /* OnboardingViewController.storyboard */; };
 		018698A6292F81E3000033E7 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018698A2292F81E3000033E7 /* OnboardingViewController.swift */; };
 		018698AE292FA880000033E7 /* OnboardingPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018698AC292FA880000033E7 /* OnboardingPagerViewCell.swift */; };
 		018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018698AD292FA880000033E7 /* OnboardingPagerViewCell.xib */; };
@@ -154,6 +154,7 @@
 		013C12A8294814190059C95F /* YourGoalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YourGoalViewController.storyboard; sourceTree = "<group>"; };
 		013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalPagerViewCell.swift; sourceTree = "<group>"; };
 		013C12AC294817CA0059C95F /* YourGoalPagerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourGoalPagerViewCell.xib; sourceTree = "<group>"; };
+		015A05F52A5468A4009773D8 /* OnboardingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnboardingViewController.storyboard; sourceTree = "<group>"; };
 		015F83D0296C5D9D000DEA70 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
 		015F83D2296C6B3D000DEA70 /* OnboardingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBuilder.swift; sourceTree = "<group>"; };
 		016CC4892931C5AF0085A5FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -227,7 +228,6 @@
 		01869896292F81B3000033E7 /* FSPagerViewObjcCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPagerViewObjcCompat.m; sourceTree = "<group>"; };
 		01869897292F81B3000033E7 /* FSPagerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerCollectionView.swift; sourceTree = "<group>"; };
 		018698A0292F81E3000033E7 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
-		018698A1292F81E3000033E7 /* OnboardingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingViewController.storyboard; sourceTree = "<group>"; };
 		018698A2292F81E3000033E7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		018698AC292FA880000033E7 /* OnboardingPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPagerViewCell.swift; sourceTree = "<group>"; };
 		018698AD292FA880000033E7 /* OnboardingPagerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingPagerViewCell.xib; sourceTree = "<group>"; };
@@ -286,6 +286,16 @@
 				010A90912A546257004922BD /* UserDefaultsProvider.swift */,
 			);
 			path = Storages;
+			sourceTree = "<group>";
+		};
+		010A90952A546824004922BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				018698A8292FA605000033E7 /* Views */,
+				015A05F52A5468A4009773D8 /* OnboardingViewController.storyboard */,
+				018698A2292F81E3000033E7 /* OnboardingViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		0127C238292E270C000504E4 /* Landing */ = {
@@ -387,6 +397,22 @@
 				013C12AC294817CA0059C95F /* YourGoalPagerViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		015A05F72A5468CA009773D8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				018698A0292F81E3000033E7 /* OnboardingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		015A05F82A5468DA009773D8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				015F83D0296C5D9D000DEA70 /* OnboardingRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		016CC48C29324A4D0085A5FC /* Register */ = {
@@ -909,13 +935,11 @@
 		01BF5D47292F321900B7446E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				018698A8292FA605000033E7 /* Views */,
-				018698B0292FB335000033E7 /* Model */,
 				015F83D2296C6B3D000DEA70 /* OnboardingBuilder.swift */,
-				018698A0292F81E3000033E7 /* OnboardingPresenter.swift */,
-				015F83D0296C5D9D000DEA70 /* OnboardingRouter.swift */,
-				018698A1292F81E3000033E7 /* OnboardingViewController.storyboard */,
-				018698A2292F81E3000033E7 /* OnboardingViewController.swift */,
+				018698B0292FB335000033E7 /* Model */,
+				010A90952A546824004922BD /* View */,
+				015A05F72A5468CA009773D8 /* Presenter */,
+				015A05F82A5468DA009773D8 /* Router */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -1025,6 +1049,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015A05F62A5468A4009773D8 /* OnboardingViewController.storyboard in Resources */,
 				DB9BB0192A3EAB29000303CD /* FitnestBannerView.xib in Resources */,
 				01A3BBA32A3DF0AE007C10F9 /* DashboardViewController.storyboard in Resources */,
 				013C12AE294817CA0059C95F /* YourGoalPagerViewCell.xib in Resources */,
@@ -1032,7 +1057,6 @@
 				01755B26292DC5740020DA7E /* LaunchScreen.storyboard in Resources */,
 				01755B3A292DDC5F0020DA7E /* Poppins-Regular.ttf in Resources */,
 				01755B23292DC5740020DA7E /* Assets.xcassets in Resources */,
-				018698A5292F81E3000033E7 /* OnboardingViewController.storyboard in Resources */,
 				013C12A9294814190059C95F /* YourGoalViewController.storyboard in Resources */,
 				016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */,
 				01755B38292DDC4D0020DA7E /* Poppins-Medium.ttf in Resources */,

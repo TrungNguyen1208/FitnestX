@@ -24,10 +24,6 @@ final class OnboardingViewController: BaseViewController {
     presenter.onViewDidLoad()
   }
   
-  override func applyLocalization() {
-    
-  }
-  
   // MARK: - Action
   
   @IBAction private func nextButtonDidTap() {
@@ -47,6 +43,10 @@ private extension OnboardingViewController {
     progressRingView.timingFunction = .linear
     progressRingView.setProgress(0.25, animated: false)
     
+    setupCollectionView()
+  }
+  
+  func setupCollectionView() {
     pagerView.register(OnboardingPagerViewCell.nib(), forCellWithReuseIdentifier: OnboardingPagerViewCell.nibName())
     pagerView.delegate = self
     pagerView.dataSource = self
@@ -71,6 +71,8 @@ extension OnboardingViewController: FSPagerViewDataSource, FSPagerViewDelegate {
     presenter.onMoveToItem(at: targetIndex)
   }
 }
+
+// MARK: - OnboardingViewProtocol
 
 extension OnboardingViewController: OnboardingViewProtocol {
   func scrollToItem(at index: Int) {
