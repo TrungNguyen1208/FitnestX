@@ -1,10 +1,3 @@
-//
-//  GradientView.swift
-//  FitnestX
-//
-//  Created by Trung Nguyen on 23/11/2022.
-//
-
 import UIKit
 
 @IBDesignable final class GradientView: UIView {

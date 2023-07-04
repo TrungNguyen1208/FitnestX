@@ -1,11 +1,3 @@
-//
-//  DashboardBuilder.swift
-//  FitnestX
-//
-//  Created by Trung Nguyen on 17/06/2023.
-//  
-//
-
 import Foundation
 
 final class DashboardBuilder {

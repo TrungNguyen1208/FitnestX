@@ -1,10 +1,3 @@
-//
-//  YourGoalPagerViewCell.swift
-//  FitnestX
-//
-//  Created by Trung Nguyen on 13/12/2022.
-//
-
 import UIKit
 
 final class YourGoalPagerViewCell: FSPagerViewCell {

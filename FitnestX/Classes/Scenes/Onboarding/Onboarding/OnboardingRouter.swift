@@ -1,10 +1,3 @@
-//
-//  OnboardingRouter.swift
-//  FitnestX
-//
-//  Created by Trung Nguyen on 09/01/2023.
-//
-
 import Foundation
 
 protocol OnboardingRouterProtocol {

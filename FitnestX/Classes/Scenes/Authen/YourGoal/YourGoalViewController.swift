@@ -1,10 +1,3 @@
-//
-//  YourGoalViewController.swift
-//  FitnestX
-//
-//  Created by Trung Nguyen on 13/12/2022.
-//
-
 import Foundation
 import UIKit
 

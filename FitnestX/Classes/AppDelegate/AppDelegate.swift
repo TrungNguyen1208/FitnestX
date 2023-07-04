@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  FitnestX
-//
-//  Created by Trung Nguyen on 23/11/2022.
-//
-
 import UIKit
 
 @main
@@ -25,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
     .portrait
   }
-
 }
 
 // MARK: - Private

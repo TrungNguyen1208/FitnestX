@@ -1,10 +1,3 @@
-//
-//  AppCoordinator.swift
-//  FitnestX
-//
-//  Created by Trung Nguyen on 23/11/2022.
-//
-
 import Foundation
 import UIKit
 
@@ -47,7 +40,6 @@ final class AppCoordinatorImpl: AppCoordinator {
   
   func launch() {
     setupObservers()
-//    logoutService.setup()
     let launchState = stateForLaunch()
     switchToState(launchState, animated: false)
   }
@@ -65,7 +57,7 @@ private extension AppCoordinatorImpl {
   }
   
   func stateForLaunch() -> AppCoordinatorState {
-    return .loggedIn
+    return .firstLaunch
   }
   
   func switchToState(_ updatedState: AppCoordinatorState, animated: Bool) {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010A90842A545E61004922BD /* String+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A90832A545E61004922BD /* String+Convenience.swift */; };
+		010A90862A545ECE004922BD /* Optional+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A90852A545ECE004922BD /* Optional+Convenience.swift */; };
+		010A90882A545EF1004922BD /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A90872A545EF1004922BD /* Date+Additions.swift */; };
 		0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0127C242292E2811000504E4 /* LandingViewController.storyboard */; };
 		0127C247292E2811000504E4 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C243292E2811000504E4 /* LandingViewController.swift */; };
 		0127C24C292E2A25000504E4 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C24B292E2A25000504E4 /* NibView.swift */; };
@@ -121,6 +124,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		010A90832A545E61004922BD /* String+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Convenience.swift"; sourceTree = "<group>"; };
+		010A90852A545ECE004922BD /* Optional+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Convenience.swift"; sourceTree = "<group>"; };
+		010A90872A545EF1004922BD /* Date+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
 		0127C242292E2811000504E4 /* LandingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LandingViewController.storyboard; sourceTree = "<group>"; };
 		0127C243292E2811000504E4 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		0127C24B292E2A25000504E4 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
@@ -440,6 +446,7 @@
 			children = (
 				01755B30292DDB420020DA7E /* AppDelegate */,
 				01755B42292E069A0020DA7E /* Common */,
+				01755B57292E0B6E0020DA7E /* Extensions */,
 				01755B55292E0ADE0020DA7E /* Scenes */,
 				01755B51292E09860020DA7E /* Services */,
 			);
@@ -495,7 +502,6 @@
 			children = (
 				01755B49292E07950020DA7E /* Bases */,
 				01755B4E292E090C0020DA7E /* Constant */,
-				01755B57292E0B6E0020DA7E /* Extensions */,
 				01755B43292E06BE0020DA7E /* Utils */,
 				0127C249292E2A15000504E4 /* Views */,
 			);
@@ -752,6 +758,9 @@
 			children = (
 				01755BB2292E0BC20020DA7E /* Array+Additions.swift */,
 				01755BB3292E0BC20020DA7E /* Collection+SafeSubscript.swift */,
+				010A90872A545EF1004922BD /* Date+Additions.swift */,
+				010A90852A545ECE004922BD /* Optional+Convenience.swift */,
+				010A90832A545E61004922BD /* String+Convenience.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1117,6 +1126,7 @@
 				01755B48292E06C40020DA7E /* RootControllerPresenter.swift in Sources */,
 				01755B90292E0B890020DA7E /* AttributedString+Convenience.swift in Sources */,
 				018698B2292FB37F000033E7 /* OnboardingViewModel.swift in Sources */,
+				010A90882A545EF1004922BD /* Date+Additions.swift in Sources */,
 				01BB898C2933495500379A96 /* BEMCheckBoxGroup.swift in Sources */,
 				01755BA8292E0B890020DA7E /* UINavigationController+Transparency.swift in Sources */,
 				01755B95292E0B890020DA7E /* UIView+Extensions.swift in Sources */,
@@ -1140,6 +1150,7 @@
 				01755BA2292E0B890020DA7E /* UITextView+ContainerInsets.swift in Sources */,
 				01869899292F81B3000033E7 /* FSPageViewTransformer.swift in Sources */,
 				01755B92292E0B890020DA7E /* UIApplication+Convenience.swift in Sources */,
+				010A90842A545E61004922BD /* String+Convenience.swift in Sources */,
 				01A3BBA52A3DF0AE007C10F9 /* DashboardBuilder.swift in Sources */,
 				01755B9F292E0B890020DA7E /* UIView+ShimmerAnimation.swift in Sources */,
 				01755BA7292E0B890020DA7E /* UIViewController+TopVisible.swift in Sources */,
@@ -1171,6 +1182,7 @@
 				01DEE7F12934C48700A988DC /* TermsAndPolicyLabel.swift in Sources */,
 				01755B8F292E0B890020DA7E /* UIScrollView+Convenience.swift in Sources */,
 				01755B50292E091A0020DA7E /* NotificationNames.swift in Sources */,
+				010A90862A545ECE004922BD /* Optional+Convenience.swift in Sources */,
 				0186989D292F81B3000033E7 /* FSPageControl.swift in Sources */,
 				01DEE7F42934C74900A988DC /* LoginLabel.swift in Sources */,
 				01755B9C292E0B890020DA7E /* UIView+Shake.swift in Sources */,

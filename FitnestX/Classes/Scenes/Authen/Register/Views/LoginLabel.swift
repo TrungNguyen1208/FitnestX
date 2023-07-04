@@ -1,10 +1,3 @@
-//
-//  LoginLabel.swift
-//  FitnestX
-//
-//  Created by Trung Nguyen on 28/11/2022.
-//
-
 import Foundation
 import UIKit
 

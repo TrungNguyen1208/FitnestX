@@ -1,10 +1,3 @@
-//
-//  AppDelegate+Setup.swift
-//  FitnestX
-//
-//  Created by Trung Nguyen on 23/11/2022.
-//
-
 import Foundation
 import IQKeyboardManagerSwift
 
@@ -12,7 +5,6 @@ extension AppDelegate {
   func setupAppearance() {
     setupIQKeyboard()
     setupToastView()
-    setupSVProgressHUD()
   }
 }
 
@@ -24,10 +16,13 @@ private extension AppDelegate {
   }
   
   func setupToastView() {
-
-  }
-  
-  func setupSVProgressHUD() {
-
+    var style = ToastStyle()
+    style.messageFont = R.font.poppinsMedium(size: 15)!
+    style.messageAlignment = .center
+    style.titleAlignment = .center
+    style.horizontalPadding = 15.0
+    style.verticalPadding = 10.0
+    ToastManager.shared.style = style
+    ToastManager.shared.duration = 2.0
   }
 }

@@ -1,10 +1,3 @@
-//
-//  FitnestTextField.swift
-//  FitnestX
-//
-//  Created by Trung Nguyen on 26/11/2022.
-//
-
 import Foundation
 import UIKit
 
@@ -55,7 +48,7 @@ class FitnestTextField: UITextField {
 private extension FitnestTextField {
   func setup() {
     if let image = leftImage {
-      if leftView != nil { return } // critical!
+      if leftView != nil { return }
       
       let im = UIImageView(frame: CGRect(x: 0, y: 15, width: 18, height: 18))
       im.contentMode = .scaleAspectFit

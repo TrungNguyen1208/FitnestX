@@ -1,10 +1,3 @@
-//
-//  FitnestPasswordTextField.swift
-//  FitnestX
-//
-//  Created by Trung Nguyen on 27/11/2022.
-//
-
 import Foundation
 import UIKit
 
@@ -66,7 +59,7 @@ private extension FitnestPasswordTextField {
   }
   
   @objc func textDidChange() {
-    if text == ""  {
+    if text.orEmpty.isEmpty {
       rightButton.setImage(UIImage(named: "password_show") , for: .normal)
     } else if isSecureTextEntry {
       rightButton.setImage(UIImage(named: "password_show") , for: .normal)
@@ -76,7 +69,7 @@ private extension FitnestPasswordTextField {
   }
   
   func toggle() {
-    if text == ""  {
+    if text.orEmpty.isEmpty {
       return
     }
     isSecureTextEntry.toggle()

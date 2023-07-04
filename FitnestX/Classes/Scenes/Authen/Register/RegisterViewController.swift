@@ -1,11 +1,3 @@
-//
-//  RegisterViewController.swift
-//  FitnestX
-//
-//  Created by Trung Nguyen on 26/11/2022.
-//  
-//
-
 import UIKit
 
 final class RegisterViewController: BaseViewController {

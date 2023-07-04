@@ -26,13 +26,6 @@ private extension RootViewControllerProviderImpl {
     return navigation
   }
   
-  func makeHomeScreen() -> NavigationController {
-    let homeVC = UIViewController()
-    let navigation = NavigationController(viewControllers: homeVC)
-    navigation.setNavigationBarHidden(true, animated: false)
-    return navigation
-  }
-  
   func makeDashboardScreen() -> NavigationController {
     let dashboardVC = DashboardBuilder.build()
     let navigation = NavigationController(viewControllers: dashboardVC)

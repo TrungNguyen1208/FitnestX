@@ -1,10 +1,3 @@
-//
-//  OnboardingViewModel.swift
-//  FitnestX
-//
-//  Created by Trung Nguyen on 24/11/2022.
-//
-
 import Foundation
 
 struct OnboardingViewModel: Equatable {
