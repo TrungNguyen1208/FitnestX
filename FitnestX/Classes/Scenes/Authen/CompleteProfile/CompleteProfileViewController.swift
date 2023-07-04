@@ -1,10 +1,3 @@
-//
-//  CompleteProfileViewController.swift
-//  FitnestX
-//
-//  Created by Quang Thanh on 09/12/2022.
-//
-
 import UIKit
 
 final class CompleteProfileViewController: BaseViewController {
@@ -38,5 +31,6 @@ final class CompleteProfileViewController: BaseViewController {
 
 private extension CompleteProfileViewController {
   func setupUI() {
+    
   }
 }

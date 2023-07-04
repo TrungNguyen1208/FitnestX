@@ -1,10 +1,3 @@
-//
-//  LoginViewController.swift
-//  FitnestX
-//
-//  Created by Quang Thanh on 05/12/2022.
-//
-
 import Foundation
 
 final class LoginViewController: BaseViewController {

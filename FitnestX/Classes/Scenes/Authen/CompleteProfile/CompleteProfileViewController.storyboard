@@ -48,7 +48,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="59"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s complete your profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyJ-bL-mH0">
-                                                                        <rect key="frame" x="41" y="0.0" width="272.5" height="30"/>
+                                                                        <rect key="frame" x="58.5" y="0.0" width="237" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="uX5-Ir-vRr"/>
                                                                         </constraints>
@@ -57,7 +57,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It will help us to know more about you!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDz-OT-cFw">
-                                                                        <rect key="frame" x="62.5" y="35" width="229" height="24"/>
+                                                                        <rect key="frame" x="73.5" y="35" width="207" height="24"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="24" id="jnL-Ra-F63"/>
                                                                         </constraints>
@@ -300,25 +300,25 @@
     </scenes>
     <designables>
         <designable name="Gw0-P1-Toa">
-            <size key="intrinsicContentSize" width="156" height="18.5"/>
+            <size key="intrinsicContentSize" width="62.5" height="15.5"/>
         </designable>
         <designable name="XtP-Ef-iTp">
-            <size key="intrinsicContentSize" width="131.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="68" height="15.5"/>
         </designable>
         <designable name="egN-Yk-msd">
-            <size key="intrinsicContentSize" width="30" height="29"/>
+            <size key="intrinsicContentSize" width="30" height="26"/>
         </designable>
         <designable name="ez8-eB-hX7">
-            <size key="intrinsicContentSize" width="30" height="29"/>
+            <size key="intrinsicContentSize" width="30" height="26"/>
         </designable>
         <designable name="wER-H7-5WT">
-            <size key="intrinsicContentSize" width="130.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="64.5" height="15.5"/>
         </designable>
         <designable name="wrA-Ka-gLG">
-            <size key="intrinsicContentSize" width="152" height="18.5"/>
+            <size key="intrinsicContentSize" width="85" height="15.5"/>
         </designable>
         <designable name="yue-dj-GB0">
-            <size key="intrinsicContentSize" width="42" height="35"/>
+            <size key="intrinsicContentSize" width="38" height="31"/>
         </designable>
     </designables>
     <resources>

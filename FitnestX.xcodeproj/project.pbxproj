@@ -27,19 +27,20 @@
 		0134054E2930A6DA00112DC5 /* ALTimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134054A2930A6DA00112DC5 /* ALTimingFunction.swift */; };
 		0134054F2930A6DA00112DC5 /* ALProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134054C2930A6DA00112DC5 /* ALProgressBar.swift */; };
 		013405502930A6DA00112DC5 /* ALProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134054D2930A6DA00112DC5 /* ALProgressRing.swift */; };
+		013A63A32A5470D6005AEC47 /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013A63A22A5470D6005AEC47 /* RegisterViewController.storyboard */; };
 		013C12A7294813E70059C95F /* YourGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C12A6294813E70059C95F /* YourGoalViewController.swift */; };
 		013C12A9294814190059C95F /* YourGoalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013C12A8294814190059C95F /* YourGoalViewController.storyboard */; };
 		013C12AD294817CA0059C95F /* YourGoalPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */; };
 		013C12AE294817CA0059C95F /* YourGoalPagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013C12AC294817CA0059C95F /* YourGoalPagerViewCell.xib */; };
 		015A05F62A5468A4009773D8 /* OnboardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015A05F52A5468A4009773D8 /* OnboardingViewController.storyboard */; };
 		015A05FC2A546C0F009773D8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 015A05FB2A546C0F009773D8 /* README.md */; };
+		015A06022A546EFE009773D8 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A05FD2A546EFE009773D8 /* RegisterPresenter.swift */; };
+		015A06032A546EFE009773D8 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A05FE2A546EFE009773D8 /* RegisterRouter.swift */; };
+		015A06052A546EFE009773D8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A06002A546EFE009773D8 /* RegisterViewController.swift */; };
+		015A06062A546EFE009773D8 /* RegisterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A06012A546EFE009773D8 /* RegisterBuilder.swift */; };
 		015F83D1296C5D9D000DEA70 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015F83D0296C5D9D000DEA70 /* OnboardingRouter.swift */; };
 		015F83D3296C6B3D000DEA70 /* OnboardingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015F83D2296C6B3D000DEA70 /* OnboardingBuilder.swift */; };
 		016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 016CC48A2931C5AF0085A5FC /* Localizable.strings */; };
-		016CC4A1293256990085A5FC /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016CC49D293256990085A5FC /* RegisterPresenter.swift */; };
-		016CC4A2293256990085A5FC /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016CC49E293256990085A5FC /* RegisterViewController.storyboard */; };
-		016CC4A3293256990085A5FC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016CC49F293256990085A5FC /* RegisterViewController.swift */; };
-		016CC4A4293256990085A5FC /* RegisterViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016CC4A0293256990085A5FC /* RegisterViewProtocol.swift */; };
 		016CC4A829325DA30085A5FC /* FitnestTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016CC4A729325DA30085A5FC /* FitnestTextField.swift */; };
 		01755B1A292DC5730020DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01755B19292DC5730020DA7E /* AppDelegate.swift */; };
 		01755B23292DC5740020DA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01755B22292DC5740020DA7E /* Assets.xcassets */; };
@@ -151,20 +152,21 @@
 		0134054A2930A6DA00112DC5 /* ALTimingFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTimingFunction.swift; sourceTree = "<group>"; };
 		0134054C2930A6DA00112DC5 /* ALProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALProgressBar.swift; sourceTree = "<group>"; };
 		0134054D2930A6DA00112DC5 /* ALProgressRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALProgressRing.swift; sourceTree = "<group>"; };
+		013A63A22A5470D6005AEC47 /* RegisterViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
 		013C12A6294813E70059C95F /* YourGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalViewController.swift; sourceTree = "<group>"; };
 		013C12A8294814190059C95F /* YourGoalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YourGoalViewController.storyboard; sourceTree = "<group>"; };
 		013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalPagerViewCell.swift; sourceTree = "<group>"; };
 		013C12AC294817CA0059C95F /* YourGoalPagerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourGoalPagerViewCell.xib; sourceTree = "<group>"; };
 		015A05F52A5468A4009773D8 /* OnboardingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnboardingViewController.storyboard; sourceTree = "<group>"; };
 		015A05FB2A546C0F009773D8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		015A05FD2A546EFE009773D8 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		015A05FE2A546EFE009773D8 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		015A06002A546EFE009773D8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		015A06012A546EFE009773D8 /* RegisterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBuilder.swift; sourceTree = "<group>"; };
 		015F83D0296C5D9D000DEA70 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
 		015F83D2296C6B3D000DEA70 /* OnboardingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBuilder.swift; sourceTree = "<group>"; };
 		016CC4892931C5AF0085A5FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		016CC48B2931C5B20085A5FC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
-		016CC49D293256990085A5FC /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
-		016CC49E293256990085A5FC /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
-		016CC49F293256990085A5FC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		016CC4A0293256990085A5FC /* RegisterViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewProtocol.swift; sourceTree = "<group>"; };
 		016CC4A729325DA30085A5FC /* FitnestTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnestTextField.swift; sourceTree = "<group>"; };
 		01755B16292DC5730020DA7E /* FitnestX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnestX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01755B19292DC5730020DA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -381,6 +383,22 @@
 			path = ALProgressView;
 			sourceTree = "<group>";
 		};
+		013A63A42A5470DF005AEC47 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				015A05FE2A546EFE009773D8 /* RegisterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		013A63A52A5470F2005AEC47 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				015A05FD2A546EFE009773D8 /* RegisterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		013C12A5294813C50059C95F /* YourGoal */ = {
 			isa = PBXGroup;
 			children = (
@@ -417,14 +435,23 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		016CC48C29324A4D0085A5FC /* Register */ = {
+		015A06092A547028009773D8 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				01DEE7EF2934C47D00A988DC /* Views */,
-				016CC49D293256990085A5FC /* RegisterPresenter.swift */,
-				016CC49E293256990085A5FC /* RegisterViewController.storyboard */,
-				016CC49F293256990085A5FC /* RegisterViewController.swift */,
-				016CC4A0293256990085A5FC /* RegisterViewProtocol.swift */,
+				013A63A22A5470D6005AEC47 /* RegisterViewController.storyboard */,
+				015A06002A546EFE009773D8 /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		016CC48C29324A4D0085A5FC /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				015A06012A546EFE009773D8 /* RegisterBuilder.swift */,
+				015A06092A547028009773D8 /* View */,
+				013A63A52A5470F2005AEC47 /* Presenter */,
+				013A63A42A5470DF005AEC47 /* Router */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -1063,8 +1090,8 @@
 				013C12A9294814190059C95F /* YourGoalViewController.storyboard in Resources */,
 				016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */,
 				01755B38292DDC4D0020DA7E /* Poppins-Medium.ttf in Resources */,
+				013A63A32A5470D6005AEC47 /* RegisterViewController.storyboard in Resources */,
 				0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */,
-				016CC4A2293256990085A5FC /* RegisterViewController.storyboard in Resources */,
 				015A05FC2A546C0F009773D8 /* README.md in Resources */,
 				01A3BBAA2A3DF25F007C10F9 /* FitnestActionCardView.xib in Resources */,
 				018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */,
@@ -1164,13 +1191,13 @@
 				019415F1294EF8E000F11B23 /* YourGoalPagerViewModel.swift in Sources */,
 				01755B98292E0B890020DA7E /* UIView+Shadows.swift in Sources */,
 				01A3BBA82A3DF210007C10F9 /* FitnestActionCardView.swift in Sources */,
-				016CC4A3293256990085A5FC /* RegisterViewController.swift in Sources */,
 				01755B96292E0B890020DA7E /* UIView+Screenshot.swift in Sources */,
 				01755B91292E0B890020DA7E /* UILabel+Convenience.swift in Sources */,
 				0127C256292E2A43000504E4 /* ToastManager.swift in Sources */,
 				01755BB5292E0BC20020DA7E /* Collection+SafeSubscript.swift in Sources */,
 				0127C247292E2811000504E4 /* LandingViewController.swift in Sources */,
 				01755B9E292E0B890020DA7E /* UIView+Animation.swift in Sources */,
+				015A06022A546EFE009773D8 /* RegisterPresenter.swift in Sources */,
 				01755BA6292E0B890020DA7E /* UIViewController+Convenience.swift in Sources */,
 				0127C250292E2A35000504E4 /* TTTAttributedLabel.m in Sources */,
 				01755B97292E0B890020DA7E /* UIView+Anchor.swift in Sources */,
@@ -1189,7 +1216,6 @@
 				01BB898C2933495500379A96 /* BEMCheckBoxGroup.swift in Sources */,
 				01755BA8292E0B890020DA7E /* UINavigationController+Transparency.swift in Sources */,
 				01755B95292E0B890020DA7E /* UIView+Extensions.swift in Sources */,
-				016CC4A4293256990085A5FC /* RegisterViewProtocol.swift in Sources */,
 				01755BB0292E0B890020DA7E /* UITextField+Extension.swift in Sources */,
 				01BB898E2933B20500379A96 /* FitnestPasswordTextField.swift in Sources */,
 				0127C259292E2A43000504E4 /* Toast.swift in Sources */,
@@ -1221,6 +1247,7 @@
 				01755BA1292E0B890020DA7E /* UITabBarController+Convenience.swift in Sources */,
 				015F83D1296C5D9D000DEA70 /* OnboardingRouter.swift in Sources */,
 				01A3BBA42A3DF0AE007C10F9 /* DashboardViewController.swift in Sources */,
+				015A06032A546EFE009773D8 /* RegisterRouter.swift in Sources */,
 				01755B94292E0B890020DA7E /* UIView+LayerAnimation.swift in Sources */,
 				01755B47292E06C40020DA7E /* RootViewControllerProvider.swift in Sources */,
 				0134054E2930A6DA00112DC5 /* ALTimingFunction.swift in Sources */,
@@ -1251,10 +1278,11 @@
 				01755B9C292E0B890020DA7E /* UIView+Shake.swift in Sources */,
 				01755B9D292E0B890020DA7E /* UIView+Dashed.swift in Sources */,
 				01BB89892933495500379A96 /* BEMPathManager.swift in Sources */,
+				015A06062A546EFE009773D8 /* RegisterBuilder.swift in Sources */,
 				01755B4D292E08200020DA7E /* BaseViewController.swift in Sources */,
+				015A06052A546EFE009773D8 /* RegisterViewController.swift in Sources */,
 				0127C24C292E2A25000504E4 /* NibView.swift in Sources */,
 				01755BA3292E0B890020DA7E /* UIDevice+Model.swift in Sources */,
-				016CC4A1293256990085A5FC /* RegisterPresenter.swift in Sources */,
 				01BF5D46292F1C9200B7446E /* GradientButton.swift in Sources */,
 				010A90922A546257004922BD /* DefaultsStorageKeys.swift in Sources */,
 				01755B1A292DC5730020DA7E /* AppDelegate.swift in Sources */,

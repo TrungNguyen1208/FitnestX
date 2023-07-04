@@ -1,4 +1,16 @@
+//
+//  RegisterViewController.swift
+//  FitnestX
+//
+//  Created by Trung Nguyen on 04/07/2023.
+//  
+//
+
 import UIKit
+
+protocol RegisterViewProtocol: AnyObject {
+    
+}
 
 final class RegisterViewController: BaseViewController {
   
@@ -7,13 +19,9 @@ final class RegisterViewController: BaseViewController {
   @IBOutlet private weak var termCheckBox: BEMCheckBox!
   @IBOutlet private weak var loginLabel: LoginLabel!
   
-  // MARK: - Private Variable
+  // MARK: - Public Variable
   
-  private lazy var presenter: RegisterPresenter = {
-    let presenter = RegisterPresenter()
-    presenter.view = self
-    return presenter
-  }()
+  public var presenter: RegisterPresenterProtocol!
   
   // MARK: - Lifecycle
   
@@ -55,8 +63,8 @@ extension RegisterViewController: TTTAttributedLabelDelegate {
   }
 }
 
-// MARK: - RegisterViewInput
+// MARK: - RegisterViewControllerProtocol
 
-extension RegisterViewController: RegisterViewInput {
+extension RegisterViewController: RegisterViewProtocol {
   
 }

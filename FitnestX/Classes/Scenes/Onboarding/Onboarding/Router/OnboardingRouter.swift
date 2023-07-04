@@ -14,7 +14,7 @@ final class OnboardingRouter: OnboardingRouterProtocol {
   }
   
   func navigateToRegister() {
-    let vc = RegisterViewController.makeMe()
-    view?.navigationController?.pushViewController(vc, animated: true)
+    let registerVC = RegisterBuilder.build()
+    view?.navigationController?.pushViewController(registerVC, animated: true)
   }
 }
