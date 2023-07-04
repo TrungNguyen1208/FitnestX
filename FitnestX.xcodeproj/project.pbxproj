@@ -32,6 +32,7 @@
 		013C12AD294817CA0059C95F /* YourGoalPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */; };
 		013C12AE294817CA0059C95F /* YourGoalPagerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013C12AC294817CA0059C95F /* YourGoalPagerViewCell.xib */; };
 		015A05F62A5468A4009773D8 /* OnboardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015A05F52A5468A4009773D8 /* OnboardingViewController.storyboard */; };
+		015A05FC2A546C0F009773D8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 015A05FB2A546C0F009773D8 /* README.md */; };
 		015F83D1296C5D9D000DEA70 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015F83D0296C5D9D000DEA70 /* OnboardingRouter.swift */; };
 		015F83D3296C6B3D000DEA70 /* OnboardingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015F83D2296C6B3D000DEA70 /* OnboardingBuilder.swift */; };
 		016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 016CC48A2931C5AF0085A5FC /* Localizable.strings */; };
@@ -155,6 +156,7 @@
 		013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalPagerViewCell.swift; sourceTree = "<group>"; };
 		013C12AC294817CA0059C95F /* YourGoalPagerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourGoalPagerViewCell.xib; sourceTree = "<group>"; };
 		015A05F52A5468A4009773D8 /* OnboardingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnboardingViewController.storyboard; sourceTree = "<group>"; };
+		015A05FB2A546C0F009773D8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		015F83D0296C5D9D000DEA70 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
 		015F83D2296C6B3D000DEA70 /* OnboardingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBuilder.swift; sourceTree = "<group>"; };
 		016CC4892931C5AF0085A5FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 		01755B0D292DC5730020DA7E = {
 			isa = PBXGroup;
 			children = (
+				015A05FB2A546C0F009773D8 /* README.md */,
 				01755B18292DC5730020DA7E /* FitnestX */,
 				01755B17292DC5730020DA7E /* Products */,
 				D3075C6FFFAF90CD44B4360F /* Pods */,
@@ -1062,6 +1065,7 @@
 				01755B38292DDC4D0020DA7E /* Poppins-Medium.ttf in Resources */,
 				0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */,
 				016CC4A2293256990085A5FC /* RegisterViewController.storyboard in Resources */,
+				015A05FC2A546C0F009773D8 /* README.md in Resources */,
 				01A3BBAA2A3DF25F007C10F9 /* FitnestActionCardView.xib in Resources */,
 				018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */,
 				017B17F72966C3A4001C3517 /* LoginViewController.storyboard in Resources */,
