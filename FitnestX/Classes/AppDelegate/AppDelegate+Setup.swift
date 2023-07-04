@@ -12,7 +12,7 @@ private extension AppDelegate {
   func setupIQKeyboard() {
     IQKeyboardManager.shared.enable = true
     IQKeyboardManager.shared.enableAutoToolbar = true
-    IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "Done"
+    IQKeyboardManager.shared.toolbarDoneBarButtonItemText = R.string.localizable.common_done.localized()
   }
   
   func setupToastView() {

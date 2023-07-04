@@ -10,6 +10,11 @@
 		010A90842A545E61004922BD /* String+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A90832A545E61004922BD /* String+Convenience.swift */; };
 		010A90862A545ECE004922BD /* Optional+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A90852A545ECE004922BD /* Optional+Convenience.swift */; };
 		010A90882A545EF1004922BD /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A90872A545EF1004922BD /* Date+Additions.swift */; };
+		010A908B2A5461CD004922BD /* Rswift+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A908A2A5461CD004922BD /* Rswift+Localized.swift */; };
+		010A908D2A5461E6004922BD /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A908C2A5461E6004922BD /* String+Localization.swift */; };
+		010A90922A546257004922BD /* DefaultsStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A908F2A546257004922BD /* DefaultsStorageKeys.swift */; };
+		010A90932A546258004922BD /* DefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A90902A546257004922BD /* DefaultsStorage.swift */; };
+		010A90942A546258004922BD /* UserDefaultsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A90912A546257004922BD /* UserDefaultsProvider.swift */; };
 		0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0127C242292E2811000504E4 /* LandingViewController.storyboard */; };
 		0127C247292E2811000504E4 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C243292E2811000504E4 /* LandingViewController.swift */; };
 		0127C24C292E2A25000504E4 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C24B292E2A25000504E4 /* NibView.swift */; };
@@ -127,6 +132,11 @@
 		010A90832A545E61004922BD /* String+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Convenience.swift"; sourceTree = "<group>"; };
 		010A90852A545ECE004922BD /* Optional+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Convenience.swift"; sourceTree = "<group>"; };
 		010A90872A545EF1004922BD /* Date+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
+		010A908A2A5461CD004922BD /* Rswift+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Rswift+Localized.swift"; sourceTree = "<group>"; };
+		010A908C2A5461E6004922BD /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		010A908F2A546257004922BD /* DefaultsStorageKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsStorageKeys.swift; sourceTree = "<group>"; };
+		010A90902A546257004922BD /* DefaultsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsStorage.swift; sourceTree = "<group>"; };
+		010A90912A546257004922BD /* UserDefaultsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsProvider.swift; sourceTree = "<group>"; };
 		0127C242292E2811000504E4 /* LandingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LandingViewController.storyboard; sourceTree = "<group>"; };
 		0127C243292E2811000504E4 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		0127C24B292E2A25000504E4 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
@@ -260,6 +270,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010A90892A5461CD004922BD /* Rswift */ = {
+			isa = PBXGroup;
+			children = (
+				010A908A2A5461CD004922BD /* Rswift+Localized.swift */,
+			);
+			path = Rswift;
+			sourceTree = "<group>";
+		};
+		010A908E2A546257004922BD /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				010A908F2A546257004922BD /* DefaultsStorageKeys.swift */,
+				010A90902A546257004922BD /* DefaultsStorage.swift */,
+				010A90912A546257004922BD /* UserDefaultsProvider.swift */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
 		0127C238292E270C000504E4 /* Landing */ = {
 			isa = PBXGroup;
 			children = (
@@ -511,6 +539,7 @@
 		01755B43292E06BE0020DA7E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				010A908E2A546257004922BD /* Storages */,
 				01755B44292E06C40020DA7E /* RootController */,
 			);
 			path = Utils;
@@ -580,6 +609,7 @@
 		01755B57292E0B6E0020DA7E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				010A90892A5461CD004922BD /* Rswift */,
 				01755BB1292E0BB30020DA7E /* Foundation */,
 				01755B58292E0B890020DA7E /* UIKit */,
 			);
@@ -760,6 +790,7 @@
 				01755BB3292E0BC20020DA7E /* Collection+SafeSubscript.swift */,
 				010A90872A545EF1004922BD /* Date+Additions.swift */,
 				010A90852A545ECE004922BD /* Optional+Convenience.swift */,
+				010A908C2A5461E6004922BD /* String+Localization.swift */,
 				010A90832A545E61004922BD /* String+Convenience.swift */,
 			);
 			path = Foundation;
@@ -1142,6 +1173,7 @@
 				013C12AD294817CA0059C95F /* YourGoalPagerViewCell.swift in Sources */,
 				0127C258292E2A43000504E4 /* ToastPosition.swift in Sources */,
 				01869898292F81B3000033E7 /* FSPagerView.swift in Sources */,
+				010A908D2A5461E6004922BD /* String+Localization.swift in Sources */,
 				0134054F2930A6DA00112DC5 /* ALProgressBar.swift in Sources */,
 				018698AE292FA880000033E7 /* OnboardingPagerViewCell.swift in Sources */,
 				0186989F292F81B3000033E7 /* FSPagerCollectionView.swift in Sources */,
@@ -1166,6 +1198,7 @@
 				0134054E2930A6DA00112DC5 /* ALTimingFunction.swift in Sources */,
 				0186989B292F81B3000033E7 /* FSPagerViewLayoutAttributes.swift in Sources */,
 				01755BB4292E0BC20020DA7E /* Array+Additions.swift in Sources */,
+				010A90932A546258004922BD /* DefaultsStorage.swift in Sources */,
 				01755BA0292E0B890020DA7E /* UIPageViewController+Extension.swift in Sources */,
 				01755BAE292E0B890020DA7E /* UIStackView+RemoveAll.swift in Sources */,
 				013405502930A6DA00112DC5 /* ALProgressRing.swift in Sources */,
@@ -1183,7 +1216,9 @@
 				01755B8F292E0B890020DA7E /* UIScrollView+Convenience.swift in Sources */,
 				01755B50292E091A0020DA7E /* NotificationNames.swift in Sources */,
 				010A90862A545ECE004922BD /* Optional+Convenience.swift in Sources */,
+				010A90942A546258004922BD /* UserDefaultsProvider.swift in Sources */,
 				0186989D292F81B3000033E7 /* FSPageControl.swift in Sources */,
+				010A908B2A5461CD004922BD /* Rswift+Localized.swift in Sources */,
 				01DEE7F42934C74900A988DC /* LoginLabel.swift in Sources */,
 				01755B9C292E0B890020DA7E /* UIView+Shake.swift in Sources */,
 				01755B9D292E0B890020DA7E /* UIView+Dashed.swift in Sources */,
@@ -1193,6 +1228,7 @@
 				01755BA3292E0B890020DA7E /* UIDevice+Model.swift in Sources */,
 				016CC4A1293256990085A5FC /* RegisterPresenter.swift in Sources */,
 				01BF5D46292F1C9200B7446E /* GradientButton.swift in Sources */,
+				010A90922A546257004922BD /* DefaultsStorageKeys.swift in Sources */,
 				01755B1A292DC5730020DA7E /* AppDelegate.swift in Sources */,
 				0127C257292E2A43000504E4 /* ToastStyle.swift in Sources */,
 				015F83D3296C6B3D000DEA70 /* OnboardingBuilder.swift in Sources */,
