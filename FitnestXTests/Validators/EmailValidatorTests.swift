@@ -29,7 +29,7 @@ final class EmailValidatorTests: XCTestCase {
   
   func testEmptyEmail() {
     let result = emailValidator.validate("")
-    XCTAssertEqual(result, .error(.invalid))
+    XCTAssertEqual(result, .error(.empty))
   }
   
   func testInvalidEmail() {

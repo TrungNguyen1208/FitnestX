@@ -7,3 +7,5 @@
 "landing_page_subtitle" = "Everybody Can Train";
 
 "login_forgot_pass" = "Forgot your password?";
+"login_invalid_email" = "Invalid email, please try again";
+"login_invalid_password" = "Password empty or not enough 6 character";

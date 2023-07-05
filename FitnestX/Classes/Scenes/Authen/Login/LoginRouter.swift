@@ -12,6 +12,8 @@ protocol LoginRouterProtocol {
   init(view: LoginViewController)
   
   func navigateToRegisterScreen()
+  func navigateToDashboardScreen()
+  func makeToast(_ message: String)
 }
 
 final class LoginRouter: LoginRouterProtocol {
@@ -25,5 +27,14 @@ final class LoginRouter: LoginRouterProtocol {
   func navigateToRegisterScreen() {
     let vc = RegisterBuilder.build()
     view?.navigationController?.pushViewController(vc, animated: true)
+  }
+  
+  func navigateToDashboardScreen() {
+    let vc = DashboardBuilder.build()
+    view?.navigationController?.pushViewController(vc, animated: true)
+  }
+  
+  func makeToast(_ message: String) {
+    view?.view.makeToast(message)
   }
 }

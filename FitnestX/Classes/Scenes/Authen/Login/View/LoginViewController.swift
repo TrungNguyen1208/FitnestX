@@ -42,7 +42,9 @@ final class LoginViewController: BaseViewController {
   // MARK: - Action
   
   @IBAction private func loginButtonDidTapped() {
-    presenter.onLoginButtonDidTap()
+    let email = emailTextField.text.orEmpty
+    let password = passwordTextField.text.orEmpty
+    presenter.onLoginButtonDidTap(email: email, password: password)
   }
   
   @IBAction private func googleButtonDidTapped() {

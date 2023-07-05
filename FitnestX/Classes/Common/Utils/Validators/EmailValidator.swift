@@ -19,7 +19,7 @@ final class EmailValidatorImpl: EmailValidator {
   // MARK: - Public
   
   func validate(_ email: String?) -> EmailValidationResult {
-    guard let email = email else {
+    guard let email = email, !email.isEmpty else {
       return .error(.empty)
     }
     let emailRegex = "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
