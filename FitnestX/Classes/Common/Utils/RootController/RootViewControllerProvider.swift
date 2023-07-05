@@ -20,7 +20,7 @@ final class RootViewControllerProviderImpl: RootViewControllerProvider {
 
 private extension RootViewControllerProviderImpl {
   func makeLandingScreen() -> NavigationController {
-    let landingVC = LandingViewController.makeMe()
+    let landingVC = LandingBuilder.build()
     let navigation = NavigationController(viewControllers: landingVC)
     navigation.setNavigationBarHidden(true, animated: false)
     return navigation

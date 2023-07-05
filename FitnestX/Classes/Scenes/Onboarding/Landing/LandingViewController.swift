@@ -1,4 +1,16 @@
+//
+//  LandingViewController.swift
+//  FitnestX
+//
+//  Created by Trung Nguyen on 05/07/2023.
+//  
+//
+
 import UIKit
+
+protocol LandingViewProtocol: AnyObject {
+    
+}
 
 final class LandingViewController: BaseViewController {
   
@@ -6,6 +18,10 @@ final class LandingViewController: BaseViewController {
   
   @IBOutlet private weak var subtitleLabel: UILabel!
   @IBOutlet private weak var getStartedButton: GradientButton!
+  
+  // MARK: - Public Variable
+  
+  public var presenter: LandingPresenterProtocol!
   
   // MARK: - Lifecycle
   
@@ -33,4 +49,10 @@ private extension LandingViewController {
   func setupUI() {
     
   }
+}
+
+// MARK: - LandingViewControllerProtocol
+
+extension LandingViewController: LandingViewProtocol {
+  
 }

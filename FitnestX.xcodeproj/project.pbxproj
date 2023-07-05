@@ -15,8 +15,6 @@
 		010A90922A546257004922BD /* DefaultsStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A908F2A546257004922BD /* DefaultsStorageKeys.swift */; };
 		010A90932A546258004922BD /* DefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A90902A546257004922BD /* DefaultsStorage.swift */; };
 		010A90942A546258004922BD /* UserDefaultsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A90912A546257004922BD /* UserDefaultsProvider.swift */; };
-		0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0127C242292E2811000504E4 /* LandingViewController.storyboard */; };
-		0127C247292E2811000504E4 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C243292E2811000504E4 /* LandingViewController.swift */; };
 		0127C24C292E2A25000504E4 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C24B292E2A25000504E4 /* NibView.swift */; };
 		0127C250292E2A35000504E4 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0127C24F292E2A35000504E4 /* TTTAttributedLabel.m */; };
 		0127C256292E2A43000504E4 /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C252292E2A43000504E4 /* ToastManager.swift */; };
@@ -28,6 +26,11 @@
 		0134054F2930A6DA00112DC5 /* ALProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134054C2930A6DA00112DC5 /* ALProgressBar.swift */; };
 		013405502930A6DA00112DC5 /* ALProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134054D2930A6DA00112DC5 /* ALProgressRing.swift */; };
 		013A63A32A5470D6005AEC47 /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013A63A22A5470D6005AEC47 /* RegisterViewController.storyboard */; };
+		013A63AB2A550901005AEC47 /* LandingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63A62A550901005AEC47 /* LandingPresenter.swift */; };
+		013A63AC2A550901005AEC47 /* LandingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63A72A550901005AEC47 /* LandingRouter.swift */; };
+		013A63AE2A550901005AEC47 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63A92A550901005AEC47 /* LandingViewController.swift */; };
+		013A63AF2A550901005AEC47 /* LandingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63AA2A550901005AEC47 /* LandingBuilder.swift */; };
+		013A63B12A550925005AEC47 /* LandingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013A63B02A550925005AEC47 /* LandingViewController.storyboard */; };
 		013C12A7294813E70059C95F /* YourGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C12A6294813E70059C95F /* YourGoalViewController.swift */; };
 		013C12A9294814190059C95F /* YourGoalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013C12A8294814190059C95F /* YourGoalViewController.storyboard */; };
 		013C12AD294817CA0059C95F /* YourGoalPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */; };
@@ -139,8 +142,6 @@
 		010A908F2A546257004922BD /* DefaultsStorageKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsStorageKeys.swift; sourceTree = "<group>"; };
 		010A90902A546257004922BD /* DefaultsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsStorage.swift; sourceTree = "<group>"; };
 		010A90912A546257004922BD /* UserDefaultsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsProvider.swift; sourceTree = "<group>"; };
-		0127C242292E2811000504E4 /* LandingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LandingViewController.storyboard; sourceTree = "<group>"; };
-		0127C243292E2811000504E4 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		0127C24B292E2A25000504E4 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		0127C24E292E2A35000504E4 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
 		0127C24F292E2A35000504E4 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
@@ -153,6 +154,11 @@
 		0134054C2930A6DA00112DC5 /* ALProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALProgressBar.swift; sourceTree = "<group>"; };
 		0134054D2930A6DA00112DC5 /* ALProgressRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALProgressRing.swift; sourceTree = "<group>"; };
 		013A63A22A5470D6005AEC47 /* RegisterViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
+		013A63A62A550901005AEC47 /* LandingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPresenter.swift; sourceTree = "<group>"; };
+		013A63A72A550901005AEC47 /* LandingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingRouter.swift; sourceTree = "<group>"; };
+		013A63A92A550901005AEC47 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		013A63AA2A550901005AEC47 /* LandingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingBuilder.swift; sourceTree = "<group>"; };
+		013A63B02A550925005AEC47 /* LandingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LandingViewController.storyboard; sourceTree = "<group>"; };
 		013C12A6294813E70059C95F /* YourGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalViewController.swift; sourceTree = "<group>"; };
 		013C12A8294814190059C95F /* YourGoalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YourGoalViewController.storyboard; sourceTree = "<group>"; };
 		013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalPagerViewCell.swift; sourceTree = "<group>"; };
@@ -305,8 +311,11 @@
 		0127C238292E270C000504E4 /* Landing */ = {
 			isa = PBXGroup;
 			children = (
-				0127C242292E2811000504E4 /* LandingViewController.storyboard */,
-				0127C243292E2811000504E4 /* LandingViewController.swift */,
+				013A63AA2A550901005AEC47 /* LandingBuilder.swift */,
+				013A63B02A550925005AEC47 /* LandingViewController.storyboard */,
+				013A63A92A550901005AEC47 /* LandingViewController.swift */,
+				013A63A62A550901005AEC47 /* LandingPresenter.swift */,
+				013A63A72A550901005AEC47 /* LandingRouter.swift */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
@@ -1091,8 +1100,8 @@
 				016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */,
 				01755B38292DDC4D0020DA7E /* Poppins-Medium.ttf in Resources */,
 				013A63A32A5470D6005AEC47 /* RegisterViewController.storyboard in Resources */,
-				0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */,
 				015A05FC2A546C0F009773D8 /* README.md in Resources */,
+				013A63B12A550925005AEC47 /* LandingViewController.storyboard in Resources */,
 				01A3BBAA2A3DF25F007C10F9 /* FitnestActionCardView.xib in Resources */,
 				018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */,
 				017B17F72966C3A4001C3517 /* LoginViewController.storyboard in Resources */,
@@ -1195,7 +1204,6 @@
 				01755B91292E0B890020DA7E /* UILabel+Convenience.swift in Sources */,
 				0127C256292E2A43000504E4 /* ToastManager.swift in Sources */,
 				01755BB5292E0BC20020DA7E /* Collection+SafeSubscript.swift in Sources */,
-				0127C247292E2811000504E4 /* LandingViewController.swift in Sources */,
 				01755B9E292E0B890020DA7E /* UIView+Animation.swift in Sources */,
 				015A06022A546EFE009773D8 /* RegisterPresenter.swift in Sources */,
 				01755BA6292E0B890020DA7E /* UIViewController+Convenience.swift in Sources */,
@@ -1248,6 +1256,7 @@
 				015F83D1296C5D9D000DEA70 /* OnboardingRouter.swift in Sources */,
 				01A3BBA42A3DF0AE007C10F9 /* DashboardViewController.swift in Sources */,
 				015A06032A546EFE009773D8 /* RegisterRouter.swift in Sources */,
+				013A63AF2A550901005AEC47 /* LandingBuilder.swift in Sources */,
 				01755B94292E0B890020DA7E /* UIView+LayerAnimation.swift in Sources */,
 				01755B47292E06C40020DA7E /* RootViewControllerProvider.swift in Sources */,
 				0134054E2930A6DA00112DC5 /* ALTimingFunction.swift in Sources */,
@@ -1265,13 +1274,16 @@
 				01755B9B292E0B890020DA7E /* UIView+Convenience.swift in Sources */,
 				01BB898B2933495500379A96 /* BEMCheckBox.swift in Sources */,
 				01755B8E292E0B890020DA7E /* UIImage+Size.swift in Sources */,
+				013A63AC2A550901005AEC47 /* LandingRouter.swift in Sources */,
 				018698A4292F81E3000033E7 /* OnboardingPresenter.swift in Sources */,
 				013C12A7294813E70059C95F /* YourGoalViewController.swift in Sources */,
 				01DEE7F12934C48700A988DC /* TermsAndPolicyLabel.swift in Sources */,
+				013A63AB2A550901005AEC47 /* LandingPresenter.swift in Sources */,
 				01755B8F292E0B890020DA7E /* UIScrollView+Convenience.swift in Sources */,
 				01755B50292E091A0020DA7E /* NotificationNames.swift in Sources */,
 				010A90862A545ECE004922BD /* Optional+Convenience.swift in Sources */,
 				010A90942A546258004922BD /* UserDefaultsProvider.swift in Sources */,
+				013A63AE2A550901005AEC47 /* LandingViewController.swift in Sources */,
 				0186989D292F81B3000033E7 /* FSPageControl.swift in Sources */,
 				010A908B2A5461CD004922BD /* Rswift+Localized.swift in Sources */,
 				01DEE7F42934C74900A988DC /* LoginLabel.swift in Sources */,
