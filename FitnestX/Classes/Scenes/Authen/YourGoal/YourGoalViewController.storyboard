@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -23,11 +23,11 @@
             <objects>
                 <viewController storyboardIdentifier="YourGoalViewController" id="Y6W-OH-hqX" customClass="YourGoalViewController" customModule="FitnestX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="CompleteProfileViewControllerr" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5an-pJ-Qsv" customClass="GradientButton" customModule="FitnestX" customModuleProvider="target">
-                                <rect key="frame" x="30" y="636" width="354" height="60"/>
+                                <rect key="frame" x="30" y="832" width="370" height="60"/>
                                 <color key="backgroundColor" name="blue-92A3FD"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="iwU-Hb-ofa"/>
@@ -49,16 +49,16 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KB6-uj-IaC">
-                                <rect key="frame" x="80" y="40.000000000000007" width="254" height="66.666666666666686"/>
+                                <rect key="frame" x="80" y="59" width="270" height="42.333333333333343"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your goal ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqr-D2-L2H">
-                                        <rect key="frame" x="30" y="0.0" width="194.33333333333334" height="28"/>
+                                        <rect key="frame" x="49" y="0.0" width="172" height="23.333333333333332"/>
                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="20"/>
                                         <color key="textColor" name="black-1D1617"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It will help us to choose a best program for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgr-c6-S6S">
-                                        <rect key="frame" x="7.6666666666666714" y="33" width="239" height="33.666666666666657"/>
+                                        <rect key="frame" x="9.0000000000000142" y="28.333333333333329" width="252.33333333333337" height="14"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                         <color key="textColor" name="gray-7B6F72"/>
                                         <nil key="highlightedColor"/>
@@ -66,7 +66,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1D-mx-ySf" customClass="FSPagerView" customModule="FitnestX" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="129" width="414" height="478"/>
+                                <rect key="frame" x="0.0" y="239.66666666666663" width="430" height="478"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="478" id="EHT-un-p5I"/>
@@ -87,7 +87,7 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="KB6-uj-IaC" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="40" id="9EM-jN-D1h"/>
+                            <constraint firstItem="KB6-uj-IaC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="9EM-jN-D1h"/>
                             <constraint firstItem="KB6-uj-IaC" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Eer-QT-P8v"/>
                             <constraint firstItem="q1D-mx-ySf" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="LUM-3S-WaS"/>
                             <constraint firstItem="KB6-uj-IaC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="80" id="Ro7-rs-dVd"/>
@@ -110,7 +110,7 @@
     </scenes>
     <designables>
         <designable name="5an-pJ-Qsv">
-            <size key="intrinsicContentSize" width="68" height="35"/>
+            <size key="intrinsicContentSize" width="57" height="31"/>
         </designable>
     </designables>
     <resources>

@@ -300,10 +300,10 @@
     </scenes>
     <designables>
         <designable name="Gw0-P1-Toa">
-            <size key="intrinsicContentSize" width="62.5" height="15.5"/>
+            <size key="intrinsicContentSize" width="176.5" height="22"/>
         </designable>
         <designable name="XtP-Ef-iTp">
-            <size key="intrinsicContentSize" width="68" height="15.5"/>
+            <size key="intrinsicContentSize" width="154" height="22"/>
         </designable>
         <designable name="egN-Yk-msd">
             <size key="intrinsicContentSize" width="30" height="26"/>
@@ -312,10 +312,10 @@
             <size key="intrinsicContentSize" width="30" height="26"/>
         </designable>
         <designable name="wER-H7-5WT">
-            <size key="intrinsicContentSize" width="64.5" height="15.5"/>
+            <size key="intrinsicContentSize" width="150.5" height="22"/>
         </designable>
         <designable name="wrA-Ka-gLG">
-            <size key="intrinsicContentSize" width="85" height="15.5"/>
+            <size key="intrinsicContentSize" width="177" height="22"/>
         </designable>
         <designable name="yue-dj-GB0">
             <size key="intrinsicContentSize" width="38" height="31"/>

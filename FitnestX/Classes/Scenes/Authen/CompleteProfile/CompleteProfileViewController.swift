@@ -4,9 +4,9 @@ final class CompleteProfileViewController: BaseViewController {
   
   // MARK: - IBOutlet
   
-  @IBOutlet weak var nextButton: GradientButton!
-  @IBOutlet weak var kgButton: GradientButton!
-  @IBOutlet weak var cmButton: GradientButton!
+  @IBOutlet private weak var nextButton: GradientButton!
+  @IBOutlet private weak var kgButton: GradientButton!
+  @IBOutlet private weak var cmButton: GradientButton!
   
   // MARK: - Lifecycle
   

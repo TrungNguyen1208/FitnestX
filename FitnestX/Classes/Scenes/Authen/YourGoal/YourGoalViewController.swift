@@ -31,7 +31,6 @@ final class YourGoalViewController: BaseViewController {
     super.viewDidLoad()
     setupUI()
   }
-  
 }
 
 // MARK: - Private
