@@ -20,9 +20,5 @@
 		<string>Poppins-Regular.ttf</string>
 		<string>Poppins-SemiBold.ttf</string>
 	</array>
-	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleLightContent</string>
-  <key>UIUserInterfaceStyle</key>
-  <string>Light</string>
 </dict>
 </plist>
