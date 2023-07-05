@@ -37,6 +37,7 @@
 		013A63BB2A550DAB005AEC47 /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63B62A550DAB005AEC47 /* LoginBuilder.swift */; };
 		013A63BF2A550DE0005AEC47 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013A63BE2A550DE0005AEC47 /* LoginViewController.storyboard */; };
 		013A63C22A551278005AEC47 /* RegisterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63C12A551278005AEC47 /* RegisterLabel.swift */; };
+		013A63C52A551E80005AEC47 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63C42A551E80005AEC47 /* EmailValidator.swift */; };
 		013C12A7294813E70059C95F /* YourGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C12A6294813E70059C95F /* YourGoalViewController.swift */; };
 		013C12A9294814190059C95F /* YourGoalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013C12A8294814190059C95F /* YourGoalViewController.storyboard */; };
 		013C12AD294817CA0059C95F /* YourGoalPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */; };
@@ -169,6 +170,7 @@
 		013A63B62A550DAB005AEC47 /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
 		013A63BE2A550DE0005AEC47 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		013A63C12A551278005AEC47 /* RegisterLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLabel.swift; sourceTree = "<group>"; };
+		013A63C42A551E80005AEC47 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		013C12A6294813E70059C95F /* YourGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalViewController.swift; sourceTree = "<group>"; };
 		013C12A8294814190059C95F /* YourGoalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YourGoalViewController.storyboard; sourceTree = "<group>"; };
 		013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalPagerViewCell.swift; sourceTree = "<group>"; };
@@ -425,6 +427,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		013A63C32A551E64005AEC47 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				013A63C42A551E80005AEC47 /* EmailValidator.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
 		013C12A5294813C50059C95F /* YourGoal */ = {
 			isa = PBXGroup;
 			children = (
@@ -623,6 +633,7 @@
 		01755B43292E06BE0020DA7E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				013A63C32A551E64005AEC47 /* Validators */,
 				010A908E2A546257004922BD /* Storages */,
 				01755B44292E06C40020DA7E /* RootController */,
 			);
@@ -1314,6 +1325,7 @@
 				01755B9C292E0B890020DA7E /* UIView+Shake.swift in Sources */,
 				01755B9D292E0B890020DA7E /* UIView+Dashed.swift in Sources */,
 				01BB89892933495500379A96 /* BEMPathManager.swift in Sources */,
+				013A63C52A551E80005AEC47 /* EmailValidator.swift in Sources */,
 				015A06062A546EFE009773D8 /* RegisterBuilder.swift in Sources */,
 				01755B4D292E08200020DA7E /* BaseViewController.swift in Sources */,
 				015A06052A546EFE009773D8 /* RegisterViewController.swift in Sources */,
