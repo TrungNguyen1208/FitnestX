@@ -15,11 +15,11 @@ final class OnboardingPresenter: OnboardingPresenterProtocol {
   // MARK: - Private Variable
   
   private weak var view: OnboardingViewProtocol?
-  private var currentIndex: Int = 0
   
   // MARK: - Public Variable
   
   public var router: OnboardingRouterProtocol
+  public var currentIndex: Int = 0
   public let onboardingViewModels: [OnboardingViewModel] = OnboardingBuilder.onboardingViewModels
   
   // MARK: - Public function

@@ -42,6 +42,7 @@
 		013A63DB2A552749005AEC47 /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63DA2A552749005AEC47 /* PasswordValidator.swift */; };
 		013A63DD2A5528D1005AEC47 /* PasswordValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63DC2A5528D1005AEC47 /* PasswordValidatorTests.swift */; };
 		013A63E12A5532C2005AEC47 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63E02A5532C2005AEC47 /* LoginPresenterTest.swift */; };
+		013A63E42A553726005AEC47 /* OnboardingPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63E32A553726005AEC47 /* OnboardingPresenterTests.swift */; };
 		013C12A7294813E70059C95F /* YourGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C12A6294813E70059C95F /* YourGoalViewController.swift */; };
 		013C12A9294814190059C95F /* YourGoalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013C12A8294814190059C95F /* YourGoalViewController.storyboard */; };
 		013C12AD294817CA0059C95F /* YourGoalPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */; };
@@ -190,6 +191,7 @@
 		013A63DA2A552749005AEC47 /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
 		013A63DC2A5528D1005AEC47 /* PasswordValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidatorTests.swift; sourceTree = "<group>"; };
 		013A63E02A5532C2005AEC47 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
+		013A63E32A553726005AEC47 /* OnboardingPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterTests.swift; sourceTree = "<group>"; };
 		013C12A6294813E70059C95F /* YourGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalViewController.swift; sourceTree = "<group>"; };
 		013C12A8294814190059C95F /* YourGoalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YourGoalViewController.storyboard; sourceTree = "<group>"; };
 		013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalPagerViewCell.swift; sourceTree = "<group>"; };
@@ -483,6 +485,7 @@
 		013A63DE2A5532A7005AEC47 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				013A63E22A5536CE005AEC47 /* Onboarding */,
 				013A63DF2A5532B2005AEC47 /* Login */,
 			);
 			path = Screen;
@@ -494,6 +497,14 @@
 				013A63E02A5532C2005AEC47 /* LoginPresenterTest.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		013A63E22A5536CE005AEC47 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				013A63E32A553726005AEC47 /* OnboardingPresenterTests.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		013C12A5294813C50059C95F /* YourGoal */ = {
@@ -1324,6 +1335,7 @@
 				013A63D42A551FC2005AEC47 /* EmailValidatorTests.swift in Sources */,
 				013A63E12A5532C2005AEC47 /* LoginPresenterTest.swift in Sources */,
 				013A63DD2A5528D1005AEC47 /* PasswordValidatorTests.swift in Sources */,
+				013A63E42A553726005AEC47 /* OnboardingPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
