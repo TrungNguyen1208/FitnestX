@@ -38,6 +38,7 @@
 		013A63BF2A550DE0005AEC47 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013A63BE2A550DE0005AEC47 /* LoginViewController.storyboard */; };
 		013A63C22A551278005AEC47 /* RegisterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63C12A551278005AEC47 /* RegisterLabel.swift */; };
 		013A63C52A551E80005AEC47 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63C42A551E80005AEC47 /* EmailValidator.swift */; };
+		013A63D42A551FC2005AEC47 /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63D32A551FC2005AEC47 /* EmailValidatorTests.swift */; };
 		013C12A7294813E70059C95F /* YourGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C12A6294813E70059C95F /* YourGoalViewController.swift */; };
 		013C12A9294814190059C95F /* YourGoalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013C12A8294814190059C95F /* YourGoalViewController.storyboard */; };
 		013C12AD294817CA0059C95F /* YourGoalPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */; };
@@ -138,6 +139,16 @@
 		DB9BB0192A3EAB29000303CD /* FitnestBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB9BB0182A3EAB29000303CD /* FitnestBannerView.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		013A63CE2A551F88005AEC47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01755B0E292DC5730020DA7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01755B15292DC5730020DA7E;
+			remoteInfo = FitnestX;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		010A90832A545E61004922BD /* String+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Convenience.swift"; sourceTree = "<group>"; };
 		010A90852A545ECE004922BD /* Optional+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Convenience.swift"; sourceTree = "<group>"; };
@@ -171,6 +182,8 @@
 		013A63BE2A550DE0005AEC47 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		013A63C12A551278005AEC47 /* RegisterLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLabel.swift; sourceTree = "<group>"; };
 		013A63C42A551E80005AEC47 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		013A63CA2A551F88005AEC47 /* FitnestXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnestXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		013A63D32A551FC2005AEC47 /* EmailValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorTests.swift; sourceTree = "<group>"; };
 		013C12A6294813E70059C95F /* YourGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalViewController.swift; sourceTree = "<group>"; };
 		013C12A8294814190059C95F /* YourGoalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YourGoalViewController.storyboard; sourceTree = "<group>"; };
 		013C12AB294817CA0059C95F /* YourGoalPagerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGoalPagerViewCell.swift; sourceTree = "<group>"; };
@@ -279,6 +292,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		013A63C72A551F88005AEC47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01755B13292DC5730020DA7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -435,6 +455,22 @@
 			path = Validators;
 			sourceTree = "<group>";
 		};
+		013A63CB2A551F88005AEC47 /* FitnestXTests */ = {
+			isa = PBXGroup;
+			children = (
+				013A63D52A552115005AEC47 /* Validators */,
+			);
+			path = FitnestXTests;
+			sourceTree = "<group>";
+		};
+		013A63D52A552115005AEC47 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				013A63D32A551FC2005AEC47 /* EmailValidatorTests.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
 		013C12A5294813C50059C95F /* YourGoal */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,6 +553,7 @@
 			children = (
 				015A05FB2A546C0F009773D8 /* README.md */,
 				01755B18292DC5730020DA7E /* FitnestX */,
+				013A63CB2A551F88005AEC47 /* FitnestXTests */,
 				01755B17292DC5730020DA7E /* Products */,
 				D3075C6FFFAF90CD44B4360F /* Pods */,
 				39DF26119C5FBAF33A535FF3 /* Frameworks */,
@@ -527,6 +564,7 @@
 			isa = PBXGroup;
 			children = (
 				01755B16292DC5730020DA7E /* FitnestX.app */,
+				013A63CA2A551F88005AEC47 /* FitnestXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1059,6 +1097,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		013A63C92A551F88005AEC47 /* FitnestXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 013A63D02A551F88005AEC47 /* Build configuration list for PBXNativeTarget "FitnestXTests" */;
+			buildPhases = (
+				013A63C62A551F88005AEC47 /* Sources */,
+				013A63C72A551F88005AEC47 /* Frameworks */,
+				013A63C82A551F88005AEC47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				013A63CF2A551F88005AEC47 /* PBXTargetDependency */,
+			);
+			name = FitnestXTests;
+			productName = FitnestXTests;
+			productReference = 013A63CA2A551F88005AEC47 /* FitnestXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		01755B15292DC5730020DA7E /* FitnestX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01755B2A292DC5740020DA7E /* Build configuration list for PBXNativeTarget "FitnestX" */;
@@ -1087,9 +1143,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					013A63C92A551F88005AEC47 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 01755B15292DC5730020DA7E;
+					};
 					01755B15292DC5730020DA7E = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
@@ -1110,11 +1170,19 @@
 			projectRoot = "";
 			targets = (
 				01755B15292DC5730020DA7E /* FitnestX */,
+				013A63C92A551F88005AEC47 /* FitnestXTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		013A63C82A551F88005AEC47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01755B14292DC5730020DA7E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1224,6 +1292,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		013A63C62A551F88005AEC47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013A63D42A551FC2005AEC47 /* EmailValidatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01755B12292DC5730020DA7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1342,6 +1418,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		013A63CF2A551F88005AEC47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01755B15292DC5730020DA7E /* FitnestX */;
+			targetProxy = 013A63CE2A551F88005AEC47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		016CC48A2931C5AF0085A5FC /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -1363,6 +1447,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		013A63D12A551F88005AEC47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trungnt.FitnestXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitnestX.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FitnestX";
+			};
+			name = Debug;
+		};
+		013A63D22A551F88005AEC47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trungnt.FitnestXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitnestX.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FitnestX";
+			};
+			name = Release;
+		};
 		01755B28292DC5740020DA7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1544,6 +1666,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		013A63D02A551F88005AEC47 /* Build configuration list for PBXNativeTarget "FitnestXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013A63D12A551F88005AEC47 /* Debug */,
+				013A63D22A551F88005AEC47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		01755B11292DC5730020DA7E /* Build configuration list for PBXProject "FitnestX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
