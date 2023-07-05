@@ -30,8 +30,7 @@ final class LoginRouter: LoginRouterProtocol {
   }
   
   func navigateToDashboardScreen() {
-    let vc = DashboardBuilder.build()
-    view?.navigationController?.pushViewController(vc, animated: true)
+    NotificationCenter.default.post(name: AccountNotifications.authorizationCompleted, object: nil)
   }
   
   func makeToast(_ message: String) {

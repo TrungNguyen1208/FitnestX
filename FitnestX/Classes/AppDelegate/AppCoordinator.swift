@@ -40,7 +40,7 @@ final class AppCoordinatorImpl: AppCoordinator {
   
   func launch() {
     setupObservers()
-    let launchState = stateForLaunch()
+    let launchState = AppCoordinatorState.firstLaunch
     switchToState(launchState, animated: false)
   }
 }
@@ -51,12 +51,13 @@ private extension AppCoordinatorImpl {
   func setupObservers() {
     notificationCenterService.addObserver(self, forName: AccountNotifications.authorizationCompleted) { [weak self] _ in
       guard let strongSelf = self else { return }
-      let state = strongSelf.stateForLaunch()
+      let state = AppCoordinatorState.loggedIn
       strongSelf.switchToState(state, animated: true)
     }
   }
   
   func stateForLaunch() -> AppCoordinatorState {
+    // Todo logic check login or logout or need update app, ...
     return .firstLaunch
   }
   

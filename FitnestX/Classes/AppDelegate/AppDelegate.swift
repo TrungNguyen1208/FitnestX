@@ -30,6 +30,6 @@ private extension AppDelegate {
   }
   
   func setupExternalServicesConfig(in application: UIApplication, with launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
-
+    // Setup Google Map, Firebase, External Service here
   }
 }

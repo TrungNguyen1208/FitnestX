@@ -19,7 +19,11 @@ $ pod install
 After all, Run in the simulator.
 
 ## Coding:
-- MVP-R Pattern  
+- MVP-R Pattern, have template to create it in project folder.
+- Unit test for OnboardingPresenter, LoginPresenter and some Validator class.
 
 ## Todo:
+- More screen.
+- Use Dependency Injection.
+- Use Firebase or database to do some function.
 
