@@ -55,8 +55,7 @@ extension RegisterViewController: TTTAttributedLabelDelegate {
   func attributedLabel(_ label: TTTAttributedLabel!, didSelectLinkWith url: URL!) {
     switch url.absoluteString {
     case LoginLabelURL.loginLinkAction:
-      let vc = LoginViewController.makeMe()
-      navigationController?.pushViewController(vc, animated: true)
+      presenter.onLoginLabelDidTap()
     default:
       break
     }

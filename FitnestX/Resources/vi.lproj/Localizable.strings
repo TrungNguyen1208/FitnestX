@@ -1,4 +1,9 @@
 "common_done" = "Xong";
 "common_get_started" = "Get Started";
+"common_login" = "Login";
+"common_email" = "Email";
+"common_password" = "Password";
 
 "landing_page_subtitle" = "Everybody Can Train";
+
+"login_forgot_pass" = "Forgot your password?";

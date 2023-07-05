@@ -2,7 +2,7 @@ import Foundation
 
 protocol OnboardingRouterProtocol {
   init(view: OnboardingViewController)
-  func navigateToRegister()
+  func navigateToLoginScreen()
 }
 
 final class OnboardingRouter: OnboardingRouterProtocol {
@@ -13,8 +13,8 @@ final class OnboardingRouter: OnboardingRouterProtocol {
     self.view = view
   }
   
-  func navigateToRegister() {
-    let registerVC = RegisterBuilder.build()
-    view?.navigationController?.pushViewController(registerVC, animated: true)
+  func navigateToLoginScreen() {
+    let vc = LoginBuilder.build()
+    view?.navigationController?.pushViewController(vc, animated: true)
   }
 }

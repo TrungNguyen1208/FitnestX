@@ -6,7 +6,6 @@ protocol OnboardingPresenterProtocol: AnyObject {
   
   init(view: OnboardingViewProtocol, router: OnboardingRouterProtocol)
   
-  func onViewDidLoad()
   func onNextButtonDidTap()
   func onMoveToItem(at targetIndex: Int)
 }
@@ -30,10 +29,6 @@ final class OnboardingPresenter: OnboardingPresenterProtocol {
     self.router = router
   }
   
-  func onViewDidLoad() {
-    
-  }
-  
   func onNextButtonDidTap() {
     let numberOfItems = onboardingViewModels.count
     if currentIndex < numberOfItems - 1 {
@@ -43,7 +38,7 @@ final class OnboardingPresenter: OnboardingPresenterProtocol {
       let progress = Float(currentIndex + 1) / Float(numberOfItems)
       view?.setProgressRingView(progress)
     } else {
-      router.navigateToRegister()
+      router.navigateToLoginScreen()
     }
   }
   

@@ -21,7 +21,6 @@ final class OnboardingViewController: BaseViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupUI()
-    presenter.onViewDidLoad()
   }
   
   // MARK: - Action

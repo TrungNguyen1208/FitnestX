@@ -12,6 +12,8 @@ protocol RegisterPresenterProtocol: AnyObject {
   var router: RegisterRouterProtocol { get }
   
   init(view: RegisterViewProtocol, router: RegisterRouterProtocol)
+  
+  func onLoginLabelDidTap()
 }
 
 final class RegisterPresenter: RegisterPresenterProtocol {
@@ -29,5 +31,9 @@ final class RegisterPresenter: RegisterPresenterProtocol {
   init(view: RegisterViewProtocol, router: RegisterRouterProtocol) {
     self.view = view
     self.router = router
+  }
+  
+  func onLoginLabelDidTap() {
+    router.popToLoginScreen()
   }
 }
