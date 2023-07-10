@@ -8,11 +8,9 @@ protocol DefaultsStorage {
 
 final class DefaultsStorageImpl: DefaultsStorage {
   
-  static let shared = DefaultsStorageImpl()
-
   // MARK: - Init
-
-  private init(userDefaultsProvider: UserDefaultsProvider = UserDefaults.standard) {
+  
+  init(userDefaultsProvider: UserDefaultsProvider = UserDefaults.standard) {
     defaults = userDefaultsProvider
   }
 

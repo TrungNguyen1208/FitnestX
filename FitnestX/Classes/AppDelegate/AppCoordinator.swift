@@ -16,11 +16,11 @@ protocol AppCoordinator: AnyObject {
 
 final class AppCoordinatorImpl: AppCoordinator {
   
-  // MARK: - Private Variables
+  // MARK: - Injected
   
-  private var rootControllerPresenter: RootControllerPresenter = RootControllerPresenterImpl()
-  private let rootViewControllerProvider: RootViewControllerProvider = RootViewControllerProviderImpl()
-  private let notificationCenterService: NotificationCenterService = NotificationCenter.default
+  var rootViewControllerProvider: RootViewControllerProvider!
+  var rootControllerPresenter: RootControllerPresenter!
+  var notificationCenterService: NotificationCenterService!
   
   // MARK: - Public Variables
 
@@ -57,7 +57,7 @@ private extension AppCoordinatorImpl {
   }
   
   func stateForLaunch() -> AppCoordinatorState {
-    // Todo logic check login or logout or need update app, ...
+    // Logic check login or logout or need update app, ... => then show move to correct screen
     return .firstLaunch
   }
   

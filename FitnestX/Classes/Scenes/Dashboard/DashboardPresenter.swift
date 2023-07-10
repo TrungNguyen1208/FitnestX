@@ -1,25 +1,14 @@
 import Foundation
 
 protocol DashboardPresenterProtocol: AnyObject {
-  var router: DashboardRouterProtocol { get }
-  
-  init(view: DashboardViewProtocol, router: DashboardRouterProtocol)
+
 }
 
 final class DashboardPresenter: DashboardPresenterProtocol {
   
-  // MARK: - Private Variable
+  // MARK: - Injected
   
-  private weak var view: DashboardViewProtocol?
-  
-  // MARK: - Public Variable
-  
-  public var router: DashboardRouterProtocol
-  
-  // MARK: - Public function
-  
-  init(view: DashboardViewProtocol, router: DashboardRouterProtocol) {
-    self.view = view
-    self.router = router
-  }
+  weak var view: DashboardViewProtocol?
+  var router: DashboardRouterProtocol!
+
 }

@@ -9,30 +9,18 @@
 import Foundation
 
 protocol LoginPresenterProtocol: AnyObject {
-  var router: LoginRouterProtocol { get }
-  
-  init(view: LoginViewProtocol, router: LoginRouterProtocol)
-  
   func onLoginButtonDidTap(email: String, password: String)
   func onRegisterLabelDidTap()
 }
 
 final class LoginPresenter: LoginPresenterProtocol {
   
-  // MARK: - Private Variable
+  // MARK: - Injected
   
-  private weak var view: LoginViewProtocol?
-  
-  // MARK: - Public Variable
-  
-  public var router: LoginRouterProtocol
+  weak var view: LoginViewProtocol?
+  var router: LoginRouterProtocol!
   
   // MARK: - Public function
-  
-  init(view: LoginViewProtocol, router: LoginRouterProtocol) {
-    self.view = view
-    self.router = router
-  }
   
   func onLoginButtonDidTap(email: String, password: String) {
     let emailValidator: EmailValidator = EmailValidatorImpl()

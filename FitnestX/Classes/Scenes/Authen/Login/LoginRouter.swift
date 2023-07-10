@@ -9,8 +9,6 @@
 import Foundation
 
 protocol LoginRouterProtocol {
-  init(view: LoginViewController)
-  
   func navigateToRegisterScreen()
   func navigateToDashboardScreen()
   func makeToast(_ message: String)
@@ -18,14 +16,10 @@ protocol LoginRouterProtocol {
 
 final class LoginRouter: LoginRouterProtocol {
   
-  private weak var view: LoginViewController?
-
-  init(view: LoginViewController) {
-    self.view = view
-  }
+  weak var view: LoginViewController?
   
   func navigateToRegisterScreen() {
-    let vc = RegisterBuilder.build()
+    let vc = RegisterViewController.makeMe()
     view?.navigationController?.pushViewController(vc, animated: true)
   }
   

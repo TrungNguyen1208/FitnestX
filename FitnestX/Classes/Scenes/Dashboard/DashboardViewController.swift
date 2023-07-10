@@ -18,10 +18,6 @@ final class DashboardViewController: BaseViewController {
     super.viewDidLoad()
     setupUI()
   }
-  
-  override func applyLocalization() {
-    
-  }
 }
 
 // MARK: - Private

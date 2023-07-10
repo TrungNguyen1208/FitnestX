@@ -11,15 +11,16 @@ import XCTest
 final class LoginPresenterTests: XCTestCase {
 
   var presenter: LoginPresenter!
-  var viewMock: LoginViewProtocol!
+  var viewMock: LoginViewMock!
   var routerMock: LoginRouterMock!
 
   override func setUp() {
     super.setUp()
-    let loginVc = LoginViewController()
-    viewMock = loginVc
-    routerMock = LoginRouterMock(view: loginVc)
-    presenter = LoginPresenter(view: viewMock, router: routerMock)
+    viewMock = LoginViewMock()
+    routerMock = LoginRouterMock()
+    presenter = LoginPresenter()
+    presenter.view = viewMock
+    presenter.router = routerMock
   }
 
   override func tearDown() {
@@ -29,50 +30,77 @@ final class LoginPresenterTests: XCTestCase {
     super.tearDown()
   }
 
-  func testSuccessfulLogin() {
-    presenter.onLoginButtonDidTap(email: "test@example.com", password: "password")
+  func testValidLogin() {
+    // Arrange
+    let email = "test@example.com"
+    let password = "password"
     
+    // Act
+    presenter.onLoginButtonDidTap(email: email, password: password)
+    
+    // Assert
+    XCTAssertTrue(routerMock.didNavigateToDashboardScreen)
     XCTAssertFalse(routerMock.didMakeToast)
     XCTAssertFalse(routerMock.didNavigateToRegisterScreen)
   }
   
   func testInvalidEmail() {
-    presenter.onLoginButtonDidTap(email: "invalid_email", password: "password")
+    // Arrange
+    let email = "invalid_email"
+    let password = "password"
     
+    // Act
+    presenter.onLoginButtonDidTap(email: email, password: password)
+    
+    // Assert
+    XCTAssertFalse(routerMock.didNavigateToDashboardScreen)
     XCTAssertTrue(routerMock.didMakeToast)
     XCTAssertFalse(routerMock.didNavigateToRegisterScreen)
   }
   
   func testInvalidPassword() {
-    presenter.onLoginButtonDidTap(email: "test@example.com", password: "12345")
+    // Arrange
+    let email = "test@example.com"
+    let password = "12345"
     
+    // Act
+    presenter.onLoginButtonDidTap(email: email, password: password)
+    
+    // Assert
+    XCTAssertFalse(routerMock.didNavigateToDashboardScreen)
     XCTAssertTrue(routerMock.didMakeToast)
     XCTAssertFalse(routerMock.didNavigateToRegisterScreen)
   }
   
   func testRegisterLabelDidTap() {
+    // Act
     presenter.onRegisterLabelDidTap()
     
+    // Assert
+    XCTAssertFalse(routerMock.didNavigateToDashboardScreen)
     XCTAssertFalse(routerMock.didMakeToast)
     XCTAssertTrue(routerMock.didNavigateToRegisterScreen)
   }
 }
 
+// Mock Classes
+
+final class LoginViewMock: LoginViewProtocol {}
+
 final class LoginRouterMock: LoginRouterProtocol {
-  required init(view: FitnestX.LoginViewController) {
-    
-  }
-  
   var didMakeToast = false
   var lastToastMessage: String?
   var didNavigateToRegisterScreen = false
+  var didNavigateToDashboardScreen = false
   
   func makeToast(_ message: String) {
     didMakeToast = true
     lastToastMessage = message
   }
   
-  func navigateToDashboardScreen() {}
+  func navigateToDashboardScreen() {
+    didNavigateToDashboardScreen = true
+  }
   
   func navigateToRegisterScreen() {
     didNavigateToRegisterScreen = true

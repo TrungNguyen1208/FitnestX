@@ -38,8 +38,7 @@ final class LandingViewController: BaseViewController {
   // MARK: - Action
   
   @IBAction private func startButtonDidTap() {
-    let vc = OnboardingBuilder.build()
-    navigationController?.pushViewController(vc, animated: true)
+    presenter.onGetStartedButtonDidTap()
   }
 }
 

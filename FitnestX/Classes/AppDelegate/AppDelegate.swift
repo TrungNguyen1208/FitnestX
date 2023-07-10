@@ -1,10 +1,15 @@
 import UIKit
+import Swinject
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
   var appCoordinator: AppCoordinator?
+  
+  private var container: Container {
+    return AppAssembly.current.resolver as! Container
+  }
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     self.window = UIWindow()
@@ -24,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 private extension AppDelegate {
   func setupAppCoordinator() {
-    appCoordinator = AppCoordinatorImpl()
+    appCoordinator = container.resolve(AppCoordinator.self)
     appCoordinator?.setup(with: window!)
     appCoordinator?.launch()
   }

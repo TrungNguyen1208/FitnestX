@@ -17,8 +17,10 @@ final class OnboardingPresenterTests: XCTestCase {
   override func setUp() {
     super.setUp()
     viewMock = OnboardingViewMock()
-    routerMock = OnboardingRouterMock(view: OnboardingViewController())
-    presenter = OnboardingPresenter(view: viewMock, router: routerMock)
+    routerMock = OnboardingRouterMock()
+    presenter = OnboardingPresenter()
+    presenter.view = viewMock
+    presenter.router = routerMock
   }
 
   override func tearDown() {
@@ -65,7 +67,7 @@ final class OnboardingPresenterTests: XCTestCase {
   
   func testNextButtonDidTap_NavigateToLoginScreenOnLastItem() {
     // Arrange
-    presenter.currentIndex = OnboardingBuilder.onboardingViewModels.count - 1
+    presenter.currentIndex = OnboardingData.onboardingViewModels.count - 1
     
     // Act
     presenter.onNextButtonDidTap()
@@ -112,10 +114,6 @@ final class OnboardingViewMock: OnboardingViewProtocol {
 }
 
 final class OnboardingRouterMock: OnboardingRouterProtocol {
-  required init(view: FitnestX.OnboardingViewController) {
-    
-  }
-  
   var didNavigateToLoginScreen = false
   
   func navigateToLoginScreen() {

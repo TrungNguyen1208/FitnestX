@@ -9,29 +9,17 @@
 import Foundation
 
 protocol RegisterPresenterProtocol: AnyObject {
-  var router: RegisterRouterProtocol { get }
-  
-  init(view: RegisterViewProtocol, router: RegisterRouterProtocol)
-  
   func onLoginLabelDidTap()
 }
 
 final class RegisterPresenter: RegisterPresenterProtocol {
   
-  // MARK: - Private Variable
+  // MARK: - Injected
   
-  private weak var view: RegisterViewProtocol?
-  
-  // MARK: - Public Variable
-  
-  public var router: RegisterRouterProtocol
+  weak var view: RegisterViewProtocol?
+  var router: RegisterRouterProtocol!
   
   // MARK: - Public function
-  
-  init(view: RegisterViewProtocol, router: RegisterRouterProtocol) {
-    self.view = view
-    self.router = router
-  }
   
   func onLoginLabelDidTap() {
     router.popToLoginScreen()

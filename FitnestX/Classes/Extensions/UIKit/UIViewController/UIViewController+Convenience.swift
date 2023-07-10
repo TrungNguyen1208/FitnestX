@@ -2,12 +2,12 @@ import Foundation
 import UIKit
 
 extension UIViewController {
-  static func makeMe() -> Self {
-    let className = String(describing: self.classForCoder())
-    let storyboard = UIStoryboard(name: className, bundle: nil)
-    let controller = storyboard.instantiateViewController(withIdentifier: className) as! Self
-    return controller
-  }
+//  static func makeMe() -> Self {
+//    let className = String(describing: self.classForCoder())
+//    let storyboard = UIStoryboard(name: className, bundle: nil)
+//    let controller = storyboard.instantiateViewController(withIdentifier: className) as! Self
+//    return controller
+//  }
   
   func addChildViewController(_ viewController: UIViewController, andPinToEdgesOf view: UIView) {
     addChild(viewController)

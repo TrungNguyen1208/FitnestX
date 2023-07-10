@@ -20,14 +20,14 @@ final class RootViewControllerProviderImpl: RootViewControllerProvider {
 
 private extension RootViewControllerProviderImpl {
   func makeLandingScreen() -> NavigationController {
-    let landingVC = LandingBuilder.build()
+    let landingVC = LandingViewController.makeMe()
     let navigation = NavigationController(viewControllers: landingVC)
     navigation.setNavigationBarHidden(true, animated: false)
     return navigation
   }
   
   func makeDashboardScreen() -> NavigationController {
-    let dashboardVC = DashboardBuilder.build()
+    let dashboardVC = DashboardViewController.makeMe()
     let navigation = NavigationController(viewControllers: dashboardVC)
     navigation.setNavigationBarHidden(true, animated: false)
     return navigation

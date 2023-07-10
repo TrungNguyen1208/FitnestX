@@ -9,25 +9,17 @@
 import Foundation
 
 protocol LandingPresenterProtocol: AnyObject {
-  var router: LandingRouterProtocol { get }
-  
-  init(view: LandingViewProtocol, router: LandingRouterProtocol)
+  func onGetStartedButtonDidTap()
 }
 
 final class LandingPresenter: LandingPresenterProtocol {
   
-  // MARK: - Private Variable
+  // MARK: - Injected
   
-  private weak var view: LandingViewProtocol?
+  weak var view: LandingViewProtocol?
+  var router: LandingRouterProtocol!
   
-  // MARK: - Public Variable
-  
-  public var router: LandingRouterProtocol
-  
-  // MARK: - Public function
-  
-  init(view: LandingViewProtocol, router: LandingRouterProtocol) {
-    self.view = view
-    self.router = router
+  func onGetStartedButtonDidTap() {
+    router.navigateToOnboardingScreen()
   }
 }

@@ -29,12 +29,10 @@
 		013A63AB2A550901005AEC47 /* LandingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63A62A550901005AEC47 /* LandingPresenter.swift */; };
 		013A63AC2A550901005AEC47 /* LandingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63A72A550901005AEC47 /* LandingRouter.swift */; };
 		013A63AE2A550901005AEC47 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63A92A550901005AEC47 /* LandingViewController.swift */; };
-		013A63AF2A550901005AEC47 /* LandingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63AA2A550901005AEC47 /* LandingBuilder.swift */; };
 		013A63B12A550925005AEC47 /* LandingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013A63B02A550925005AEC47 /* LandingViewController.storyboard */; };
 		013A63B72A550DAB005AEC47 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63B22A550DAB005AEC47 /* LoginPresenter.swift */; };
 		013A63B82A550DAB005AEC47 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63B32A550DAB005AEC47 /* LoginRouter.swift */; };
 		013A63BA2A550DAB005AEC47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63B52A550DAB005AEC47 /* LoginViewController.swift */; };
-		013A63BB2A550DAB005AEC47 /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63B62A550DAB005AEC47 /* LoginBuilder.swift */; };
 		013A63BF2A550DE0005AEC47 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013A63BE2A550DE0005AEC47 /* LoginViewController.storyboard */; };
 		013A63C22A551278005AEC47 /* RegisterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63C12A551278005AEC47 /* RegisterLabel.swift */; };
 		013A63C52A551E80005AEC47 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A63C42A551E80005AEC47 /* EmailValidator.swift */; };
@@ -52,9 +50,8 @@
 		015A06022A546EFE009773D8 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A05FD2A546EFE009773D8 /* RegisterPresenter.swift */; };
 		015A06032A546EFE009773D8 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A05FE2A546EFE009773D8 /* RegisterRouter.swift */; };
 		015A06052A546EFE009773D8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A06002A546EFE009773D8 /* RegisterViewController.swift */; };
-		015A06062A546EFE009773D8 /* RegisterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A06012A546EFE009773D8 /* RegisterBuilder.swift */; };
 		015F83D1296C5D9D000DEA70 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015F83D0296C5D9D000DEA70 /* OnboardingRouter.swift */; };
-		015F83D3296C6B3D000DEA70 /* OnboardingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015F83D2296C6B3D000DEA70 /* OnboardingBuilder.swift */; };
+		015F83D3296C6B3D000DEA70 /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015F83D2296C6B3D000DEA70 /* OnboardingData.swift */; };
 		016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 016CC48A2931C5AF0085A5FC /* Localizable.strings */; };
 		016CC4A829325DA30085A5FC /* FitnestTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016CC4A729325DA30085A5FC /* FitnestTextField.swift */; };
 		01755B1A292DC5730020DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01755B19292DC5730020DA7E /* AppDelegate.swift */; };
@@ -125,7 +122,6 @@
 		01A3BBA22A3DF0AE007C10F9 /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3BB9D2A3DF0AE007C10F9 /* DashboardRouter.swift */; };
 		01A3BBA32A3DF0AE007C10F9 /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A3BB9E2A3DF0AE007C10F9 /* DashboardViewController.storyboard */; };
 		01A3BBA42A3DF0AE007C10F9 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3BB9F2A3DF0AE007C10F9 /* DashboardViewController.swift */; };
-		01A3BBA52A3DF0AE007C10F9 /* DashboardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3BBA02A3DF0AE007C10F9 /* DashboardBuilder.swift */; };
 		01A3BBA82A3DF210007C10F9 /* FitnestActionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3BBA72A3DF210007C10F9 /* FitnestActionCardView.swift */; };
 		01A3BBAA2A3DF25F007C10F9 /* FitnestActionCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A3BBA92A3DF25F007C10F9 /* FitnestActionCardView.xib */; };
 		01BB89892933495500379A96 /* BEMPathManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB89852933495500379A96 /* BEMPathManager.swift */; };
@@ -136,6 +132,19 @@
 		01BF5D46292F1C9200B7446E /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BF5D45292F1C9200B7446E /* GradientButton.swift */; };
 		01DEE7F12934C48700A988DC /* TermsAndPolicyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEE7F02934C48700A988DC /* TermsAndPolicyLabel.swift */; };
 		01DEE7F42934C74900A988DC /* LoginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEE7F32934C74900A988DC /* LoginLabel.swift */; };
+		01F2F9392A57AA190092056D /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2F9382A57AA190092056D /* AppAssembly.swift */; };
+		01F2F93C2A57AA7F0092056D /* FormattersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2F93B2A57AA7F0092056D /* FormattersAssembly.swift */; };
+		01F2F93F2A57AAD70092056D /* ValidatorsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2F93E2A57AAD70092056D /* ValidatorsAssembly.swift */; };
+		01F2F9432A57AB720092056D /* SwinjectStoryboard+InstantiateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2F9412A57AB720092056D /* SwinjectStoryboard+InstantiateViewController.swift */; };
+		01F2F9442A57AB720092056D /* SwinjectStoryboard+CustomCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2F9422A57AB720092056D /* SwinjectStoryboard+CustomCreate.swift */; };
+		01F2F9472A57ACD40092056D /* CommonServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2F9462A57ACD40092056D /* CommonServicesAssembly.swift */; };
+		01F2F9492A57AE750092056D /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2F9482A57AE750092056D /* ServicesAssembly.swift */; };
+		01F2F94C2A57B1E10092056D /* ModulesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2F94B2A57B1E10092056D /* ModulesAssembly.swift */; };
+		01F2F94E2A57B7020092056D /* DashboardAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2F94D2A57B7020092056D /* DashboardAssembly.swift */; };
+		01F2F9502A57BCB00092056D /* LandingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2F94F2A57BCB00092056D /* LandingAssembly.swift */; };
+		01F2F9522A57C2830092056D /* OnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2F9512A57C2830092056D /* OnboardingAssembly.swift */; };
+		01F2F9542A57C45B0092056D /* LoginAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2F9532A57C45B0092056D /* LoginAssembly.swift */; };
+		01F2F9562A580EF10092056D /* RegisterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2F9552A580EF10092056D /* RegisterAssembly.swift */; };
 		4FE38886121795767F056EB9 /* Pods_FitnestX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11666F100796CA469128E412 /* Pods_FitnestX.framework */; };
 		7E9832132943024F00B695FD /* CompleteProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */; };
 		7E9832152943026700B695FD /* CompleteProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9832142943026700B695FD /* CompleteProfileViewController.swift */; };
@@ -177,12 +186,10 @@
 		013A63A62A550901005AEC47 /* LandingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPresenter.swift; sourceTree = "<group>"; };
 		013A63A72A550901005AEC47 /* LandingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingRouter.swift; sourceTree = "<group>"; };
 		013A63A92A550901005AEC47 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
-		013A63AA2A550901005AEC47 /* LandingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingBuilder.swift; sourceTree = "<group>"; };
 		013A63B02A550925005AEC47 /* LandingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LandingViewController.storyboard; sourceTree = "<group>"; };
 		013A63B22A550DAB005AEC47 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		013A63B32A550DAB005AEC47 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		013A63B52A550DAB005AEC47 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		013A63B62A550DAB005AEC47 /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
 		013A63BE2A550DE0005AEC47 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		013A63C12A551278005AEC47 /* RegisterLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLabel.swift; sourceTree = "<group>"; };
 		013A63C42A551E80005AEC47 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
@@ -201,9 +208,8 @@
 		015A05FD2A546EFE009773D8 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		015A05FE2A546EFE009773D8 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 		015A06002A546EFE009773D8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		015A06012A546EFE009773D8 /* RegisterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBuilder.swift; sourceTree = "<group>"; };
 		015F83D0296C5D9D000DEA70 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
-		015F83D2296C6B3D000DEA70 /* OnboardingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBuilder.swift; sourceTree = "<group>"; };
+		015F83D2296C6B3D000DEA70 /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
 		016CC4892931C5AF0085A5FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		016CC48B2931C5B20085A5FC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		016CC4A729325DA30085A5FC /* FitnestTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnestTextField.swift; sourceTree = "<group>"; };
@@ -278,7 +284,6 @@
 		01A3BB9D2A3DF0AE007C10F9 /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
 		01A3BB9E2A3DF0AE007C10F9 /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
 		01A3BB9F2A3DF0AE007C10F9 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		01A3BBA02A3DF0AE007C10F9 /* DashboardBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardBuilder.swift; sourceTree = "<group>"; };
 		01A3BBA72A3DF210007C10F9 /* FitnestActionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnestActionCardView.swift; sourceTree = "<group>"; };
 		01A3BBA92A3DF25F007C10F9 /* FitnestActionCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnestActionCardView.xib; sourceTree = "<group>"; };
 		01BB89852933495500379A96 /* BEMPathManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMPathManager.swift; sourceTree = "<group>"; };
@@ -290,6 +295,19 @@
 		01DEE7F02934C48700A988DC /* TermsAndPolicyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsAndPolicyLabel.swift; sourceTree = "<group>"; };
 		01DEE7F22934C4C300A988DC /* FitnestX-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FitnestX-Bridging-Header.h"; sourceTree = "<group>"; };
 		01DEE7F32934C74900A988DC /* LoginLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLabel.swift; sourceTree = "<group>"; };
+		01F2F9382A57AA190092056D /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
+		01F2F93B2A57AA7F0092056D /* FormattersAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattersAssembly.swift; sourceTree = "<group>"; };
+		01F2F93E2A57AAD70092056D /* ValidatorsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorsAssembly.swift; sourceTree = "<group>"; };
+		01F2F9412A57AB720092056D /* SwinjectStoryboard+InstantiateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+InstantiateViewController.swift"; sourceTree = "<group>"; };
+		01F2F9422A57AB720092056D /* SwinjectStoryboard+CustomCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+CustomCreate.swift"; sourceTree = "<group>"; };
+		01F2F9462A57ACD40092056D /* CommonServicesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonServicesAssembly.swift; sourceTree = "<group>"; };
+		01F2F9482A57AE750092056D /* ServicesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
+		01F2F94B2A57B1E10092056D /* ModulesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesAssembly.swift; sourceTree = "<group>"; };
+		01F2F94D2A57B7020092056D /* DashboardAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardAssembly.swift; sourceTree = "<group>"; };
+		01F2F94F2A57BCB00092056D /* LandingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingAssembly.swift; sourceTree = "<group>"; };
+		01F2F9512A57C2830092056D /* OnboardingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAssembly.swift; sourceTree = "<group>"; };
+		01F2F9532A57C45B0092056D /* LoginAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssembly.swift; sourceTree = "<group>"; };
+		01F2F9552A580EF10092056D /* RegisterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAssembly.swift; sourceTree = "<group>"; };
 		11666F100796CA469128E412 /* Pods_FitnestX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnestX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		124CBD6FD62264FCEDEFCE45 /* Pods-FitnestX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.release.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.release.xcconfig"; sourceTree = "<group>"; };
 		7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompleteProfileViewController.storyboard; sourceTree = "<group>"; };
@@ -349,7 +367,7 @@
 		0127C238292E270C000504E4 /* Landing */ = {
 			isa = PBXGroup;
 			children = (
-				013A63AA2A550901005AEC47 /* LandingBuilder.swift */,
+				01F2F94F2A57BCB00092056D /* LandingAssembly.swift */,
 				013A63B02A550925005AEC47 /* LandingViewController.storyboard */,
 				013A63A92A550901005AEC47 /* LandingViewController.swift */,
 				013A63A62A550901005AEC47 /* LandingPresenter.swift */,
@@ -556,7 +574,7 @@
 		016CC48C29324A4D0085A5FC /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				015A06012A546EFE009773D8 /* RegisterBuilder.swift */,
+				01F2F9552A580EF10092056D /* RegisterAssembly.swift */,
 				015A06092A547028009773D8 /* View */,
 				013A63A52A5470F2005AEC47 /* Presenter */,
 				013A63A42A5470DF005AEC47 /* Router */,
@@ -567,7 +585,7 @@
 		016CC4A52932586E0085A5FC /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				013A63B62A550DAB005AEC47 /* LoginBuilder.swift */,
+				01F2F9532A57C45B0092056D /* LoginAssembly.swift */,
 				013A63C02A551140005AEC47 /* View */,
 				013A63B22A550DAB005AEC47 /* LoginPresenter.swift */,
 				013A63B32A550DAB005AEC47 /* LoginRouter.swift */,
@@ -645,6 +663,7 @@
 				01755B57292E0B6E0020DA7E /* Extensions */,
 				01755B55292E0ADE0020DA7E /* Scenes */,
 				01755B51292E09860020DA7E /* Services */,
+				01F2F9372A57A9BB0092056D /* DI */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -778,6 +797,7 @@
 		01755B57292E0B6E0020DA7E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				01F2F9402A57AB720092056D /* Swinject */,
 				010A90892A5461CD004922BD /* Rswift */,
 				01755BB1292E0BB30020DA7E /* Foundation */,
 				01755B58292E0B890020DA7E /* UIKit */,
@@ -1020,12 +1040,11 @@
 		01A3BB9B2A3DF068007C10F9 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				01A3BBAD2A3F4F52007C10F9 /* Views */,
+				01F2F94D2A57B7020092056D /* DashboardAssembly.swift */,
 				01A3BB9C2A3DF0AE007C10F9 /* DashboardPresenter.swift */,
 				01A3BB9D2A3DF0AE007C10F9 /* DashboardRouter.swift */,
 				01A3BB9E2A3DF0AE007C10F9 /* DashboardViewController.storyboard */,
 				01A3BB9F2A3DF0AE007C10F9 /* DashboardViewController.swift */,
-				01A3BBA02A3DF0AE007C10F9 /* DashboardBuilder.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -1057,13 +1076,6 @@
 			path = FitnestBanner;
 			sourceTree = "<group>";
 		};
-		01A3BBAD2A3F4F52007C10F9 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		01BB89842933495500379A96 /* BEMCheckBox */ = {
 			isa = PBXGroup;
 			children = (
@@ -1078,7 +1090,8 @@
 		01BF5D47292F321900B7446E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				015F83D2296C6B3D000DEA70 /* OnboardingBuilder.swift */,
+				015F83D2296C6B3D000DEA70 /* OnboardingData.swift */,
+				01F2F9512A57C2830092056D /* OnboardingAssembly.swift */,
 				018698B0292FB335000033E7 /* Model */,
 				010A90952A546824004922BD /* View */,
 				015A05F72A5468CA009773D8 /* Presenter */,
@@ -1102,6 +1115,60 @@
 			children = (
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		01F2F9372A57A9BB0092056D /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				01F2F9382A57AA190092056D /* AppAssembly.swift */,
+				01F2F93A2A57AA430092056D /* Formatters */,
+				01F2F94A2A57B1E10092056D /* Modules */,
+				01F2F9452A57ACBD0092056D /* Services */,
+				01F2F93D2A57AAC70092056D /* Validators */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		01F2F93A2A57AA430092056D /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				01F2F93B2A57AA7F0092056D /* FormattersAssembly.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		01F2F93D2A57AAC70092056D /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				01F2F93E2A57AAD70092056D /* ValidatorsAssembly.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		01F2F9402A57AB720092056D /* Swinject */ = {
+			isa = PBXGroup;
+			children = (
+				01F2F9412A57AB720092056D /* SwinjectStoryboard+InstantiateViewController.swift */,
+				01F2F9422A57AB720092056D /* SwinjectStoryboard+CustomCreate.swift */,
+			);
+			path = Swinject;
+			sourceTree = "<group>";
+		};
+		01F2F9452A57ACBD0092056D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				01F2F9482A57AE750092056D /* ServicesAssembly.swift */,
+				01F2F9462A57ACD40092056D /* CommonServicesAssembly.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		01F2F94A2A57B1E10092056D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				01F2F94B2A57B1E10092056D /* ModulesAssembly.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		39DF26119C5FBAF33A535FF3 /* Frameworks */ = {
@@ -1358,9 +1425,11 @@
 				01755B97292E0B890020DA7E /* UIView+Anchor.swift in Sources */,
 				0127C25C292E2A6C000504E4 /* GradientView.swift in Sources */,
 				0186989E292F81B3000033E7 /* FSPagerViewObjcCompat.m in Sources */,
+				01F2F9502A57BCB00092056D /* LandingAssembly.swift in Sources */,
 				0186989A292F81B3000033E7 /* FSPagerViewCell.swift in Sources */,
 				01755B41292DE4070020DA7E /* AppCoordinator.swift in Sources */,
 				01755BAA292E0B890020DA7E /* UITableViewCell+Extension.swift in Sources */,
+				01F2F9392A57AA190092056D /* AppAssembly.swift in Sources */,
 				01755B4B292E07CB0020DA7E /* NavigationController.swift in Sources */,
 				01755B3F292DE37C0020DA7E /* AppDelegate+Setup.swift in Sources */,
 				01755B48292E06C40020DA7E /* RootControllerPresenter.swift in Sources */,
@@ -1372,10 +1441,15 @@
 				01755B95292E0B890020DA7E /* UIView+Extensions.swift in Sources */,
 				013A63DB2A552749005AEC47 /* PasswordValidator.swift in Sources */,
 				01755BB0292E0B890020DA7E /* UITextField+Extension.swift in Sources */,
+				01F2F9542A57C45B0092056D /* LoginAssembly.swift in Sources */,
 				01BB898E2933B20500379A96 /* FitnestPasswordTextField.swift in Sources */,
+				01F2F94C2A57B1E10092056D /* ModulesAssembly.swift in Sources */,
+				01F2F93F2A57AAD70092056D /* ValidatorsAssembly.swift in Sources */,
 				0127C259292E2A43000504E4 /* Toast.swift in Sources */,
+				01F2F9442A57AB720092056D /* SwinjectStoryboard+CustomCreate.swift in Sources */,
 				7E9832152943026700B695FD /* CompleteProfileViewController.swift in Sources */,
 				0186989C292F81B3000033E7 /* FSPageViewLayout.swift in Sources */,
+				01F2F9472A57ACD40092056D /* CommonServicesAssembly.swift in Sources */,
 				016CC4A829325DA30085A5FC /* FitnestTextField.swift in Sources */,
 				01755B99292E0B890020DA7E /* UIView+Image.swift in Sources */,
 				018698A6292F81E3000033E7 /* OnboardingViewController.swift in Sources */,
@@ -1384,6 +1458,7 @@
 				01869898292F81B3000033E7 /* FSPagerView.swift in Sources */,
 				010A908D2A5461E6004922BD /* String+Localization.swift in Sources */,
 				0134054F2930A6DA00112DC5 /* ALProgressBar.swift in Sources */,
+				01F2F94E2A57B7020092056D /* DashboardAssembly.swift in Sources */,
 				018698AE292FA880000033E7 /* OnboardingPagerViewCell.swift in Sources */,
 				0186989F292F81B3000033E7 /* FSPagerCollectionView.swift in Sources */,
 				01755BAB292E0B890020DA7E /* UITableView+HeaderLayoutHelpers.swift in Sources */,
@@ -1392,7 +1467,6 @@
 				01869899292F81B3000033E7 /* FSPageViewTransformer.swift in Sources */,
 				01755B92292E0B890020DA7E /* UIApplication+Convenience.swift in Sources */,
 				010A90842A545E61004922BD /* String+Convenience.swift in Sources */,
-				01A3BBA52A3DF0AE007C10F9 /* DashboardBuilder.swift in Sources */,
 				01755B9F292E0B890020DA7E /* UIView+ShimmerAnimation.swift in Sources */,
 				01755BA7292E0B890020DA7E /* UIViewController+TopVisible.swift in Sources */,
 				DB9BB0172A3EAB19000303CD /* FitnestBannerView.swift in Sources */,
@@ -1400,10 +1474,10 @@
 				01755BA4292E0B890020DA7E /* UICollectionView+Extension.swift in Sources */,
 				01A3BBA12A3DF0AE007C10F9 /* DashboardPresenter.swift in Sources */,
 				01755BA1292E0B890020DA7E /* UITabBarController+Convenience.swift in Sources */,
+				01F2F9492A57AE750092056D /* ServicesAssembly.swift in Sources */,
 				015F83D1296C5D9D000DEA70 /* OnboardingRouter.swift in Sources */,
 				01A3BBA42A3DF0AE007C10F9 /* DashboardViewController.swift in Sources */,
 				015A06032A546EFE009773D8 /* RegisterRouter.swift in Sources */,
-				013A63AF2A550901005AEC47 /* LandingBuilder.swift in Sources */,
 				01755B94292E0B890020DA7E /* UIView+LayerAnimation.swift in Sources */,
 				01755B47292E06C40020DA7E /* RootViewControllerProvider.swift in Sources */,
 				0134054E2930A6DA00112DC5 /* ALTimingFunction.swift in Sources */,
@@ -1413,11 +1487,11 @@
 				01755BA0292E0B890020DA7E /* UIPageViewController+Extension.swift in Sources */,
 				01755BAE292E0B890020DA7E /* UIStackView+RemoveAll.swift in Sources */,
 				013A63B82A550DAB005AEC47 /* LoginRouter.swift in Sources */,
-				013A63BB2A550DAB005AEC47 /* LoginBuilder.swift in Sources */,
 				013405502930A6DA00112DC5 /* ALProgressRing.swift in Sources */,
 				01BB898A2933495500379A96 /* BEMAnimationManager.swift in Sources */,
 				01755BB9292E14F70020DA7E /* R.generated.swift in Sources */,
 				01755B54292E09980020DA7E /* NotificationCenterService.swift in Sources */,
+				01F2F9432A57AB720092056D /* SwinjectStoryboard+InstantiateViewController.swift in Sources */,
 				01755B93292E0B890020DA7E /* UIColor+Extension.swift in Sources */,
 				01A3BBA22A3DF0AE007C10F9 /* DashboardRouter.swift in Sources */,
 				01755B9B292E0B890020DA7E /* UIView+Convenience.swift in Sources */,
@@ -1427,8 +1501,10 @@
 				013A63AC2A550901005AEC47 /* LandingRouter.swift in Sources */,
 				018698A4292F81E3000033E7 /* OnboardingPresenter.swift in Sources */,
 				013C12A7294813E70059C95F /* YourGoalViewController.swift in Sources */,
+				01F2F9522A57C2830092056D /* OnboardingAssembly.swift in Sources */,
 				01DEE7F12934C48700A988DC /* TermsAndPolicyLabel.swift in Sources */,
 				013A63AB2A550901005AEC47 /* LandingPresenter.swift in Sources */,
+				01F2F9562A580EF10092056D /* RegisterAssembly.swift in Sources */,
 				01755B8F292E0B890020DA7E /* UIScrollView+Convenience.swift in Sources */,
 				01755B50292E091A0020DA7E /* NotificationNames.swift in Sources */,
 				010A90862A545ECE004922BD /* Optional+Convenience.swift in Sources */,
@@ -1442,16 +1518,16 @@
 				01755B9D292E0B890020DA7E /* UIView+Dashed.swift in Sources */,
 				01BB89892933495500379A96 /* BEMPathManager.swift in Sources */,
 				013A63C52A551E80005AEC47 /* EmailValidator.swift in Sources */,
-				015A06062A546EFE009773D8 /* RegisterBuilder.swift in Sources */,
 				01755B4D292E08200020DA7E /* BaseViewController.swift in Sources */,
 				015A06052A546EFE009773D8 /* RegisterViewController.swift in Sources */,
 				0127C24C292E2A25000504E4 /* NibView.swift in Sources */,
 				01755BA3292E0B890020DA7E /* UIDevice+Model.swift in Sources */,
 				01BF5D46292F1C9200B7446E /* GradientButton.swift in Sources */,
+				01F2F93C2A57AA7F0092056D /* FormattersAssembly.swift in Sources */,
 				010A90922A546257004922BD /* DefaultsStorageKeys.swift in Sources */,
 				01755B1A292DC5730020DA7E /* AppDelegate.swift in Sources */,
 				0127C257292E2A43000504E4 /* ToastStyle.swift in Sources */,
-				015F83D3296C6B3D000DEA70 /* OnboardingBuilder.swift in Sources */,
+				015F83D3296C6B3D000DEA70 /* OnboardingData.swift in Sources */,
 				01755BA5292E0B890020DA7E /* UICollectionViewCell+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

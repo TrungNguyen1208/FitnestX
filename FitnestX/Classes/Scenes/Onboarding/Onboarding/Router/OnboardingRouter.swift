@@ -1,20 +1,15 @@
 import Foundation
 
 protocol OnboardingRouterProtocol {
-  init(view: OnboardingViewController)
   func navigateToLoginScreen()
 }
 
 final class OnboardingRouter: OnboardingRouterProtocol {
   
-  private weak var view: OnboardingViewController?
-
-  init(view: OnboardingViewController) {
-    self.view = view
-  }
+  weak var view: OnboardingViewController?
   
   func navigateToLoginScreen() {
-    let vc = LoginBuilder.build()
+    let vc = LoginViewController.makeMe()
     view?.navigationController?.pushViewController(vc, animated: true)
   }
 }

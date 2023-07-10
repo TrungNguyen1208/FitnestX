@@ -24,9 +24,13 @@ After all, Run in the simulator.
 
 ## Todo:
 - More screen.
-- Use Dependency Injection.
 - Use Firebase or database to do some function.
 - Add Networking layer.
+
+## Structure Application
+<img src="images/structure.png" height="480" />
+
+<img src="images/unit-test.png" height="480" />
 
 ## Model View Presenter - Router (MVP-R) :heart:
 

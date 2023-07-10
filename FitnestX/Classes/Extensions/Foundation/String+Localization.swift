@@ -3,7 +3,7 @@ import Foundation
 public extension String {
 
   internal var defaultStorage: DefaultsStorage {
-    return DefaultsStorageImpl.shared
+    return DefaultsStorageImpl()
   }
   
   func localized() -> String {

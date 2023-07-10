@@ -1,10 +1,7 @@
 import Foundation
 
 protocol OnboardingPresenterProtocol: AnyObject {
-  var router: OnboardingRouterProtocol { get }
   var onboardingViewModels: [OnboardingViewModel] { get }
-  
-  init(view: OnboardingViewProtocol, router: OnboardingRouterProtocol)
   
   func onNextButtonDidTap()
   func onMoveToItem(at targetIndex: Int)
@@ -12,22 +9,17 @@ protocol OnboardingPresenterProtocol: AnyObject {
 
 final class OnboardingPresenter: OnboardingPresenterProtocol {
   
-  // MARK: - Private Variable
+  // MARK: - Injected
   
-  private weak var view: OnboardingViewProtocol?
+  weak var view: OnboardingViewProtocol?
+  var router: OnboardingRouterProtocol!
   
   // MARK: - Public Variable
   
-  public var router: OnboardingRouterProtocol
   public var currentIndex: Int = 0
-  public let onboardingViewModels: [OnboardingViewModel] = OnboardingBuilder.onboardingViewModels
+  public let onboardingViewModels: [OnboardingViewModel] = OnboardingData.onboardingViewModels
   
   // MARK: - Public function
-  
-  init(view: OnboardingViewProtocol, router: OnboardingRouterProtocol) {
-    self.view = view
-    self.router = router
-  }
   
   func onNextButtonDidTap() {
     let numberOfItems = onboardingViewModels.count

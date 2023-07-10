@@ -9,14 +9,15 @@
 import Foundation
 
 protocol LandingRouterProtocol {
-  init(view: LandingViewController)
+  func navigateToOnboardingScreen()
 }
 
 final class LandingRouter: LandingRouterProtocol {
   
-  private weak var view: LandingViewController?
-
-  init(view: LandingViewController) {
-    self.view = view
+  weak var view: LandingViewController?
+  
+  func navigateToOnboardingScreen() {
+    let vc = OnboardingViewController.makeMe()
+    view?.navigationController?.pushViewController(vc, animated: true)
   }
 }
