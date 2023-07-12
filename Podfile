@@ -7,15 +7,10 @@ inhibit_all_warnings!
 target 'FitnestX' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for FitnestX
-  pod 'IQKeyboardManagerSwift'
   
   # Quality + Generation
   pod 'SwiftLint'
   pod 'R.swift'
-  pod 'Swinject', '~> 2.7.1'
-  pod 'SwinjectStoryboard', :git => 'https://github.com/Swinject/SwinjectStoryboard.git', :commit => '0ca45c83a8aa398c153d8a036c95abb4343cfa0c'
 end
 
 post_install do |installer|

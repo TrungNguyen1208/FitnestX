@@ -52,6 +52,8 @@
 		015A06052A546EFE009773D8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A06002A546EFE009773D8 /* RegisterViewController.swift */; };
 		015F83D1296C5D9D000DEA70 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015F83D0296C5D9D000DEA70 /* OnboardingRouter.swift */; };
 		015F83D3296C6B3D000DEA70 /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015F83D2296C6B3D000DEA70 /* OnboardingData.swift */; };
+		01673A212A5EB303000409B2 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 01673A202A5EB303000409B2 /* IQKeyboardManagerSwift */; };
+		01673A2A2A5EB60E000409B2 /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 01673A292A5EB60E000409B2 /* SwinjectStoryboard */; };
 		016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 016CC48A2931C5AF0085A5FC /* Localizable.strings */; };
 		016CC4A829325DA30085A5FC /* FitnestTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016CC4A729325DA30085A5FC /* FitnestTextField.swift */; };
 		01755B1A292DC5730020DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01755B19292DC5730020DA7E /* AppDelegate.swift */; };
@@ -330,6 +332,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FE38886121795767F056EB9 /* Pods_FitnestX.framework in Frameworks */,
+				01673A2A2A5EB60E000409B2 /* SwinjectStoryboard in Frameworks */,
+				01673A212A5EB303000409B2 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1235,6 +1239,10 @@
 			dependencies = (
 			);
 			name = FitnestX;
+			packageProductDependencies = (
+				01673A202A5EB303000409B2 /* IQKeyboardManagerSwift */,
+				01673A292A5EB60E000409B2 /* SwinjectStoryboard */,
+			);
 			productName = FitnestX;
 			productReference = 01755B16292DC5730020DA7E /* FitnestX.app */;
 			productType = "com.apple.product-type.application";
@@ -1268,6 +1276,10 @@
 				vi,
 			);
 			mainGroup = 01755B0D292DC5730020DA7E;
+			packageReferences = (
+				01673A1F2A5EB303000409B2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				01673A282A5EB60E000409B2 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */,
+			);
 			productRefGroup = 01755B17292DC5730020DA7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1812,6 +1824,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01673A1F2A5EB303000409B2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		01673A282A5EB60E000409B2 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectStoryboard.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01673A202A5EB303000409B2 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01673A1F2A5EB303000409B2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		01673A292A5EB60E000409B2 /* SwinjectStoryboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01673A282A5EB60E000409B2 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */;
+			productName = SwinjectStoryboard;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 01755B0E292DC5730020DA7E /* Project object */;
 }
