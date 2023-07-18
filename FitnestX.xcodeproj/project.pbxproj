@@ -118,6 +118,13 @@
 		7E9832152943026700B695FD /* CompleteProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9832142943026700B695FD /* CompleteProfileViewController.swift */; };
 		DB9BB0172A3EAB19000303CD /* FitnestBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9BB0162A3EAB19000303CD /* FitnestBannerView.swift */; };
 		DB9BB0192A3EAB29000303CD /* FitnestBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB9BB0182A3EAB29000303CD /* FitnestBannerView.xib */; };
+		DBF7D35E2A433ED100DF4DD4 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D35C2A433ED100DF4DD4 /* NotificationViewController.swift */; };
+		DBF7D35F2A433ED100DF4DD4 /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D35D2A433ED100DF4DD4 /* NotificationViewController.xib */; };
+		DBF7D3612A433EE800DF4DD4 /* NotificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D3602A433EE800DF4DD4 /* NotificationRouter.swift */; };
+		DBF7D3632A433EFB00DF4DD4 /* NotificationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D3622A433EFB00DF4DD4 /* NotificationPresenter.swift */; };
+		DBF7D3682A433F3D00DF4DD4 /* NotificationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D3662A433F3D00DF4DD4 /* NotificationViewCell.swift */; };
+		DBF7D3692A433F3D00DF4DD4 /* NotificationViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF7D3672A433F3D00DF4DD4 /* NotificationViewCell.xib */; };
+		DBF7D36B2A433F5900DF4DD4 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7D36A2A433F5900DF4DD4 /* NotificationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -240,6 +247,13 @@
 		C6F88D206A5749E90FD2C7A0 /* Pods-FitnestX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.debug.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.debug.xcconfig"; sourceTree = "<group>"; };
 		DB9BB0162A3EAB19000303CD /* FitnestBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnestBannerView.swift; sourceTree = "<group>"; };
 		DB9BB0182A3EAB29000303CD /* FitnestBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnestBannerView.xib; sourceTree = "<group>"; };
+		DBF7D35C2A433ED100DF4DD4 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		DBF7D35D2A433ED100DF4DD4 /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
+		DBF7D3602A433EE800DF4DD4 /* NotificationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRouter.swift; sourceTree = "<group>"; };
+		DBF7D3622A433EFB00DF4DD4 /* NotificationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPresenter.swift; sourceTree = "<group>"; };
+		DBF7D3662A433F3D00DF4DD4 /* NotificationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewCell.swift; sourceTree = "<group>"; };
+		DBF7D3672A433F3D00DF4DD4 /* NotificationViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewCell.xib; sourceTree = "<group>"; };
+		DBF7D36A2A433F5900DF4DD4 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -555,6 +569,7 @@
 		01755B55292E0ADE0020DA7E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				DBF7D35B2A433E4900DF4DD4 /* Notification */,
 				018698B329305BEE000033E7 /* Authen */,
 				01A3BB9B2A3DF068007C10F9 /* Dashboard */,
 				01755B56292E0B360020DA7E /* Onboarding */,
@@ -922,6 +937,36 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DBF7D35B2A433E4900DF4DD4 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				DBF7D3652A433F1700DF4DD4 /* Views */,
+				DBF7D3642A433F0C00DF4DD4 /* Model */,
+				DBF7D35C2A433ED100DF4DD4 /* NotificationViewController.swift */,
+				DBF7D35D2A433ED100DF4DD4 /* NotificationViewController.xib */,
+				DBF7D3602A433EE800DF4DD4 /* NotificationRouter.swift */,
+				DBF7D3622A433EFB00DF4DD4 /* NotificationPresenter.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		DBF7D3642A433F0C00DF4DD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBF7D36A2A433F5900DF4DD4 /* NotificationViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBF7D3652A433F1700DF4DD4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBF7D3662A433F3D00DF4DD4 /* NotificationViewCell.swift */,
+				DBF7D3672A433F3D00DF4DD4 /* NotificationViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -996,10 +1041,12 @@
 				013C12A9294814190059C95F /* YourGoalViewController.storyboard in Resources */,
 				016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */,
 				01755B38292DDC4D0020DA7E /* Poppins-Medium.ttf in Resources */,
+				DBF7D3692A433F3D00DF4DD4 /* NotificationViewCell.xib in Resources */,
 				0127C246292E2811000504E4 /* LandingViewController.storyboard in Resources */,
 				016CC4A2293256990085A5FC /* RegisterViewController.storyboard in Resources */,
 				01A3BBAA2A3DF25F007C10F9 /* FitnestActionCardView.xib in Resources */,
 				018698AF292FA880000033E7 /* OnboardingPagerViewCell.xib in Resources */,
+				DBF7D35F2A433ED100DF4DD4 /* NotificationViewController.xib in Resources */,
 				017B17F72966C3A4001C3517 /* LoginViewController.storyboard in Resources */,
 				7E9832132943024F00B695FD /* CompleteProfileViewController.storyboard in Resources */,
 				01755B34292DDC310020DA7E /* Poppins-Bold.ttf in Resources */,
@@ -1116,6 +1163,7 @@
 				01755B3F292DE37C0020DA7E /* AppDelegate+Setup.swift in Sources */,
 				01755B48292E06C40020DA7E /* RootControllerPresenter.swift in Sources */,
 				01755B90292E0B890020DA7E /* AttributedString+Convenience.swift in Sources */,
+				DBF7D3682A433F3D00DF4DD4 /* NotificationViewCell.swift in Sources */,
 				018698B2292FB37F000033E7 /* OnboardingViewModel.swift in Sources */,
 				01BB898C2933495500379A96 /* BEMCheckBoxGroup.swift in Sources */,
 				01755BA8292E0B890020DA7E /* UINavigationController+Transparency.swift in Sources */,
@@ -1136,10 +1184,12 @@
 				018698AE292FA880000033E7 /* OnboardingPagerViewCell.swift in Sources */,
 				0186989F292F81B3000033E7 /* FSPagerCollectionView.swift in Sources */,
 				01755BAB292E0B890020DA7E /* UITableView+HeaderLayoutHelpers.swift in Sources */,
+				DBF7D3612A433EE800DF4DD4 /* NotificationRouter.swift in Sources */,
 				01755BA9292E0B890020DA7E /* UITableView+Convenience.swift in Sources */,
 				01755BA2292E0B890020DA7E /* UITextView+ContainerInsets.swift in Sources */,
 				01869899292F81B3000033E7 /* FSPageViewTransformer.swift in Sources */,
 				01755B92292E0B890020DA7E /* UIApplication+Convenience.swift in Sources */,
+				DBF7D35E2A433ED100DF4DD4 /* NotificationViewController.swift in Sources */,
 				01A3BBA52A3DF0AE007C10F9 /* DashboardBuilder.swift in Sources */,
 				01755B9F292E0B890020DA7E /* UIView+ShimmerAnimation.swift in Sources */,
 				01755BA7292E0B890020DA7E /* UIViewController+TopVisible.swift in Sources */,
@@ -1178,6 +1228,8 @@
 				01BB89892933495500379A96 /* BEMPathManager.swift in Sources */,
 				01755B4D292E08200020DA7E /* BaseViewController.swift in Sources */,
 				0127C24C292E2A25000504E4 /* NibView.swift in Sources */,
+				DBF7D3632A433EFB00DF4DD4 /* NotificationPresenter.swift in Sources */,
+				DBF7D36B2A433F5900DF4DD4 /* NotificationViewModel.swift in Sources */,
 				01755BA3292E0B890020DA7E /* UIDevice+Model.swift in Sources */,
 				016CC4A1293256990085A5FC /* RegisterPresenter.swift in Sources */,
 				01BF5D46292F1C9200B7446E /* GradientButton.swift in Sources */,
@@ -1334,6 +1386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56P6X48WA4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitnestX/SupportingFiles/InfoPlists/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FitnestX;
@@ -1365,6 +1418,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56P6X48WA4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitnestX/SupportingFiles/InfoPlists/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FitnestX;
