@@ -56,6 +56,7 @@
 		01673A2A2A5EB60E000409B2 /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 01673A292A5EB60E000409B2 /* SwinjectStoryboard */; };
 		016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 016CC48A2931C5AF0085A5FC /* Localizable.strings */; };
 		016CC4A829325DA30085A5FC /* FitnestTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016CC4A729325DA30085A5FC /* FitnestTextField.swift */; };
+		017463EA2A701024007C5D02 /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017463E92A701024007C5D02 /* NoticeViewModel.swift */; };
 		01755B1A292DC5730020DA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01755B19292DC5730020DA7E /* AppDelegate.swift */; };
 		01755B23292DC5740020DA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01755B22292DC5740020DA7E /* Assets.xcassets */; };
 		01755B26292DC5740020DA7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01755B24292DC5740020DA7E /* LaunchScreen.storyboard */; };
@@ -132,6 +133,11 @@
 		01BB898C2933495500379A96 /* BEMCheckBoxGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB89882933495500379A96 /* BEMCheckBoxGroup.swift */; };
 		01BB898E2933B20500379A96 /* FitnestPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BB898D2933B20500379A96 /* FitnestPasswordTextField.swift */; };
 		01BF5D46292F1C9200B7446E /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BF5D45292F1C9200B7446E /* GradientButton.swift */; };
+		01D5F8772A700C1A00749664 /* NoticePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5F8722A700C1A00749664 /* NoticePresenter.swift */; };
+		01D5F8782A700C1A00749664 /* NoticeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5F8732A700C1A00749664 /* NoticeRouter.swift */; };
+		01D5F8792A700C1A00749664 /* NoticeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D5F8742A700C1A00749664 /* NoticeViewController.storyboard */; };
+		01D5F87A2A700C1A00749664 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5F8752A700C1A00749664 /* NoticeViewController.swift */; };
+		01D5F87B2A700C1A00749664 /* NoticeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5F8762A700C1A00749664 /* NoticeAssembly.swift */; };
 		01DEE7F12934C48700A988DC /* TermsAndPolicyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEE7F02934C48700A988DC /* TermsAndPolicyLabel.swift */; };
 		01DEE7F42934C74900A988DC /* LoginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEE7F32934C74900A988DC /* LoginLabel.swift */; };
 		01F2F9392A57AA190092056D /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2F9382A57AA190092056D /* AppAssembly.swift */; };
@@ -215,6 +221,7 @@
 		016CC4892931C5AF0085A5FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		016CC48B2931C5B20085A5FC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		016CC4A729325DA30085A5FC /* FitnestTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnestTextField.swift; sourceTree = "<group>"; };
+		017463E92A701024007C5D02 /* NoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
 		01755B16292DC5730020DA7E /* FitnestX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnestX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01755B19292DC5730020DA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01755B22292DC5740020DA7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -294,6 +301,11 @@
 		01BB89882933495500379A96 /* BEMCheckBoxGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMCheckBoxGroup.swift; sourceTree = "<group>"; };
 		01BB898D2933B20500379A96 /* FitnestPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnestPasswordTextField.swift; sourceTree = "<group>"; };
 		01BF5D45292F1C9200B7446E /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		01D5F8722A700C1A00749664 /* NoticePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePresenter.swift; sourceTree = "<group>"; };
+		01D5F8732A700C1A00749664 /* NoticeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeRouter.swift; sourceTree = "<group>"; };
+		01D5F8742A700C1A00749664 /* NoticeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoticeViewController.storyboard; sourceTree = "<group>"; };
+		01D5F8752A700C1A00749664 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		01D5F8762A700C1A00749664 /* NoticeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeAssembly.swift; sourceTree = "<group>"; };
 		01DEE7F02934C48700A988DC /* TermsAndPolicyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsAndPolicyLabel.swift; sourceTree = "<group>"; };
 		01DEE7F22934C4C300A988DC /* FitnestX-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FitnestX-Bridging-Header.h"; sourceTree = "<group>"; };
 		01DEE7F32934C74900A988DC /* LoginLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLabel.swift; sourceTree = "<group>"; };
@@ -792,6 +804,7 @@
 		01755B56292E0B360020DA7E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				01D5F8712A700C0400749664 /* Notice */,
 				0127C238292E270C000504E4 /* Landing */,
 				01BF5D47292F321900B7446E /* Onboarding */,
 			);
@@ -1104,6 +1117,19 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		01D5F8712A700C0400749664 /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				017463E92A701024007C5D02 /* NoticeViewModel.swift */,
+				01D5F8722A700C1A00749664 /* NoticePresenter.swift */,
+				01D5F8732A700C1A00749664 /* NoticeRouter.swift */,
+				01D5F8742A700C1A00749664 /* NoticeViewController.storyboard */,
+				01D5F8752A700C1A00749664 /* NoticeViewController.swift */,
+				01D5F8762A700C1A00749664 /* NoticeAssembly.swift */,
+			);
+			path = Notice;
+			sourceTree = "<group>";
+		};
 		01DEE7EF2934C47D00A988DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -1313,6 +1339,7 @@
 				01755B23292DC5740020DA7E /* Assets.xcassets in Resources */,
 				013C12A9294814190059C95F /* YourGoalViewController.storyboard in Resources */,
 				016CC4882931C5AF0085A5FC /* Localizable.strings in Resources */,
+				01D5F8792A700C1A00749664 /* NoticeViewController.storyboard in Resources */,
 				01755B38292DDC4D0020DA7E /* Poppins-Medium.ttf in Resources */,
 				013A63A32A5470D6005AEC47 /* RegisterViewController.storyboard in Resources */,
 				015A05FC2A546C0F009773D8 /* README.md in Resources */,
@@ -1442,6 +1469,7 @@
 				01755B41292DE4070020DA7E /* AppCoordinator.swift in Sources */,
 				01755BAA292E0B890020DA7E /* UITableViewCell+Extension.swift in Sources */,
 				01F2F9392A57AA190092056D /* AppAssembly.swift in Sources */,
+				01D5F8782A700C1A00749664 /* NoticeRouter.swift in Sources */,
 				01755B4B292E07CB0020DA7E /* NavigationController.swift in Sources */,
 				01755B3F292DE37C0020DA7E /* AppDelegate+Setup.swift in Sources */,
 				01755B48292E06C40020DA7E /* RootControllerPresenter.swift in Sources */,
@@ -1457,6 +1485,7 @@
 				01BB898E2933B20500379A96 /* FitnestPasswordTextField.swift in Sources */,
 				01F2F94C2A57B1E10092056D /* ModulesAssembly.swift in Sources */,
 				01F2F93F2A57AAD70092056D /* ValidatorsAssembly.swift in Sources */,
+				01D5F87A2A700C1A00749664 /* NoticeViewController.swift in Sources */,
 				0127C259292E2A43000504E4 /* Toast.swift in Sources */,
 				01F2F9442A57AB720092056D /* SwinjectStoryboard+CustomCreate.swift in Sources */,
 				7E9832152943026700B695FD /* CompleteProfileViewController.swift in Sources */,
@@ -1472,6 +1501,7 @@
 				0134054F2930A6DA00112DC5 /* ALProgressBar.swift in Sources */,
 				01F2F94E2A57B7020092056D /* DashboardAssembly.swift in Sources */,
 				018698AE292FA880000033E7 /* OnboardingPagerViewCell.swift in Sources */,
+				01D5F8772A700C1A00749664 /* NoticePresenter.swift in Sources */,
 				0186989F292F81B3000033E7 /* FSPagerCollectionView.swift in Sources */,
 				01755BAB292E0B890020DA7E /* UITableView+HeaderLayoutHelpers.swift in Sources */,
 				01755BA9292E0B890020DA7E /* UITableView+Convenience.swift in Sources */,
@@ -1495,6 +1525,7 @@
 				0134054E2930A6DA00112DC5 /* ALTimingFunction.swift in Sources */,
 				0186989B292F81B3000033E7 /* FSPagerViewLayoutAttributes.swift in Sources */,
 				01755BB4292E0BC20020DA7E /* Array+Additions.swift in Sources */,
+				01D5F87B2A700C1A00749664 /* NoticeAssembly.swift in Sources */,
 				010A90932A546258004922BD /* DefaultsStorage.swift in Sources */,
 				01755BA0292E0B890020DA7E /* UIPageViewController+Extension.swift in Sources */,
 				01755BAE292E0B890020DA7E /* UIStackView+RemoveAll.swift in Sources */,
@@ -1532,6 +1563,7 @@
 				013A63C52A551E80005AEC47 /* EmailValidator.swift in Sources */,
 				01755B4D292E08200020DA7E /* BaseViewController.swift in Sources */,
 				015A06052A546EFE009773D8 /* RegisterViewController.swift in Sources */,
+				017463EA2A701024007C5D02 /* NoticeViewModel.swift in Sources */,
 				0127C24C292E2A25000504E4 /* NibView.swift in Sources */,
 				01755BA3292E0B890020DA7E /* UIDevice+Model.swift in Sources */,
 				01BF5D46292F1C9200B7446E /* GradientButton.swift in Sources */,

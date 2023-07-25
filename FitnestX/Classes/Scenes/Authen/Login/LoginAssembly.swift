@@ -20,6 +20,8 @@ final class LoginAssembly: Assembly {
     container.register(LoginPresenter.self) { (r, viewController: LoginViewController) in
       let presenter = LoginPresenter()
       presenter.view = viewController
+      presenter.emailValidator = r.resolve(EmailValidator.self)
+      presenter.passValidator = r.resolve(PasswordValidator.self)
       presenter.router = r.resolve(LoginRouter.self, argument: viewController)
       return presenter
     }

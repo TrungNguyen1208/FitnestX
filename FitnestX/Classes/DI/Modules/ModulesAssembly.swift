@@ -13,6 +13,7 @@ final class ModulesAssembly {
     return [
       LandingAssembly(),
       OnboardingAssembly(),
+      NoticeAssembly(),
       LoginAssembly(),
       RegisterAssembly()
     ]
