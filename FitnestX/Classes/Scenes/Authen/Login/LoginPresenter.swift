@@ -33,10 +33,16 @@ final class LoginPresenter: LoginPresenterProtocol {
       router.makeToast(R.string.localizable.login_invalid_password.localized())
       return
     }
-    router.navigateToWelcomeScreen()
+    router.navigateToWelcomeScreen(self)
   }
   
   func onRegisterLabelDidTap() {
     router.navigateToRegisterScreen()
+  }
+}
+
+extension LoginPresenter: NoticeViewControllerDelegate {
+  func primaryButtonNoticeDidTap() {
+    router.navigateToDashboardScreen()
   }
 }

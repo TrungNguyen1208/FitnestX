@@ -9,13 +9,13 @@ import XCTest
 @testable import FitnestX
 
 final class LoginPresenterTests: XCTestCase {
-
+  
   var presenter: LoginPresenter!
   var viewMock: LoginViewMock!
   var routerMock: LoginRouterMock!
   var emailValidatorMock: EmailValidatorMock!
   var passValidatorMock: PasswordValidatorMock!
-
+  
   override func setUp() {
     super.setUp()
     viewMock = LoginViewMock()
@@ -29,7 +29,7 @@ final class LoginPresenterTests: XCTestCase {
     presenter.emailValidator = emailValidatorMock
     presenter.passValidator = passValidatorMock
   }
-
+  
   override func tearDown() {
     presenter = nil
     viewMock = nil
@@ -38,7 +38,7 @@ final class LoginPresenterTests: XCTestCase {
     passValidatorMock = nil
     super.tearDown()
   }
-
+  
   func testValidLogin() {
     // Arrange
     emailValidatorMock.validationResult = .valid
@@ -96,6 +96,14 @@ final class LoginPresenterTests: XCTestCase {
     XCTAssertFalse(routerMock.didMakeToast)
     XCTAssertTrue(routerMock.didNavigateToRegisterScreen)
   }
+  
+  func testPrimaryButtonNoticeDidTap() {
+    // Act
+    presenter.primaryButtonNoticeDidTap()
+    
+    // Assert
+    XCTAssertTrue(routerMock.didNavigateToDashboardScreen)
+  }
 }
 
 // Mock Classes
@@ -103,16 +111,22 @@ final class LoginPresenterTests: XCTestCase {
 final class LoginViewMock: LoginViewProtocol {}
 
 final class LoginRouterMock: LoginRouterProtocol {
+  
   var didMakeToast = false
   var didNavigateToRegisterScreen = false
   var didNavigateToWelcomeScreen = false
+  var didNavigateToDashboardScreen = false
   
   func makeToast(_ message: String) {
     didMakeToast = true
   }
   
-  func navigateToWelcomeScreen() {
+  func navigateToWelcomeScreen(_ delegate: NoticeViewControllerDelegate) {
     didNavigateToWelcomeScreen = true
+  }
+  
+  func navigateToDashboardScreen() {
+    didNavigateToDashboardScreen = true
   }
   
   func navigateToRegisterScreen() {

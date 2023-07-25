@@ -3,6 +3,7 @@
 "common_login" = "Login";
 "common_email" = "Email";
 "common_password" = "Password";
+"common_go_to_home" = "Go To Home";
 
 "landing_page_subtitle" = "Everybody Can Train";
 

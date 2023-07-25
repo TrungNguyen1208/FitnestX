@@ -79,6 +79,9 @@
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="primaryButtonDidTap" destination="FOo-hU-P6F" eventType="touchUpInside" id="KZA-WE-hgZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zrw-ps-frZ"/>

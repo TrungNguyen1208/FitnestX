@@ -10,8 +10,8 @@ import Foundation
 
 protocol LoginRouterProtocol {
   func navigateToRegisterScreen()
-  func navigateToWelcomeScreen()
-//  func navigateToDashboardScreen()
+  func navigateToWelcomeScreen(_ delegate: NoticeViewControllerDelegate)
+  func navigateToDashboardScreen()
   func makeToast(_ message: String)
 }
 
@@ -24,15 +24,23 @@ final class LoginRouter: LoginRouterProtocol {
     view?.navigationController?.pushViewController(vc, animated: true)
   }
   
-  func navigateToWelcomeScreen() {
+  func navigateToWelcomeScreen(_ delegate: NoticeViewControllerDelegate) {
     let vc = NoticeViewController.makeMe()
+    let viewModel = NoticeViewModel(
+      imageName: R.image.welcomeBack.name,
+      title: "Welcome, Stefani",
+      subtitle: "You are all set now, let’s reach your\n goals together with us",
+      primaryButtonTitle: R.string.localizable.common_go_to_home.localized()
+    )
     vc.modalPresentationStyle = .fullScreen
+    vc.viewModel = viewModel
+    vc.delegate = delegate
     view?.navigationController?.present(vc, animated: true)
   }
   
-//  func navigateToDashboardScreen() {
-//    NotificationCenter.default.post(name: AccountNotifications.authorizationCompleted, object: nil)
-//  }
+  func navigateToDashboardScreen() {
+    NotificationCenter.default.post(name: AccountNotifications.authorizationCompleted, object: nil)
+  }
   
   func makeToast(_ message: String) {
     view?.view.makeToast(message)

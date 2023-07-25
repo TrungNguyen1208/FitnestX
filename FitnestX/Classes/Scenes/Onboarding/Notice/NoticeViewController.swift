@@ -12,6 +12,10 @@ protocol NoticeViewProtocol: AnyObject {
     
 }
 
+protocol NoticeViewControllerDelegate: AnyObject {
+  func primaryButtonNoticeDidTap()
+}
+
 final class NoticeViewController: BaseViewController {
   
   // MARK: - IBOutlet
@@ -25,6 +29,8 @@ final class NoticeViewController: BaseViewController {
   // MARK: - Public Variable
   
   public var presenter: NoticePresenterProtocol!
+  public var viewModel: NoticeViewModel!
+  weak var delegate: NoticeViewControllerDelegate?
   
   // MARK: - Lifecycle
   
@@ -33,8 +39,10 @@ final class NoticeViewController: BaseViewController {
     setupUI()
   }
   
-  override func applyLocalization() {
-    
+  // MARK: - Action
+  
+  @IBAction private func primaryButtonDidTap() {
+    delegate?.primaryButtonNoticeDidTap()
   }
 }
 
@@ -42,7 +50,11 @@ final class NoticeViewController: BaseViewController {
 
 private extension NoticeViewController {
   func setupUI() {
-    
+    imageView.image = UIImage(named: viewModel.imageName)
+    titleLabel.setAttributedText(from: viewModel.title, hideIfNil: true)
+    subtitleLabel.setAttributedText(from: viewModel.subtitle, hideIfNil: true)
+    descriptionLabel.setAttributedText(from: viewModel.description, hideIfNil: true)
+    primaryButton.setTitle(viewModel.primaryButtonTitle, for: .normal)
   }
 }
 
