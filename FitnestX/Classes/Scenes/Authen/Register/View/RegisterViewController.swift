@@ -48,8 +48,9 @@ final class RegisterViewController: BaseViewController {
     let lastName = lastNameTextField.text.orEmpty
     let email = emailTextField.text.orEmpty
     let password = passwordTextField.text.orEmpty
-    let isChooseCheckbox = termCheckBox.on
-    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password, isChooseCheckbox: isChooseCheckbox)
+    let isCheckTerm = termCheckBox.on
+    
+    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password, isCheckTerm: isCheckTerm)
   }
 }
 

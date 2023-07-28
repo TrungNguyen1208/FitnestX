@@ -29,7 +29,7 @@ final class FirstNameValidatorImpl: FirstNameValidator {
     guard let firstName = firstName, !firstName.isEmpty else {
       return .error(.empty)
     }
-    if firstName.count < 6 {
+    if firstName.count < 3 {
       return .error(.invalid)
     }
     return .valid

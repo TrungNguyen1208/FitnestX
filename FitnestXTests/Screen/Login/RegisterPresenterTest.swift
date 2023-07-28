@@ -35,6 +35,7 @@ final class RegisterPresenterTest: XCTestCase {
     presenter.emailValidator = emailValidatorMock
     presenter.passValidator = passValidatorMock
   }
+  
   override func tearDown() {
     presenter = nil
     viewMock = nil
@@ -59,7 +60,7 @@ final class RegisterPresenterTest: XCTestCase {
     let onCheckBox = true
     
     // Act
-    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password, isChooseCheckbox: onCheckBox)
+    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password, isCheckTerm: onCheckBox)
     
     // Assert
     XCTAssertTrue(routerMock.didNavigateToCompleteProfileScreen)
@@ -70,7 +71,7 @@ final class RegisterPresenterTest: XCTestCase {
     // Arrange
     firstNameValidatorMock.validationResult = .valid
     lastNameValidatorMock.validationResult = .valid
-    emailValidatorMock.validationResult = .valid
+    emailValidatorMock.validationResult = .error(.invalid)
     passValidatorMock.validationResult = .valid
     let firstName = "firstName123"
     let lastName = "lastName"
@@ -79,7 +80,7 @@ final class RegisterPresenterTest: XCTestCase {
     let onCheckBox = true
     
     // Act
-    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password, isChooseCheckbox: onCheckBox)
+    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password, isCheckTerm: onCheckBox)
     
     // Assert
     XCTAssertFalse(routerMock.didNavigateToCompleteProfileScreen)
@@ -88,7 +89,7 @@ final class RegisterPresenterTest: XCTestCase {
   
   func testInvalidFirstName() {
     // Arrange
-    firstNameValidatorMock.validationResult = .valid
+    firstNameValidatorMock.validationResult = .error(.invalid)
     lastNameValidatorMock.validationResult = .valid
     emailValidatorMock.validationResult = .valid
     passValidatorMock.validationResult = .valid
@@ -99,7 +100,7 @@ final class RegisterPresenterTest: XCTestCase {
     let onCheckBox = true
     
     // Act
-    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password, isChooseCheckbox: onCheckBox)
+    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password, isCheckTerm: onCheckBox)
     
     // Assert
     XCTAssertFalse(routerMock.didNavigateToCompleteProfileScreen)
@@ -109,7 +110,7 @@ final class RegisterPresenterTest: XCTestCase {
   func testInvalidLastName() {
     // Arrange
     firstNameValidatorMock.validationResult = .valid
-    lastNameValidatorMock.validationResult = .valid
+    lastNameValidatorMock.validationResult = .error(.invalid)
     emailValidatorMock.validationResult = .valid
     passValidatorMock.validationResult = .valid
     let firstName = "fi222r3"
@@ -119,7 +120,7 @@ final class RegisterPresenterTest: XCTestCase {
     let onCheckBox = true
     
     // Act
-    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password, isChooseCheckbox: onCheckBox)
+    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password, isCheckTerm: onCheckBox)
     
     // Assert
     XCTAssertFalse(routerMock.didNavigateToCompleteProfileScreen)
@@ -131,7 +132,7 @@ final class RegisterPresenterTest: XCTestCase {
     firstNameValidatorMock.validationResult = .valid
     lastNameValidatorMock.validationResult = .valid
     emailValidatorMock.validationResult = .valid
-    passValidatorMock.validationResult = .valid
+    passValidatorMock.validationResult = .error(.invalid)
     let firstName = "fi222r3"
     let lastName = "las"
     let email = "texa@mple.com"
@@ -139,7 +140,7 @@ final class RegisterPresenterTest: XCTestCase {
     let onCheckBox = true
     
     // Act
-    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password, isChooseCheckbox: onCheckBox)
+    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password, isCheckTerm: onCheckBox)
     
     // Assert
     XCTAssertFalse(routerMock.didNavigateToCompleteProfileScreen)
@@ -152,6 +153,7 @@ final class RegisterPresenterTest: XCTestCase {
     lastNameValidatorMock.validationResult = .valid
     emailValidatorMock.validationResult = .valid
     passValidatorMock.validationResult = .valid
+    
     let firstName = "fi222r3"
     let lastName = "lassss"
     let email = "texa@mple.com"
@@ -159,13 +161,21 @@ final class RegisterPresenterTest: XCTestCase {
     let onCheckBox = false
     
     // Act
-    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password, isChooseCheckbox: onCheckBox)
+    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password, isCheckTerm: onCheckBox)
     
     // Assert
     XCTAssertFalse(routerMock.didNavigateToCompleteProfileScreen)
     XCTAssertTrue(routerMock.didMakeToast)
   }
   
+  func testLoginLabelDidTap() {
+    // Act
+    presenter.onLoginLabelDidTap()
+    
+    // Assert
+    XCTAssertFalse(routerMock.didMakeToast)
+    XCTAssertTrue(routerMock.didNavigateToLoginScreen)
+  }
 }
 
 // Mock Classes
@@ -176,6 +186,7 @@ final class RegisterRouterMock: RegisterRouterProtocol {
   
   var didMakeToast = false
   var didNavigateToCompleteProfileScreen = false
+  var didNavigateToLoginScreen = false
   
   func makeToast(_ message: String) {
     didMakeToast = true
@@ -186,7 +197,7 @@ final class RegisterRouterMock: RegisterRouterProtocol {
   }
   
   func popToLoginScreen() {
-    
+    didNavigateToLoginScreen = true
   }
 }
 
