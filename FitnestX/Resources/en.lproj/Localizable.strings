@@ -15,3 +15,4 @@
 
 "register_invalid_first_name" = "First name empty or not enough 6 character";
 "register_invalid_last_name" = "Last name empty or not enough 6 character";
+"register_invalid_checkbox" = "Bạn phải chọn checkbox chớ";

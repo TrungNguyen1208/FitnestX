@@ -10,7 +10,7 @@ import Foundation
 
 protocol RegisterPresenterProtocol: AnyObject {
   func onLoginLabelDidTap()
-  func onGetStartButtonDidTap(firstName: String, lastName: String, email: String, password: String)
+  func onGetStartButtonDidTap(firstName: String, lastName: String, email: String, password: String, isChooseCheckbox: Bool)
 }
 
 final class RegisterPresenter: RegisterPresenterProtocol {
@@ -26,7 +26,7 @@ final class RegisterPresenter: RegisterPresenterProtocol {
   
   // MARK: - Public function
     
-  func onGetStartButtonDidTap(firstName: String, lastName: String, email: String, password: String) {
+  func onGetStartButtonDidTap(firstName: String, lastName: String, email: String, password: String, isChooseCheckbox: Bool) {
     if fistNameValidator.validate(firstName) != .valid {
       router.makeToast(R.string.localizable.register_invalid_first_name.localized())
       return
@@ -40,7 +40,11 @@ final class RegisterPresenter: RegisterPresenterProtocol {
       return
     }
     if passValidator.validate(password) != .valid {
-      router.makeToast(R.string.localizable.login_forgot_pass().localized())
+      router.makeToast(R.string.localizable.login_invalid_password.localized())
+      return
+    }
+    if !isChooseCheckbox {
+      router.makeToast(R.string.localizable.register_invalid_checkbox.localized())
       return
     }
     
