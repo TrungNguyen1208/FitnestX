@@ -16,6 +16,11 @@ final class RegisterViewController: BaseViewController {
   
   // MARK: - IBOutlet
   
+  @IBOutlet private weak var registerButton: GradientButton!
+  @IBOutlet private weak var firstNameTextField: FitnestTextField!
+  @IBOutlet private weak var passwordTextField: FitnestPasswordTextField!
+  @IBOutlet private weak var emailTextField: FitnestTextField!
+  @IBOutlet private weak var lastNameTextField: FitnestTextField!
   @IBOutlet private weak var termCheckBox: BEMCheckBox!
   @IBOutlet private weak var loginLabel: LoginLabel!
   
@@ -31,12 +36,19 @@ final class RegisterViewController: BaseViewController {
   }
   
   override func applyLocalization() {
-    
+    registerButton.setTitle(R.string.localizable.common_get_started.localized(), for: .normal)
+    firstNameTextField.placeholder = R.string.localizable.common_first_name.localized()
+    lastNameTextField.placeholder = R.string.localizable.common_last_name.localized()
+    emailTextField.placeholder = R.string.localizable.common_email.localized()
+    passwordTextField.placeholder = R.string.localizable.common_password.localized()
   }
   
   @IBAction private func startButtonDidTap() {
-    let vc = CompleteProfileViewController.makeMe()
-    navigationController?.pushViewController(vc, animated: true)
+    let firstName = firstNameTextField.text.orEmpty
+    let lastName = lastNameTextField.text.orEmpty
+    let email = emailTextField.text.orEmpty
+    let password = passwordTextField.text.orEmpty
+    presenter.onGetStartButtonDidTap(firstName: firstName, lastName: lastName, email: email, password: password)
   }
 }
 
