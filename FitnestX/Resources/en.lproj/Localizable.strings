@@ -4,9 +4,15 @@
 "common_email" = "Email";
 "common_password" = "Password";
 "common_go_to_home" = "Go To Home";
+"common_first_name" = "First Name";
+"common_last_name" = "Last Name";
 
 "landing_page_subtitle" = "Everybody Can Train";
 
 "login_forgot_pass" = "Forgot your password?";
 "login_invalid_email" = "Invalid email, please try again";
 "login_invalid_password" = "Password empty or not enough 6 character";
+
+"register_invalid_first_name" = "First name empty or not enough 3 character";
+"register_invalid_last_name" = "Last name empty or not enough 3 character";
+"register_invalid_checkbox" = "Please select the checkbox";

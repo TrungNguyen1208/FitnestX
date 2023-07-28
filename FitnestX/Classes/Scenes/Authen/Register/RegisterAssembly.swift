@@ -19,6 +19,10 @@ final class RegisterAssembly: Assembly {
     
     container.register(RegisterPresenter.self) { (r, viewController: RegisterViewController) in
       let presenter = RegisterPresenter()
+      presenter.fistNameValidator = r.resolve(FirstNameValidator.self)
+      presenter.lastNameValidator = r.resolve(LastNameValidator.self)
+      presenter.emailValidator = r.resolve(EmailValidator.self)
+      presenter.passValidator = r.resolve(PasswordValidator.self)
       presenter.view = viewController
       presenter.router = r.resolve(RegisterRouter.self, argument: viewController)
       return presenter

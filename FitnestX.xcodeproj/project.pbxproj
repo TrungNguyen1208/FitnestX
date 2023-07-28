@@ -156,6 +156,9 @@
 		4FE38886121795767F056EB9 /* Pods_FitnestX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11666F100796CA469128E412 /* Pods_FitnestX.framework */; };
 		7E9832132943024F00B695FD /* CompleteProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */; };
 		7E9832152943026700B695FD /* CompleteProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9832142943026700B695FD /* CompleteProfileViewController.swift */; };
+		9EF1B0372A7393D1004F893B /* RegisterPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF1B0362A7393D1004F893B /* RegisterPresenterTest.swift */; };
+		DB2517C22A72B93200F73982 /* FirstNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2517C12A72B93200F73982 /* FirstNameValidator.swift */; };
+		DB2517C42A72B94300F73982 /* LastNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2517C32A72B94300F73982 /* LastNameValidator.swift */; };
 		DB9BB0172A3EAB19000303CD /* FitnestBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9BB0162A3EAB19000303CD /* FitnestBannerView.swift */; };
 		DB9BB0192A3EAB29000303CD /* FitnestBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB9BB0182A3EAB29000303CD /* FitnestBannerView.xib */; };
 /* End PBXBuildFile section */
@@ -213,9 +216,9 @@
 		013C12AC294817CA0059C95F /* YourGoalPagerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourGoalPagerViewCell.xib; sourceTree = "<group>"; };
 		015A05F52A5468A4009773D8 /* OnboardingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnboardingViewController.storyboard; sourceTree = "<group>"; };
 		015A05FB2A546C0F009773D8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		015A05FD2A546EFE009773D8 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
-		015A05FE2A546EFE009773D8 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
-		015A06002A546EFE009773D8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		015A05FD2A546EFE009773D8 /* RegisterPresenter.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; tabWidth = 2; };
+		015A05FE2A546EFE009773D8 /* RegisterRouter.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; tabWidth = 2; };
+		015A06002A546EFE009773D8 /* RegisterViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		015F83D0296C5D9D000DEA70 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
 		015F83D2296C6B3D000DEA70 /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
 		016CC4892931C5AF0085A5FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -311,7 +314,7 @@
 		01DEE7F32934C74900A988DC /* LoginLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLabel.swift; sourceTree = "<group>"; };
 		01F2F9382A57AA190092056D /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		01F2F93B2A57AA7F0092056D /* FormattersAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattersAssembly.swift; sourceTree = "<group>"; };
-		01F2F93E2A57AAD70092056D /* ValidatorsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorsAssembly.swift; sourceTree = "<group>"; };
+		01F2F93E2A57AAD70092056D /* ValidatorsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ValidatorsAssembly.swift; sourceTree = "<group>"; tabWidth = 2; };
 		01F2F9412A57AB720092056D /* SwinjectStoryboard+InstantiateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+InstantiateViewController.swift"; sourceTree = "<group>"; };
 		01F2F9422A57AB720092056D /* SwinjectStoryboard+CustomCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+CustomCreate.swift"; sourceTree = "<group>"; };
 		01F2F9462A57ACD40092056D /* CommonServicesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonServicesAssembly.swift; sourceTree = "<group>"; };
@@ -326,7 +329,10 @@
 		124CBD6FD62264FCEDEFCE45 /* Pods-FitnestX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.release.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.release.xcconfig"; sourceTree = "<group>"; };
 		7E9832122943024F00B695FD /* CompleteProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompleteProfileViewController.storyboard; sourceTree = "<group>"; };
 		7E9832142943026700B695FD /* CompleteProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteProfileViewController.swift; sourceTree = "<group>"; };
+		9EF1B0362A7393D1004F893B /* RegisterPresenterTest.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = RegisterPresenterTest.swift; sourceTree = "<group>"; tabWidth = 2; };
 		C6F88D206A5749E90FD2C7A0 /* Pods-FitnestX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnestX.debug.xcconfig"; path = "Target Support Files/Pods-FitnestX/Pods-FitnestX.debug.xcconfig"; sourceTree = "<group>"; };
+		DB2517C12A72B93200F73982 /* FirstNameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNameValidator.swift; sourceTree = "<group>"; };
+		DB2517C32A72B94300F73982 /* LastNameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastNameValidator.swift; sourceTree = "<group>"; };
 		DB9BB0162A3EAB19000303CD /* FitnestBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnestBannerView.swift; sourceTree = "<group>"; };
 		DB9BB0182A3EAB29000303CD /* FitnestBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnestBannerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -494,6 +500,8 @@
 			children = (
 				013A63C42A551E80005AEC47 /* EmailValidator.swift */,
 				013A63DA2A552749005AEC47 /* PasswordValidator.swift */,
+				DB2517C12A72B93200F73982 /* FirstNameValidator.swift */,
+				DB2517C32A72B94300F73982 /* LastNameValidator.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -529,6 +537,7 @@
 			isa = PBXGroup;
 			children = (
 				013A63E02A5532C2005AEC47 /* LoginPresenterTest.swift */,
+				9EF1B0362A7393D1004F893B /* RegisterPresenterTest.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1438,6 +1447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EF1B0372A7393D1004F893B /* RegisterPresenterTest.swift in Sources */,
 				013A63D42A551FC2005AEC47 /* EmailValidatorTests.swift in Sources */,
 				013A63E12A5532C2005AEC47 /* LoginPresenterTest.swift in Sources */,
 				013A63DD2A5528D1005AEC47 /* PasswordValidatorTests.swift in Sources */,
@@ -1500,6 +1510,7 @@
 				010A908D2A5461E6004922BD /* String+Localization.swift in Sources */,
 				0134054F2930A6DA00112DC5 /* ALProgressBar.swift in Sources */,
 				01F2F94E2A57B7020092056D /* DashboardAssembly.swift in Sources */,
+				DB2517C22A72B93200F73982 /* FirstNameValidator.swift in Sources */,
 				018698AE292FA880000033E7 /* OnboardingPagerViewCell.swift in Sources */,
 				01D5F8772A700C1A00749664 /* NoticePresenter.swift in Sources */,
 				0186989F292F81B3000033E7 /* FSPagerCollectionView.swift in Sources */,
@@ -1557,6 +1568,7 @@
 				013A63C22A551278005AEC47 /* RegisterLabel.swift in Sources */,
 				010A908B2A5461CD004922BD /* Rswift+Localized.swift in Sources */,
 				01DEE7F42934C74900A988DC /* LoginLabel.swift in Sources */,
+				DB2517C42A72B94300F73982 /* LastNameValidator.swift in Sources */,
 				01755B9C292E0B890020DA7E /* UIView+Shake.swift in Sources */,
 				01755B9D292E0B890020DA7E /* UIView+Dashed.swift in Sources */,
 				01BB89892933495500379A96 /* BEMPathManager.swift in Sources */,
@@ -1768,6 +1780,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56P6X48WA4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitnestX/SupportingFiles/InfoPlists/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FitnestX;
@@ -1800,6 +1813,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56P6X48WA4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitnestX/SupportingFiles/InfoPlists/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FitnestX;
